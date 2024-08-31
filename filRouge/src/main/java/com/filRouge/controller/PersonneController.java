@@ -1,4 +1,4 @@
 package com.filRouge.controller;
 
-public class UtilisateurController {
+public class PersonneController {
 }

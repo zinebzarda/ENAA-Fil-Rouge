@@ -1,10 +1,12 @@
 package com.filRouge.model;
 
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.List;
 
 @Getter
 @Setter
@@ -13,5 +15,12 @@ import lombok.Setter;
 @Entity
 public class Client extends Personne {
     private String adresse;
+
+
+    @OneToMany(mappedBy = "client")
+    private List<DemandeService> demandes;
+
+    @OneToMany(mappedBy = "client")
+    private List<Contact> contacts;
 
 }

@@ -1,4 +1,7 @@
 package com.filRouge.repository;
 
-public interface AdminRepository {
+import com.filRouge.model.Admin;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface AdminRepository extends JpaRepository<Admin, Long> {
 }

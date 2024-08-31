@@ -1,4 +1,4 @@
 package com.filRouge.repository;
 
-public interface UtilisateurRepository {
+public interface PersonneRepository {
 }
