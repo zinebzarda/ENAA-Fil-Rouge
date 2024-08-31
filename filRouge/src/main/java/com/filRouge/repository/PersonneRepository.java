@@ -1,4 +1,7 @@
 package com.filRouge.repository;
 
-public interface PersonneRepository {
+import com.filRouge.model.Personne;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface PersonneRepository extends JpaRepository<Personne, Long> {
 }

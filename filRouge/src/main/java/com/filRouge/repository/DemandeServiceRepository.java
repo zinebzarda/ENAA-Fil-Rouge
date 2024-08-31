@@ -1,4 +1,7 @@
 package com.filRouge.repository;
 
-public interface DemandeServiceRepository {
+import com.filRouge.model.DemandeService;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface DemandeServiceRepository extends JpaRepository<DemandeService, Integer> {
 }

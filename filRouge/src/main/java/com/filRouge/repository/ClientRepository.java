@@ -1,4 +1,7 @@
 package com.filRouge.repository;
 
-public interface ClientRepository {
+import com.filRouge.model.Client;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ClientRepository extends JpaRepository<Client, Long> {
 }

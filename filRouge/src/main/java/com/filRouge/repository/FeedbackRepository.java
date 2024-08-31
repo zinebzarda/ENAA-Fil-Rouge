@@ -1,4 +1,7 @@
 package com.filRouge.repository;
 
-public interface FeedbackRepository {
+import com.filRouge.model.Feedback;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface FeedbackRepository extends JpaRepository<Feedback, Long> {
 }
