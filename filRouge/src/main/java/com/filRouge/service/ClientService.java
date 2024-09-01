@@ -1,11 +1,15 @@
 package com.filRouge.service;
 
+import com.filRouge.exception.ResourceNotFoundException;
 import com.filRouge.model.*;
 import com.filRouge.model.enums.Role;
 import com.filRouge.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
 
 
 @Service
@@ -28,20 +32,34 @@ public class ClientService {
         client.setRole(Role.CLIENT);
         return clientRepository.save(client);
     }
-//
-//    public Optional<Client> findById(Long id) {
-//        return clientRepository.findById(id);
-//    }
-//
-//    public void deleteClient(Long id) {
-//        clientRepository.deleteById(id);
-//    }
-//
-//    public List<Client> getAllClients() {
-//        return clientRepository.findAll();
-//    }
-//
-//
+
+    public List<Client> getAllClients() {
+        return clientRepository.findAll();
+    }
+
+    public Optional<Client> findById(Long id) {
+        return clientRepository.findById(id);
+    }
+
+    public Client updateClient(Long id, Client clientDetails) {
+        Client existingClient = clientRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Client non trouvé avec l'id : " + id));
+        existingClient.setUsername(clientDetails.getUsername());
+        existingClient.setEmail(clientDetails.getEmail());
+        existingClient.setAdresse(clientDetails.getAdresse());
+        if (clientDetails.getPassword() != null && !clientDetails.getPassword().isEmpty()) {
+            existingClient.setPassword(passwordEncoder.encode(clientDetails.getPassword()));
+        }
+        return clientRepository.save(existingClient);
+    }
+
+    public void deleteClient(Long id) {
+        clientRepository.deleteById(id);
+    }
+
+
+
+
 //public List<Services> rechercherServices(String keyword) {
 //        if (keyword != null && !keyword.isEmpty()) {
 //            return serviceRepository.findByTitreContainingrDescriptionContaining(keyword, keyword);

@@ -1,5 +1,6 @@
 package com.filRouge.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.filRouge.model.enums.Role;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -24,7 +25,10 @@ public class Personne implements UserDetails {
     private Long id;
     private String username;
     private String email;
+
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
+
     @Enumerated(EnumType.STRING)
     private Role role;
 
