@@ -36,6 +36,7 @@ public class SecurityConfig {
                         expressionInterceptUrlRegistry
                                 .requestMatchers("/connexion").permitAll()
                                 .requestMatchers("/clients/inscription").permitAll()
+                                .requestMatchers("/Prestataires/inscription").permitAll()
                                 .requestMatchers("/clients/**").hasRole("CLIENT")
                                 .requestMatchers("/clients/**").hasRole("CLIENT")
 //                                .requestMatchers("/api/tickets/afficher").permitAll()
