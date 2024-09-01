@@ -20,5 +20,5 @@ public class Prestataire extends Personne {
     private String experience;
 
     @OneToMany(mappedBy = "prestataire")
-    private List<Service> services;
+    private List<Services> services;
 }

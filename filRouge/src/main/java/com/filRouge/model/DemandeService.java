@@ -24,7 +24,7 @@ public class DemandeService {
 
     @ManyToOne
     @JoinColumn(name = "service_id")
-    private Service service;
+    private Services service;
 
     @OneToMany(mappedBy = "demandeService")
     private List<Feedback> feedbacks;
