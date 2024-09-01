@@ -1,4 +1,4 @@
-package com.example.GestionRessourcesInfo.exception;
+package com.filRouge.exception;
 
 public class ResourceNotFoundException extends RuntimeException {
 

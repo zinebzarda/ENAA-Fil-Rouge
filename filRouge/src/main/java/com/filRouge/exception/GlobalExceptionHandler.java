@@ -1,4 +1,4 @@
-package com.example.GestionRessourcesInfo.exception;
+package com.filRouge.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

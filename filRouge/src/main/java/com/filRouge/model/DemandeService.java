@@ -1,5 +1,6 @@
 package com.filRouge.model;
 
+import com.filRouge.model.enums.StatutService;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -16,7 +17,9 @@ public class DemandeService {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Date dateDemmande;
-    private String status;
+
+    @Enumerated(EnumType.STRING)
+    private StatutService statut;
 
     @ManyToOne
     @JoinColumn(name = "client_id")

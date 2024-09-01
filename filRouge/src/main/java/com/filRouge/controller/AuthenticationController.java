@@ -1,6 +1,8 @@
 package com.filRouge.controller;
 
+import com.filRouge.model.Client;
 import com.filRouge.model.Personne;
+import com.filRouge.model.Prestataire;
 import com.filRouge.model.enums.Role;
 import com.filRouge.repository.PersonneRepository;
 import com.filRouge.security.JwtAuth;
@@ -49,15 +51,17 @@ public class AuthenticationController {
 
     }
 
-    @PostMapping("/inscription")
-    public ResponseEntity<Personne> inscrire(@RequestBody Personne personRequest) {
-        Role role = Role.valueOf(String.valueOf(personRequest.getRole()));
-        Personne personne = new Personne();
-        personne.setUsername(personRequest.getUsername());
-        personne.setEmail(personRequest.getEmail());
-        personne.setPassword(personRequest.getPassword());
-        Personne nouvellePersonne = personneService.inscrire(personne, role);
-        return ResponseEntity.ok(nouvellePersonne);
-    }
+//    @PostMapping("/inscription")
+//    public ResponseEntity<Personne> inscrire(@RequestBody Personne personRequest) {
+//        Role role = Role.valueOf(String.valueOf(personRequest.getRole()));
+//        Personne personne = new Personne();
+//        personne.setUsername(personRequest.getUsername());
+//        personne.setEmail(personRequest.getEmail());
+//        personne.setPassword(personRequest.getPassword());
+//        Personne nouvellePersonne = personneService.inscrire(personne, role);
+//        return ResponseEntity.ok(nouvellePersonne);
+//    }
+
+
 }
 

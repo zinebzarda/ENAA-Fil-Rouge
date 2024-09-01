@@ -35,8 +35,9 @@ public class SecurityConfig {
                 .authorizeHttpRequests(expressionInterceptUrlRegistry ->
                         expressionInterceptUrlRegistry
                                 .requestMatchers("/connexion").permitAll()
-                                .requestMatchers("/inscription").permitAll()
-//                                .requestMatchers("/api/equipements/**").hasRole("ADMIN")
+                                .requestMatchers("/clients/inscription").permitAll()
+                                .requestMatchers("/clients/**").hasRole("CLIENT")
+                                .requestMatchers("/clients/**").hasRole("CLIENT")
 //                                .requestMatchers("/api/tickets/afficher").permitAll()
 //                                .requestMatchers(POST, "/api/tickets").hasRole("USER")
 //                                .requestMatchers(PUT, "/api/tickets/**").hasAnyRole("ADMIN", "TECHNICIAN")
