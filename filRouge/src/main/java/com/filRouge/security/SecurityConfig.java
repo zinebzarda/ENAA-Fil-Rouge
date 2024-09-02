@@ -36,10 +36,20 @@ public class SecurityConfig {
                         expressionInterceptUrlRegistry
                                 .requestMatchers("/connexion").permitAll()
                                 .requestMatchers("/clients/inscription").permitAll()
-                                .requestMatchers("/Prestataires/inscription").permitAll()
+                                .requestMatchers("/clients/**").hasRole("CLIENT")
                                 .requestMatchers("/clients/allClients").hasRole("ADMIN")
                                 .requestMatchers(DELETE,"/clients/**").hasRole("ADMIN")
-                                .requestMatchers("/clients/**").hasRole("CLIENT")
+
+
+                                .requestMatchers(POST,"/Services/**").hasRole("PRESTATAIRE")
+                                .requestMatchers("/Services/all").hasAnyRole("ADMIN", "CLIENT")
+                                .requestMatchers(PUT,"/Services/**").hasRole("PRESTATAIRE")
+                                .requestMatchers(DELETE,"/Services/**").hasRole("ADMIN")
+
+
+                                .requestMatchers("/Prestataires/inscription").permitAll()
+
+
 //                                .requestMatchers("/api/tickets/afficher").permitAll()
 //                                .requestMatchers(POST, "/api/tickets").hasRole("USER")
 //                                .requestMatchers(PUT, "/api/tickets/**").hasAnyRole("ADMIN", "TECHNICIAN")

@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface ServiceRepository extends JpaRepository<Services,Long> {
 //    List<Services> findByTitreContainingrDescriptionContaining(String titre, String description);
+      List<Services> findByTitreContaining(String titre);
+
 }

@@ -1,5 +1,6 @@
 package com.filRouge.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -20,5 +21,6 @@ public class Prestataire extends Personne {
     private String experience;
 
     @OneToMany(mappedBy = "prestataire")
+    @JsonIgnore
     private List<Services> services;
 }

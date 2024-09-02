@@ -1,5 +1,6 @@
 package com.filRouge.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -23,5 +24,6 @@ public class Services {
     private Prestataire prestataire;
 
     @OneToMany(mappedBy = "service")
+
     private List<DemandeService> demandes;
 }
