@@ -4,12 +4,16 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.List;
 @Getter
 @Setter
 @AllArgsConstructor
-public class PersonneDTO {
-    private int id;
+public class PrestataireDTO {
     private String username;
     private String email;
     private String password;
+    private String domaineExpertise;
+    private String disponibilites;
+    private String experience;
+
 }

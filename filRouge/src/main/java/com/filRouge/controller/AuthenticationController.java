@@ -51,17 +51,5 @@ public class AuthenticationController {
 
     }
 
-//    @PostMapping("/inscription")
-//    public ResponseEntity<Personne> inscrire(@RequestBody Personne personRequest) {
-//        Role role = Role.valueOf(String.valueOf(personRequest.getRole()));
-//        Personne personne = new Personne();
-//        personne.setUsername(personRequest.getUsername());
-//        personne.setEmail(personRequest.getEmail());
-//        personne.setPassword(personRequest.getPassword());
-//        Personne nouvellePersonne = personneService.inscrire(personne, role);
-//        return ResponseEntity.ok(nouvellePersonne);
-//    }
-
-
 }
 

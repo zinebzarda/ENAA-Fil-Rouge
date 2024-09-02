@@ -47,6 +47,7 @@ public class SecurityConfig {
                                 .requestMatchers(DELETE,"/Services/**").hasRole("ADMIN")
 
 
+
                                 .requestMatchers("/Prestataires/inscription").permitAll()
 
 

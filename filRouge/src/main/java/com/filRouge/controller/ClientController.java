@@ -1,6 +1,8 @@
 package com.filRouge.controller;
 
 import com.filRouge.model.Client;
+import com.filRouge.model.DemandeService;
+import com.filRouge.model.Services;
 import com.filRouge.service.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -38,6 +40,16 @@ public class ClientController {
     @DeleteMapping("/delete/{id}")
     public void deleteClient(@PathVariable Long id) {
         clientService.deleteClient(id);
+    }
+
+    @GetMapping("/search")
+    public List<Services> rechercherServices(@RequestParam(required = false) String keyword) {
+        return clientService.rechercherServices(keyword);
+    }
+
+    @PostMapping("/{clientId}/demandeService/{serviceId}")
+    public DemandeService demanderService(@PathVariable Long clientId, @PathVariable Long serviceId) {
+        return clientService.demanderService(clientId, serviceId);
     }
 
 }

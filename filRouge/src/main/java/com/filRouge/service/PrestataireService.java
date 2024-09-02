@@ -1,6 +1,6 @@
 package com.filRouge.service;
 
-import com.filRouge.model.Client;
+import com.filRouge.dto.PrestataireDTO;
 import com.filRouge.model.Prestataire;
 import com.filRouge.model.enums.Role;
 import com.filRouge.repository.PrestataireRepository;
@@ -18,8 +18,14 @@ public class PrestataireService {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-    public Prestataire createPrestataire(Prestataire prestataire) {
-        prestataire.setPassword(passwordEncoder.encode(prestataire.getPassword()));
+    public Prestataire createPrestataire(PrestataireDTO prestataireDTO) {
+        Prestataire prestataire = new Prestataire();
+        prestataire.setUsername(prestataireDTO.getUsername());
+        prestataire.setEmail(prestataireDTO.getEmail());
+        prestataire.setDomaineExpertise(prestataireDTO.getDomaineExpertise());
+        prestataire.setExperience(prestataireDTO.getExperience());
+        prestataire.setDisponibilites(prestataireDTO.getDisponibilites());
+        prestataire.setPassword(passwordEncoder.encode(prestataireDTO.getPassword()));
         prestataire.setRole(Role.PRESTATAIRE);
         return prestataireRepository.save(prestataire);
     }

@@ -23,22 +23,6 @@ public class PersonneService {
 //        return personneRepository.save(personne);
 //    }
 
-    public Personne inscrire(Personne personne, Role role) {
-        // Encode le mot de passe avant de le stocker
-        personne.setPassword(passwordEncoder.encode(personne.getPassword()));
-        personne.setRole(role);
-
-        // Enregistrer le prestataire ou le client selon le type de la personne
-        if (personne instanceof Prestataire) {
-            Prestataire prestataire = (Prestataire) personne;
-            return personneRepository.save(prestataire);
-        } else if (personne instanceof Client) {
-            Client client = (Client) personne;
-            return personneRepository.save(client);
-        } else {
-            throw new IllegalArgumentException("Type de personne non supporté");
-        }
-    }
 
 
 

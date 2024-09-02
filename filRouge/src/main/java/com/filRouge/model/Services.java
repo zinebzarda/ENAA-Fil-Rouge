@@ -24,6 +24,5 @@ public class Services {
     private Prestataire prestataire;
 
     @OneToMany(mappedBy = "service")
-
     private List<DemandeService> demandes;
 }

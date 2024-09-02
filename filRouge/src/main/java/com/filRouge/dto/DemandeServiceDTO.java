@@ -7,9 +7,10 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-public class PersonneDTO {
+public class DemandeServiceDTO
+{
     private int id;
-    private String username;
-    private String email;
-    private String password;
+    private String description;
+    private int prestataireId;
+    private int serviceId;
 }

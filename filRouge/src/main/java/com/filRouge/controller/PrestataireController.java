@@ -1,6 +1,6 @@
 package com.filRouge.controller;
 
-import com.filRouge.model.Client;
+import com.filRouge.dto.PrestataireDTO;
 import com.filRouge.model.Prestataire;
 import com.filRouge.service.PrestataireService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +17,7 @@ public class PrestataireController {
     private PrestataireService prestataireService;
 
     @PostMapping("/inscription")
-    public Prestataire createPrestataire(@RequestBody Prestataire prestataire) {
+    public Prestataire createPrestataire(@RequestBody PrestataireDTO prestataire) {
         return prestataireService.createPrestataire(prestataire);
     }
 }

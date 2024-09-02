@@ -1,5 +1,6 @@
 package com.filRouge.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.filRouge.model.enums.StatutService;
 import jakarta.persistence.*;
 import lombok.*;
