@@ -1,5 +1,6 @@
 package com.filRouge.controller;
 
+import com.filRouge.dto.PersonneDTO;
 import com.filRouge.model.Client;
 import com.filRouge.model.Personne;
 import com.filRouge.model.Prestataire;
@@ -37,7 +38,7 @@ public class AuthenticationController {
 
 
     @PostMapping("/connexion")
-    public ResponseEntity<?> createAuthenticationToken(@RequestBody Personne authenticationRequest) {
+    public ResponseEntity<?> createAuthenticationToken(@RequestBody PersonneDTO authenticationRequest) {
         System.out.println("//////////////////auuuuuthcon");
         authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(authenticationRequest.getUsername(), authenticationRequest.getPassword())

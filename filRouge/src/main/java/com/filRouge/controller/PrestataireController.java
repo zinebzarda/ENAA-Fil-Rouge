@@ -17,7 +17,7 @@ public class PrestataireController {
     private PrestataireService prestataireService;
 
     @PostMapping("/inscription")
-    public Prestataire createPrestataire(@RequestBody PrestataireDTO prestataire) {
+    public Prestataire createPrestataire(@RequestBody Prestataire prestataire) {
         return prestataireService.createPrestataire(prestataire);
     }
 }

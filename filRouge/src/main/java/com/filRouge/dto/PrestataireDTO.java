@@ -11,7 +11,6 @@ import java.util.List;
 public class PrestataireDTO {
     private String username;
     private String email;
-    private String password;
     private String domaineExpertise;
     private String disponibilites;
     private String experience;

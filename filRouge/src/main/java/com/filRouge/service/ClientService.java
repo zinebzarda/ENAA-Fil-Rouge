@@ -1,7 +1,11 @@
 package com.filRouge.service;
 
+import com.filRouge.dto.ClientRequestDTO;
+import com.filRouge.dto.ClientResponseDTO;
 import com.filRouge.exception.ResourceNotFoundException;
-import com.filRouge.model.*;
+import com.filRouge.model.Client;
+import com.filRouge.model.DemandeService;
+import com.filRouge.model.Services;
 import com.filRouge.model.enums.Role;
 import com.filRouge.model.enums.StatutService;
 import com.filRouge.repository.*;
@@ -12,7 +16,7 @@ import org.springframework.stereotype.Service;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
-
+import java.util.stream.Collectors;
 
 @Service
 public class ClientService {
@@ -24,43 +28,59 @@ public class ClientService {
     @Autowired
     private DemandeServiceRepository demandeServiceRepository;
     @Autowired
-    private FeedbackRepository feedbackRepository;
-
-    @Autowired
     private PasswordEncoder passwordEncoder;
 
-    public Client createClient(Client client) {
-        client.setPassword(passwordEncoder.encode(client.getPassword()));
+    // Créer un client à partir de ClientRequestDTO
+    public ClientResponseDTO createClient(ClientRequestDTO clientRequestDTO) {
+        Client client = new Client();
+        client.setUsername(clientRequestDTO.getUsername());
+        client.setEmail(clientRequestDTO.getEmail());
+        client.setAdresse(clientRequestDTO.getAdresse());
+        client.setPassword(passwordEncoder.encode(clientRequestDTO.getPassword()));
         client.setRole(Role.CLIENT);
-        return clientRepository.save(client);
+
+        Client savedClient = clientRepository.save(client);
+
+        return convertToClientResponseDTO(savedClient);
     }
 
-    public List<Client> getAllClients() {
-        return clientRepository.findAll();
+    // Obtenir tous les clients et les convertir en ClientResponseDTO
+    public List<ClientResponseDTO> getAllClients() {
+        return clientRepository.findAll().stream()
+                .map(this::convertToClientResponseDTO)
+                .collect(Collectors.toList());
     }
 
-    public Optional<Client> findById(Long id) {
-        return clientRepository.findById(id);
+    // Trouver un client par ID et le convertir en ClientResponseDTO
+    public Optional<ClientResponseDTO> findById(Long id) {
+        return clientRepository.findById(id)
+                .map(this::convertToClientResponseDTO);
     }
 
-    public Client updateClient(Long id, Client clientDetails) {
+    // Mettre à jour un client avec ClientRequestDTO
+    public ClientResponseDTO updateClient(Long id, ClientRequestDTO clientRequestDTO) {
         Client existingClient = clientRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Client non trouvé avec l'id : " + id));
-        existingClient.setUsername(clientDetails.getUsername());
-        existingClient.setEmail(clientDetails.getEmail());
-        existingClient.setAdresse(clientDetails.getAdresse());
-        if (clientDetails.getPassword() != null && !clientDetails.getPassword().isEmpty()) {
-            existingClient.setPassword(passwordEncoder.encode(clientDetails.getPassword()));
+
+        existingClient.setUsername(clientRequestDTO.getUsername());
+        existingClient.setEmail(clientRequestDTO.getEmail());
+        existingClient.setAdresse(clientRequestDTO.getAdresse());
+
+        if (clientRequestDTO.getPassword() != null && !clientRequestDTO.getPassword().isEmpty()) {
+            existingClient.setPassword(passwordEncoder.encode(clientRequestDTO.getPassword()));
         }
-        return clientRepository.save(existingClient);
+
+        Client updatedClient = clientRepository.save(existingClient);
+
+        return convertToClientResponseDTO(updatedClient);
     }
 
+    // Supprimer un client par ID
     public void deleteClient(Long id) {
         clientRepository.deleteById(id);
     }
 
-
-
+    // Méthode pour rechercher des services
     public List<Services> rechercherServices(String keyword) {
         if (keyword != null && !keyword.isEmpty()) {
             return serviceRepository.findByTitreContainingOrDescriptionContaining(keyword, keyword);
@@ -68,6 +88,7 @@ public class ClientService {
         return serviceRepository.findAll();
     }
 
+    // Demander un service
     public DemandeService demanderService(Long clientId, Long serviceId) {
         Client client = clientRepository.findById(clientId)
                 .orElseThrow(() -> new ResourceNotFoundException("Client non trouvé"));
@@ -78,10 +99,14 @@ public class ClientService {
         demandeService.setClient(client);
         demandeService.setService(service);
         demandeService.setDateDemmande(new Date());
-        demandeService.setStatut(StatutService.valueOf("EN_ATTENTE"));
+        demandeService.setStatut(StatutService.EN_ATTENTE);
 
         return demandeServiceRepository.save(demandeService);
     }
+
+
+
+
 //
 //    public Feedback laisserFeedback(Long clientId, Long demandeServiceId, Feedback feedback) {
 //        Client client = clientRepository.findById(clientId)
@@ -108,4 +133,17 @@ public class ClientService {
 //        // contact.setClient(client);
 //        return clientRepository.save(contact);
 //    }
+
+
+
+    // Convertir Client en ClientResponseDTO
+    private ClientResponseDTO convertToClientResponseDTO(Client client) {
+        ClientResponseDTO clientResponseDTO = new ClientResponseDTO();
+        clientResponseDTO.setId(client.getId());
+        clientResponseDTO.setUsername(client.getUsername());
+        clientResponseDTO.setEmail(client.getEmail());
+        clientResponseDTO.setAdresse(client.getAdresse());
+        clientResponseDTO.setRole(client.getRole().name());
+        return clientResponseDTO;
+    }
 }

@@ -18,14 +18,8 @@ public class PrestataireService {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-    public Prestataire createPrestataire(PrestataireDTO prestataireDTO) {
-        Prestataire prestataire = new Prestataire();
-        prestataire.setUsername(prestataireDTO.getUsername());
-        prestataire.setEmail(prestataireDTO.getEmail());
-        prestataire.setDomaineExpertise(prestataireDTO.getDomaineExpertise());
-        prestataire.setExperience(prestataireDTO.getExperience());
-        prestataire.setDisponibilites(prestataireDTO.getDisponibilites());
-        prestataire.setPassword(passwordEncoder.encode(prestataireDTO.getPassword()));
+    public Prestataire createPrestataire(Prestataire prestataire) {
+        prestataire.setPassword(passwordEncoder.encode(prestataire.getPassword()));
         prestataire.setRole(Role.PRESTATAIRE);
         return prestataireRepository.save(prestataire);
     }
