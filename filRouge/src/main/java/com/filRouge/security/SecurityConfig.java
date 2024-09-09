@@ -48,7 +48,7 @@ public class SecurityConfig {
 
 
 
-                                .requestMatchers("/Prestataires/inscription").permitAll()
+                                .requestMatchers("/prestataires/inscription").permitAll()
 
 
 //                                .requestMatchers("/api/tickets/afficher").permitAll()

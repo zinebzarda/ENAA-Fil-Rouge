@@ -1,6 +1,5 @@
 package com.filRouge.dto;
 
-import com.filRouge.model.enums.Role;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
