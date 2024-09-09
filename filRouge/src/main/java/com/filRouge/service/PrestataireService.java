@@ -4,7 +4,9 @@ import com.filRouge.dto.PrestataireRequestDTO;
 import com.filRouge.dto.PrestataireResponseDTO;
 import com.filRouge.model.Prestataire;
 import com.filRouge.model.enums.Role;
+import com.filRouge.model.enums.ValidateStatus;
 import com.filRouge.repository.PrestataireRepository;
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -82,5 +84,13 @@ public class PrestataireService {
         prestataireResponseDTO.setDisponibilites(prestataire.getDisponibilites());
         prestataireResponseDTO.setExperience(prestataire.getExperience());
         return prestataireResponseDTO;
+    }
+
+    public Prestataire verifyArtisan(Long artisanId, ValidateStatus status) {
+        Prestataire prestataire = prestataireRepository.findById(artisanId)
+                .orElseThrow(() -> new EntityNotFoundException("Prestataire not found"));
+
+        prestataire.setValidateStatus(status);
+        return prestataireRepository.save(prestataire);
     }
 }

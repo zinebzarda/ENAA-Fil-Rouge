@@ -2,8 +2,11 @@ package com.filRouge.controller;
 
 import com.filRouge.dto.PrestataireRequestDTO;
 import com.filRouge.dto.PrestataireResponseDTO;
+import com.filRouge.model.Prestataire;
+import com.filRouge.model.enums.ValidateStatus;
 import com.filRouge.service.PrestataireService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -38,5 +41,11 @@ public class PrestataireController {
     @DeleteMapping("/delete/{id}")
     public void deletePrestataire(@PathVariable Long id) {
         prestataireService.deletePrestataire(id);
+    }
+
+    @PostMapping("/verify/{id}")
+    public ResponseEntity<Prestataire> verifyArtisan(@PathVariable Long id, @RequestParam ValidateStatus status) {
+        Prestataire prestataire = prestataireService.verifyArtisan(id, status);
+        return ResponseEntity.ok(prestataire);
     }
 }
