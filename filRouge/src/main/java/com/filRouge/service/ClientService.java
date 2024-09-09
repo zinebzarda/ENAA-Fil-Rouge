@@ -7,6 +7,7 @@ import com.filRouge.model.Client;
 import com.filRouge.model.DemandeService;
 import com.filRouge.model.Services;
 import com.filRouge.model.enums.Role;
+import com.filRouge.model.enums.StatutService;
 import com.filRouge.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;

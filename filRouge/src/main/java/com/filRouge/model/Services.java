@@ -25,4 +25,8 @@ public class Services {
 
     @OneToMany(mappedBy = "service")
     private List<DemandeService> demandes;
+
+
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Media> media;
 }
