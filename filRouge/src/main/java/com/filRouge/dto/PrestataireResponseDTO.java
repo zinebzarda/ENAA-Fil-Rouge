@@ -1,18 +1,17 @@
 package com.filRouge.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
 
-import java.util.List;
+
+import lombok.*;
+
 @Getter
 @Setter
+@NoArgsConstructor
 @AllArgsConstructor
-public class PrestataireDTO {
+public class PrestataireResponseDTO {
     private String username;
     private String email;
     private String domaineExpertise;
     private String disponibilites;
     private String experience;
-
 }

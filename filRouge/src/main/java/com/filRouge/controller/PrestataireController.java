@@ -1,23 +1,42 @@
 package com.filRouge.controller;
 
-import com.filRouge.dto.PrestataireDTO;
-import com.filRouge.model.Prestataire;
+import com.filRouge.dto.PrestataireRequestDTO;
+import com.filRouge.dto.PrestataireResponseDTO;
 import com.filRouge.service.PrestataireService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
-@RequestMapping("Prestataires")
+@RequestMapping("/prestataires")
 public class PrestataireController {
 
     @Autowired
     private PrestataireService prestataireService;
 
     @PostMapping("/inscription")
-    public Prestataire createPrestataire(@RequestBody Prestataire prestataire) {
-        return prestataireService.createPrestataire(prestataire);
+    public PrestataireResponseDTO createPrestataire(@RequestBody PrestataireRequestDTO prestataireRequestDTO) {
+        return prestataireService.createPrestataire(prestataireRequestDTO);
+    }
+
+    @GetMapping("/allPrestataires")
+    public List<PrestataireResponseDTO> getAllPrestataires() {
+        return prestataireService.getAllPrestataires();
+    }
+
+    @GetMapping("/{id}")
+    public PrestataireResponseDTO getPrestataireById(@PathVariable Long id) {
+        return prestataireService.findById(id);
+    }
+
+    @PutMapping("/update/{id}")
+    public PrestataireResponseDTO updatePrestataire(@PathVariable Long id, @RequestBody PrestataireRequestDTO prestataireRequestDTO) {
+        return prestataireService.updatePrestataire(id, prestataireRequestDTO);
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public void deletePrestataire(@PathVariable Long id) {
+        prestataireService.deletePrestataire(id);
     }
 }

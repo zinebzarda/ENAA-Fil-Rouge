@@ -30,7 +30,7 @@ public class ClientService {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-    // Créer un client à partir de ClientRequestDTO
+
     public ClientResponseDTO createClient(ClientRequestDTO clientRequestDTO) {
         Client client = new Client();
         client.setUsername(clientRequestDTO.getUsername());
@@ -44,20 +44,20 @@ public class ClientService {
         return convertToClientResponseDTO(savedClient);
     }
 
-    // Obtenir tous les clients et les convertir en ClientResponseDTO
+
     public List<ClientResponseDTO> getAllClients() {
         return clientRepository.findAll().stream()
                 .map(this::convertToClientResponseDTO)
                 .collect(Collectors.toList());
     }
 
-    // Trouver un client par ID et le convertir en ClientResponseDTO
+
     public Optional<ClientResponseDTO> findById(Long id) {
         return clientRepository.findById(id)
                 .map(this::convertToClientResponseDTO);
     }
 
-    // Mettre à jour un client avec ClientRequestDTO
+
     public ClientResponseDTO updateClient(Long id, ClientRequestDTO clientRequestDTO) {
         Client existingClient = clientRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Client non trouvé avec l'id : " + id));
@@ -75,12 +75,12 @@ public class ClientService {
         return convertToClientResponseDTO(updatedClient);
     }
 
-    // Supprimer un client par ID
+
     public void deleteClient(Long id) {
         clientRepository.deleteById(id);
     }
 
-    // Méthode pour rechercher des services
+
     public List<Services> rechercherServices(String keyword) {
         if (keyword != null && !keyword.isEmpty()) {
             return serviceRepository.findByTitreContainingOrDescriptionContaining(keyword, keyword);
@@ -88,7 +88,7 @@ public class ClientService {
         return serviceRepository.findAll();
     }
 
-    // Demander un service
+
     public DemandeService demanderService(Long clientId, Long serviceId) {
         Client client = clientRepository.findById(clientId)
                 .orElseThrow(() -> new ResourceNotFoundException("Client non trouvé"));
@@ -139,11 +139,9 @@ public class ClientService {
     // Convertir Client en ClientResponseDTO
     private ClientResponseDTO convertToClientResponseDTO(Client client) {
         ClientResponseDTO clientResponseDTO = new ClientResponseDTO();
-        clientResponseDTO.setId(client.getId());
         clientResponseDTO.setUsername(client.getUsername());
         clientResponseDTO.setEmail(client.getEmail());
         clientResponseDTO.setAdresse(client.getAdresse());
-        clientResponseDTO.setRole(client.getRole().name());
         return clientResponseDTO;
     }
 }

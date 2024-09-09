@@ -11,9 +11,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ClientResponseDTO {
-    private Long id;
     private String username;
     private String email;
     private String adresse;
-    private String role;
 }

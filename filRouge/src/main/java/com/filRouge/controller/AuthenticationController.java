@@ -1,9 +1,7 @@
 package com.filRouge.controller;
 
-import com.filRouge.dto.PersonneDTO;
-import com.filRouge.model.Client;
+import com.filRouge.dto.LoginDTO;
 import com.filRouge.model.Personne;
-import com.filRouge.model.Prestataire;
 import com.filRouge.model.enums.Role;
 import com.filRouge.repository.PersonneRepository;
 import com.filRouge.security.JwtAuth;
@@ -16,7 +14,6 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
@@ -38,8 +35,7 @@ public class AuthenticationController {
 
 
     @PostMapping("/connexion")
-    public ResponseEntity<?> createAuthenticationToken(@RequestBody PersonneDTO authenticationRequest) {
-        System.out.println("//////////////////auuuuuthcon");
+    public ResponseEntity<?> createAuthenticationToken(@RequestBody LoginDTO authenticationRequest) {
         authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(authenticationRequest.getUsername(), authenticationRequest.getPassword())
         );
