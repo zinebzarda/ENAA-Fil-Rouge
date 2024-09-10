@@ -49,8 +49,12 @@ public class SecurityConfig {
 
                                 .requestMatchers(POST,"/feedback/**").hasRole("CLIENT")
                                 .requestMatchers(GET,"/feedback/**").hasAnyRole("ADMIN", "CLIENT")
-                                .requestMatchers(DELETE,"/clients/**").hasRole("ADMIN")
+                                .requestMatchers(DELETE,"/feedback/**").hasRole("ADMIN")
 
+
+                                .requestMatchers(POST,"/contacts/**").hasRole("CLIENT")
+                                .requestMatchers(GET,"/contacts/**").hasRole("ADMIN")
+                                .requestMatchers(DELETE,"/contacts/**").hasRole("ADMIN")
 
 
                                 .requestMatchers("/prestataires/inscription").permitAll()
