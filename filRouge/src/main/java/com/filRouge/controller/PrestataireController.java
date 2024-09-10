@@ -45,7 +45,7 @@ public class PrestataireController {
 
     @PostMapping("/verify/{id}")
     public ResponseEntity<Prestataire> verifyArtisan(@PathVariable Long id, @RequestParam ValidateStatus status) {
-        Prestataire prestataire = prestataireService.verifyArtisan(id, status);
+        Prestataire prestataire = prestataireService.verifyPrestataire(id, status);
         return ResponseEntity.ok(prestataire);
     }
 }

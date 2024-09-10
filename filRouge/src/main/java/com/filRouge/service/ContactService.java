@@ -11,15 +11,21 @@ import java.util.List;
 public class ContactService {
 
     @Autowired
-    private  ContactRepository contactRepository;
+    private ContactRepository contactRepository;
 
-
-
-    public Contact creerContact(Contact contact) {
+    public Contact createContact(Contact contact) {
         return contactRepository.save(contact);
     }
 
-    public List<Contact> afficherContacts() {
+    public Contact findById(Long id) {
+        return contactRepository.findById(id).orElse(null);
+    }
+
+    public void deleteContact(Long id) {
+        contactRepository.deleteById(id);
+    }
+
+    public List<Contact> getAllContacts() {
         return contactRepository.findAll();
     }
 }

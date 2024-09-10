@@ -43,21 +43,20 @@ public class SecurityConfig {
 
                                 .requestMatchers(POST,"/Services/**").hasRole("PRESTATAIRE")
                                 .requestMatchers("/Services/all").hasAnyRole("ADMIN", "CLIENT")
-                                .requestMatchers(PUT,"/Services/**").hasRole("PRESTATAIRE")
+                                .requestMatchers(PUT,"/Services/**").hasAnyRole("ADMIN","PRESTATAIRE")
                                 .requestMatchers(DELETE,"/Services/**").hasRole("ADMIN")
+
+
+                                .requestMatchers(POST,"/feedback/**").hasRole("CLIENT")
+                                .requestMatchers(GET,"/feedback/**").hasAnyRole("ADMIN", "CLIENT")
+                                .requestMatchers(DELETE,"/clients/**").hasRole("ADMIN")
 
 
 
                                 .requestMatchers("/prestataires/inscription").permitAll()
 
 
-//                                .requestMatchers("/api/tickets/afficher").permitAll()
-//                                .requestMatchers(POST, "/api/tickets").hasRole("USER")
-//                                .requestMatchers(PUT, "/api/tickets/**").hasAnyRole("ADMIN", "TECHNICIAN")
-//                                .requestMatchers(DELETE, "/api/tickets/**").hasRole("ADMIN")
-//                                .requestMatchers("/api/utilisateurs/**").hasRole("ADMIN")
-//                                .requestMatchers("/api/notifications/**").hasRole("ADMIN")
-//                                .requestMatchers("/api/pannes/**").hasRole("ADMIN")
+//
                                 .anyRequest().authenticated()
                 )
                 .formLogin(formLogin -> formLogin.disable());

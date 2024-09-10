@@ -86,8 +86,8 @@ public class PrestataireService {
         return prestataireResponseDTO;
     }
 
-    public Prestataire verifyArtisan(Long artisanId, ValidateStatus status) {
-        Prestataire prestataire = prestataireRepository.findById(artisanId)
+    public Prestataire verifyPrestataire(Long prestataireId, ValidateStatus status) {
+        Prestataire prestataire = prestataireRepository.findById(prestataireId)
                 .orElseThrow(() -> new EntityNotFoundException("Prestataire not found"));
 
         prestataire.setValidateStatus(status);
