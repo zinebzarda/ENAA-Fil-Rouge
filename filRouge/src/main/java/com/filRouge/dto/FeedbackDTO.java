@@ -2,6 +2,7 @@ package com.filRouge.dto;
 
 import lombok.*;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 @Getter
@@ -11,5 +12,5 @@ import java.util.Date;
 public class FeedbackDTO {
     private int note;
     private String commentaire;
-    private Date dateCreation;
+    private LocalDate dateCreation;
 }

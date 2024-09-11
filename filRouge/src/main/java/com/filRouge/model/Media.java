@@ -9,12 +9,14 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+@Table(name = "media")
 public class Media {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String mediaUrl;
     private String mediaId;
+    @Enumerated(EnumType.STRING)
     private Type type;
 
     @ManyToOne

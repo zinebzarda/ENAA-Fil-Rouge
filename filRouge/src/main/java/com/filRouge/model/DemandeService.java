@@ -4,6 +4,7 @@ import com.filRouge.model.enums.StatutService;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 
@@ -11,12 +12,15 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
+@Entity(name = "demande_service")
+
 public class DemandeService {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Date dateDemmande;
+
+    @Column(name = "date_demmande")
+    private LocalDate dateDemmande;
 
     @Enumerated(EnumType.STRING)
     private StatutService statut;
