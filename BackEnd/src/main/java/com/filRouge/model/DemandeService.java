@@ -1,11 +1,10 @@
 package com.filRouge.model;
 
-import com.filRouge.model.enums.StatutService;
+import com.filRouge.model.enums.ValidateStatus;
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.List;
 
 @Getter
@@ -23,7 +22,7 @@ public class DemandeService {
     private LocalDate dateDemmande;
 
     @Enumerated(EnumType.STRING)
-    private StatutService statut;
+    private ValidateStatus statut;
 
     @ManyToOne
     @JoinColumn(name = "client_id")

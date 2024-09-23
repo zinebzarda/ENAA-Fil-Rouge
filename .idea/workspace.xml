@@ -5,92 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d580e07-d143-4b6b-8644-6fec88509950" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/filRouge.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/FilRougeApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/config/CloudinaryConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/controller/AuthenticationController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/controller/ClientController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/controller/ContactController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/controller/DemandeServiceController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/controller/FeedbackController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/controller/PersonneController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/controller/PrestataireController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/controller/ServiceController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/dto/ClientRequestDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/dto/ClientResponseDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/dto/CloudinaryResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/dto/ContactDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/dto/DemandeServiceDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/dto/FeedbackDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/dto/LoginDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/dto/MediaDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/dto/PrestataireRequestDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/dto/PrestataireResponseDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/dto/ServiceDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/exception/ErrorDetails.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/exception/GlobalExceptionHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/exception/ResourceNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/model/Admin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/model/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/model/Contact.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/model/DemandeService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/model/Feedback.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/model/Media.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/model/Personne.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/model/Prestataire.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/model/Services.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/model/enums/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/model/enums/StatutService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/model/enums/Type.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/model/enums/ValidateStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/repository/AdminRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/repository/ClientRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/repository/ContactRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/repository/DemandeServiceRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/repository/FeedbackRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/repository/PersonneRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/repository/PrestataireRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/repository/ServiceRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/security/JwtAuth.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/security/JwtAuthorizationFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/security/SecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/service/AdminService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/service/ClientService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/service/CloudinaryService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/service/ContactService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/service/CustomUserDetailsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/service/DemandeServiceService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/service/FeedbackService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/service/MediaService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/service/PersonneService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/service/PrestataireService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/service/ServiceService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/java/com/filRouge/util/FileUploadUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/resources/db/migration/V1__Create_table_Personne.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/resources/db/migration/V2__Create_table_Admin.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/resources/db/migration/V3__Create_table_Client.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/resources/db/migration/V4__Create_table_Contact.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/resources/db/migration/V5__Create_table_Prestataire.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/resources/db/migration/V6__Create_table_Services.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/resources/db/migration/V7__Create_table_DemandeService.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/resources/db/migration/V8__Create_table_Media.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/main/resources/db/migration/V9__Create_table_Feedback.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/filRouge/src/test/java/com/filRouge/FilRougeApplicationTests.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackEnd/src/test/java/com/filRouge/ContactServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/config/CloudinaryConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/PrestataireController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/PrestataireController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/ServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/ServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/dto/MediaDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/dto/PrestataireRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/dto/PrestataireRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/dto/PrestataireResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/dto/PrestataireResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/dto/ServiceDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/dto/ServiceDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/model/DemandeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/model/DemandeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/model/Media.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/model/Services.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/model/Services.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/model/enums/StatutService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/repository/PrestataireRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/repository/PrestataireRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/service/ClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/service/CloudinaryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/service/MediaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/service/PrestataireService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/service/PrestataireService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/service/ServiceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/service/ServiceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/util/FileUploadUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/resources/db/migration/V6__Create_table_Services.sql" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/resources/db/migration/V6__Create_table_Services.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/resources/db/migration/V8__Create_table_Media.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/resources/db/migration/V9__Create_table_Feedback.sql" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/resources/db/migration/V8__Create_table_Feedback.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/test/java/com/filRouge/FilRougeApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,21 +42,28 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "zinebzarda"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;zinebzarda&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/zinebzarda/ENAA-Fil-Rouge.git",
-    "accountId": "e1d38ca7-f69b-4ed4-a560-f5af270ce231"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/zinebzarda/ENAA-Fil-Rouge.git&quot;,
+    &quot;accountId&quot;: &quot;e1d38ca7-f69b-4ed4-a560-f5af270ce231&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+}</component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2mEuKrwrZY1uYFXbAzN2IOHvsd2" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -122,6 +71,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.ContactServiceTest.executor": "Run",
+    "Maven.filRouge [clean].executor": "Run",
+    "Maven.filRouge [install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.FilRougeApplication.executor": "Run",
     "git-widget-placeholder": "main",
@@ -132,10 +88,33 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.filRouge" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ContactServiceTest">
+    <configuration name="ContactServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="filRouge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.filRouge.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.filRouge" />
+      <option name="MAIN_CLASS_NAME" value="com.filRouge.ContactServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FilRougeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="filRouge" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.filRouge.FilRougeApplication" />
@@ -143,6 +122,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ContactServiceTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -160,11 +144,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1726653996200</updated>
-      <workItem from="1726653997330" duration="1204000" />
+      <workItem from="1726653997330" duration="9488000" />
+      <workItem from="1726828328663" duration="9234000" />
+      <workItem from="1727090214494" duration="225000" />
+      <workItem from="1727090458762" duration="553000" />
+      <workItem from="1727091022622" duration="2069000" />
+      <workItem from="1727124202790" duration="421000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

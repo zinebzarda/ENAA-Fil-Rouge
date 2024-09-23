@@ -22,20 +22,10 @@ public class ServiceController {
     @Autowired
     private ServiceService serviceService;
 
-    @PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    public ResponseEntity<Services> createServiceWithImages(
-            @RequestPart("service") Services service,
-            @RequestPart("attachments") List<MultipartFile> attachments,
-            @AuthenticationPrincipal Prestataire prestataire) {
-
-        try {
-            Services createdService = serviceService.createServiceWithImages(service, attachments, prestataire);
-            return new ResponseEntity<>(createdService, HttpStatus.CREATED);
-        } catch (IllegalArgumentException e) {
-            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-        } catch (ResourceNotFoundException e) {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
+    @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
+    public Services createService(@RequestBody Services service, @AuthenticationPrincipal Prestataire prestataire) {
+        return serviceService.createService(service, prestataire);
     }
 
     @GetMapping("/all")

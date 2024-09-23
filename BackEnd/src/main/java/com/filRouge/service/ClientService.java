@@ -7,14 +7,13 @@ import com.filRouge.model.Client;
 import com.filRouge.model.DemandeService;
 import com.filRouge.model.Services;
 import com.filRouge.model.enums.Role;
-import com.filRouge.model.enums.StatutService;
+import com.filRouge.model.enums.ValidateStatus;
 import com.filRouge.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -100,7 +99,7 @@ public class ClientService {
         demandeService.setClient(client);
         demandeService.setService(service);
         demandeService.setDateDemmande(LocalDate.now());
-        demandeService.setStatut(StatutService.EN_ATTENTE);
+        demandeService.setStatut(ValidateStatus.EN_ATTENTE);
 
         return demandeServiceRepository.save(demandeService);
     }

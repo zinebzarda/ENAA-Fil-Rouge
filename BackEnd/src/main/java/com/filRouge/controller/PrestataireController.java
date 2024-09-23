@@ -43,9 +43,29 @@ public class PrestataireController {
         prestataireService.deletePrestataire(id);
     }
 
+
+    /**
+     * Récupérer tous les prestataires en attente de validation.
+     *
+     * @return Liste des prestataires en attente
+     */
+    @GetMapping("/pending")
+    public List<Prestataire> getPendingPrestataires() {
+        return prestataireService.getPendingPrestataires();
+    }
+
+
+    /**
+     * Vérifier un prestataire.
+     *
+     * @param id ID du prestataire à vérifier
+     * @param status Statut de validation
+     * @return Le prestataire vérifié
+     */
     @PostMapping("/verify/{id}")
-    public ResponseEntity<Prestataire> verifyArtisan(@PathVariable Long id, @RequestParam ValidateStatus status) {
+    public ResponseEntity<Prestataire> verifyPrestataire(@PathVariable Long id, @RequestParam ValidateStatus status) {
         Prestataire prestataire = prestataireService.verifyPrestataire(id, status);
         return ResponseEntity.ok(prestataire);
     }
+
 }

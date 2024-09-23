@@ -62,6 +62,8 @@ public class PrestataireService {
         existingPrestataire.setDomaineExpertise(prestataireRequestDTO.getDomaineExpertise());
         existingPrestataire.setDisponibilites(prestataireRequestDTO.getDisponibilites());
         existingPrestataire.setExperience(prestataireRequestDTO.getExperience());
+        existingPrestataire.setValidateStatus(prestataireRequestDTO.getStatus());
+
 
         if (prestataireRequestDTO.getPassword() != null && !prestataireRequestDTO.getPassword().isEmpty()) {
             existingPrestataire.setPassword(passwordEncoder.encode(prestataireRequestDTO.getPassword()));
@@ -83,12 +85,30 @@ public class PrestataireService {
         prestataireResponseDTO.setDomaineExpertise(prestataire.getDomaineExpertise());
         prestataireResponseDTO.setDisponibilites(prestataire.getDisponibilites());
         prestataireResponseDTO.setExperience(prestataire.getExperience());
+        prestataireResponseDTO.setStatus(prestataire.getValidateStatus());
         return prestataireResponseDTO;
     }
 
+    /**
+     * Récupérer tous les prestataires en attente de validation.
+     *
+     * @return Liste des prestataires en attente
+     */
+    public List<Prestataire> getPendingPrestataires() {
+        return prestataireRepository.findByValidateStatus(ValidateStatus.EN_ATTENTE);
+    }
+
+    /**
+     * Vérifier un prestataire en modifiant son statut de validation.
+     *
+     * @param prestataireId ID du prestataire à vérifier
+     * @param status Nouveau statut de validation
+     * @return Le prestataire mis à jour
+     */
+
     public Prestataire verifyPrestataire(Long prestataireId, ValidateStatus status) {
         Prestataire prestataire = prestataireRepository.findById(prestataireId)
-                .orElseThrow(() -> new EntityNotFoundException("Prestataire not found"));
+                .orElseThrow(() -> new EntityNotFoundException("Prestataire non trouvé"));
 
         prestataire.setValidateStatus(status);
         return prestataireRepository.save(prestataire);

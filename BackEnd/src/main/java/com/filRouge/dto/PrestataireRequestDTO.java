@@ -1,5 +1,6 @@
 package com.filRouge.dto;
 
+import com.filRouge.model.enums.ValidateStatus;
 import lombok.*;
 
 @Getter
@@ -14,4 +15,5 @@ public class PrestataireRequestDTO {
     private String disponibilites;
     private String experience;
     private String role;
+    private ValidateStatus status;
 }

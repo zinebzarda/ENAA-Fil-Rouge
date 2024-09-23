@@ -41,10 +41,10 @@ public class SecurityConfig {
                                 .requestMatchers(DELETE,"/clients/**").hasRole("ADMIN")
 
 
-                                .requestMatchers(POST,"/Services/**").permitAll()
+                                .requestMatchers(POST,"/Services/**").hasRole("PRESTATAIRE")
                                 .requestMatchers("/Services/all").hasAnyRole("ADMIN", "CLIENT")
                                 .requestMatchers(PUT,"/Services/**").hasAnyRole("ADMIN","PRESTATAIRE")
-                                .requestMatchers(DELETE,"/Services/**").hasRole("ADMIN")
+                                .requestMatchers(DELETE,"/Services/**").hasAnyRole("ADMIN", "PRESTATAIRE")
 
 
                                 .requestMatchers(POST,"/feedback/**").hasRole("CLIENT")
@@ -58,6 +58,7 @@ public class SecurityConfig {
 
 
                                 .requestMatchers("/prestataires/inscription").permitAll()
+                                .requestMatchers(PUT,"/prestataires/**").hasRole("ADMIN")
 
 
 //

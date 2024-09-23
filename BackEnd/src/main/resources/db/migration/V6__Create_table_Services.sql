@@ -3,6 +3,7 @@ CREATE TABLE services (
                           titre VARCHAR(255),
                           description TEXT,
                           prix FLOAT,
+                          image VARCHAR(255),
                           prestataire_id BIGINT,
                           FOREIGN KEY (prestataire_id) REFERENCES prestataire(id)
 );
