@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d580e07-d143-4b6b-8644-6fec88509950" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BackEnd/src/test/java/com/filRouge/PrestataireServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackEnd/src/test/java/com/filRouge/ServiceServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +55,10 @@
     "JUnit.ContactServiceTest.executor": "Run",
     "JUnit.FeedbackServiceTest.executor": "Run",
     "JUnit.PrestataireServiceTest.executor": "Run",
+    "JUnit.PrestataireServiceTest.testUpdatePrestataire.executor": "Run",
+    "JUnit.ServiceServiceTest.executor": "Run",
+    "JUnit.ServiceServiceTest.findById.executor": "Run",
+    "JUnit.ServiceServiceTest.findById_shouldThrowException_whenServiceNotFound.executor": "Run",
     "Maven.filRouge [clean].executor": "Run",
     "Maven.filRouge [install].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
@@ -81,37 +86,7 @@
       <recent name="com.filRouge" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PrestataireServiceTest.testUpdatePrestataire">
-    <configuration name="ContactServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="filRouge" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.filRouge.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.filRouge" />
-      <option name="MAIN_CLASS_NAME" value="com.filRouge.ContactServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FeedbackServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="filRouge" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.filRouge.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.filRouge" />
-      <option name="MAIN_CLASS_NAME" value="com.filRouge.FeedbackServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ServiceServiceTest">
     <configuration name="PrestataireServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="filRouge" />
       <extension name="coverage">
@@ -143,6 +118,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServiceServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="filRouge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.filRouge.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.filRouge" />
+      <option name="MAIN_CLASS_NAME" value="com.filRouge.ServiceServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceServiceTest.findById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="filRouge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.filRouge.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.filRouge" />
+      <option name="MAIN_CLASS_NAME" value="com.filRouge.ServiceServiceTest" />
+      <option name="METHOD_NAME" value="findById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceServiceTest.findById_shouldThrowException_whenServiceNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="filRouge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.filRouge.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.filRouge" />
+      <option name="MAIN_CLASS_NAME" value="com.filRouge.ServiceServiceTest" />
+      <option name="METHOD_NAME" value="findById_shouldThrowException_whenServiceNotFound" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FilRougeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="filRouge" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.filRouge.FilRougeApplication" />
@@ -152,10 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ServiceServiceTest" />
+        <item itemvalue="JUnit.ServiceServiceTest.findById_shouldThrowException_whenServiceNotFound" />
+        <item itemvalue="JUnit.ServiceServiceTest.findById" />
         <item itemvalue="JUnit.PrestataireServiceTest.testUpdatePrestataire" />
         <item itemvalue="JUnit.PrestataireServiceTest" />
-        <item itemvalue="JUnit.FeedbackServiceTest" />
-        <item itemvalue="JUnit.ContactServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +203,7 @@
       <workItem from="1727090214494" duration="225000" />
       <workItem from="1727090458762" duration="553000" />
       <workItem from="1727091022622" duration="2069000" />
-      <workItem from="1727124202790" duration="1316000" />
+      <workItem from="1727124202790" duration="2534000" />
     </task>
     <servers />
   </component>
