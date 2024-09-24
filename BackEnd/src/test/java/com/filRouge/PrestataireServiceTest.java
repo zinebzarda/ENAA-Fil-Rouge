@@ -40,7 +40,6 @@ class PrestataireServiceTest {
     void setUp() {
         MockitoAnnotations.openMocks(this);
 
-        // Créer un prestataire exemple pour les tests
         prestataire = new Prestataire();
         prestataire.setId(1L);
         prestataire.setUsername("testUser");
@@ -52,7 +51,6 @@ class PrestataireServiceTest {
         prestataire.setRole(Role.PRESTATAIRE);
         prestataire.setValidateStatus(ValidateStatus.EN_ATTENTE);
 
-        // Créer un DTO de requête
         prestataireRequestDTO = new PrestataireRequestDTO();
         prestataireRequestDTO.setUsername("testUser");
         prestataireRequestDTO.setEmail("test@example.com");

@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d580e07-d143-4b6b-8644-6fec88509950" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/DemandeServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/DemandeServiceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/FeedbackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/FeedbackController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/service/ClientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/service/DemandeServiceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/service/DemandeServiceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/service/FeedbackService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/service/FeedbackService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackEnd/src/test/java/com/filRouge/ClientServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/ContactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/ContactController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/service/ContactService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/service/ContactService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/test/java/com/filRouge/ContactServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/test/java/com/filRouge/ContactServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackEnd/src/test/java/com/filRouge/FeedbackServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/test/java/com/filRouge/FeedbackServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/test/java/com/filRouge/ServiceServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/test/java/com/filRouge/ServiceServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/test/java/com/filRouge/PrestataireServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/test/java/com/filRouge/PrestataireServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +57,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.ClientServiceTest.executor": "Run",
     "JUnit.ContactServiceTest.executor": "Run",
+    "JUnit.DemandeServiceServiceTest.executor": "Run",
     "JUnit.FeedbackServiceTest.executor": "Run",
     "JUnit.PrestataireServiceTest.executor": "Run",
     "JUnit.PrestataireServiceTest.testUpdatePrestataire.executor": "Run",
@@ -92,7 +93,37 @@
       <recent name="com.filRouge" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DemandeServiceServiceTest">
+  <component name="RunManager" selected="JUnit.ClientServiceTest">
+    <configuration name="ClientServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="filRouge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.filRouge.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.filRouge" />
+      <option name="MAIN_CLASS_NAME" value="com.filRouge.ClientServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContactServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="filRouge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.filRouge.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.filRouge" />
+      <option name="MAIN_CLASS_NAME" value="com.filRouge.ContactServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DemandeServiceServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="filRouge" />
       <extension name="coverage">
@@ -138,38 +169,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceServiceTest.findById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="filRouge" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.filRouge.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.filRouge" />
-      <option name="MAIN_CLASS_NAME" value="com.filRouge.ServiceServiceTest" />
-      <option name="METHOD_NAME" value="findById" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ServiceServiceTest.findById_shouldThrowException_whenServiceNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="filRouge" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.filRouge.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.filRouge" />
-      <option name="MAIN_CLASS_NAME" value="com.filRouge.ServiceServiceTest" />
-      <option name="METHOD_NAME" value="findById_shouldThrowException_whenServiceNotFound" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FilRougeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="filRouge" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.filRouge.FilRougeApplication" />
@@ -179,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ClientServiceTest" />
+        <item itemvalue="JUnit.ContactServiceTest" />
         <item itemvalue="JUnit.DemandeServiceServiceTest" />
         <item itemvalue="JUnit.FeedbackServiceTest" />
         <item itemvalue="JUnit.ServiceServiceTest" />
-        <item itemvalue="JUnit.ServiceServiceTest.findById_shouldThrowException_whenServiceNotFound" />
-        <item itemvalue="JUnit.ServiceServiceTest.findById" />
       </list>
     </recent_temporary>
   </component>
@@ -208,7 +207,7 @@
       <workItem from="1727090214494" duration="225000" />
       <workItem from="1727090458762" duration="553000" />
       <workItem from="1727091022622" duration="2069000" />
-      <workItem from="1727124202790" duration="7306000" />
+      <workItem from="1727124202790" duration="8447000" />
     </task>
     <servers />
   </component>

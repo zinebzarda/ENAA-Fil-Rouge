@@ -36,10 +36,9 @@ class FeedbackServiceTest {
 
     @BeforeEach
     void setUp() {
-        MockitoAnnotations.openMocks(this); // Initialiser les mocks
+        MockitoAnnotations.openMocks(this);
 
-        // Initialiser les objets Feedback et DemandeService
-        demandeService = new DemandeService(); // Assurez-vous d'initialiser avec les valeurs nécessaires
+        demandeService = new DemandeService();
         feedback = new Feedback();
         feedback.setNote(4);
         feedback.setCommentaire("Très bon service");
@@ -49,19 +48,15 @@ class FeedbackServiceTest {
 
     @Test
     void testCreateFeedback() {
-        // Configuration du mock pour la demande de service
         when(demandeServiceRepository.findById(anyLong())).thenReturn(Optional.of(demandeService));
         when(feedbackRepository.save(any(Feedback.class))).thenReturn(feedback);
 
-        // Appel du service pour créer un feedback
         Feedback createdFeedback = feedbackService.createFeedback(1L, 4, "Très bon service");
 
-        // Assertions
         assertNotNull(createdFeedback);
         assertEquals(feedback.getNote(), createdFeedback.getNote());
         assertEquals(feedback.getCommentaire(), createdFeedback.getCommentaire());
 
-        // Vérification des interactions avec le mock
         verify(demandeServiceRepository, times(1)).findById(1L);
         verify(feedbackRepository, times(1)).save(any(Feedback.class));
     }
