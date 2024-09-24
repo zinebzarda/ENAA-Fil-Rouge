@@ -121,16 +121,18 @@
 	<build>
 		<plugins>
 			<plugin>
+				<groupId>org.sonarsource.scanner.maven</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>3.9.0.2155</version>
+			</plugin>
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-
 				<configuration>
 					<skipTests>true</skipTests>
 				</configuration>
 			</plugin>
-
 			<plugin>
-
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
@@ -145,5 +147,4 @@
 		</plugins>
 		<finalName>filRouge</finalName>
 	</build>
-
 </project>

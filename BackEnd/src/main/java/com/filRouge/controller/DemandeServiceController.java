@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/demandes")
+@RequestMapping("/demandes")
 public class DemandeServiceController {
 
     @Autowired
@@ -38,7 +38,7 @@ public class DemandeServiceController {
         return new ResponseEntity<>(demandeService, HttpStatus.OK);
     }
 
-    @PutMapping("/{id}")
+    @PutMapping("/update/{id}")
     public ResponseEntity<DemandeService> updateDemande(@PathVariable Long id,
                                                         @RequestParam(required = false) Long clientId,
                                                         @RequestParam(required = false) Long serviceId,
@@ -47,7 +47,7 @@ public class DemandeServiceController {
         return new ResponseEntity<>(updatedDemande, HttpStatus.OK);
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/delete/{id}")
     public ResponseEntity<Void> deleteDemande(@PathVariable Long id) {
         demandeServiceService.deleteDemande(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);

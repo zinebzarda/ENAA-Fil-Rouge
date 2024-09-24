@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d580e07-d143-4b6b-8644-6fec88509950" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BackEnd/src/test/java/com/filRouge/ClientServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/ContactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/ContactController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/service/ContactService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/service/ContactService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/test/java/com/filRouge/ContactServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/test/java/com/filRouge/ContactServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/test/java/com/filRouge/FeedbackServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/test/java/com/filRouge/FeedbackServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/test/java/com/filRouge/PrestataireServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/test/java/com/filRouge/PrestataireServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/DemandeServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/DemandeServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/FeedbackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/FeedbackController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/security/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +89,7 @@
       <recent name="com.filRouge" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ClientServiceTest">
+  <component name="RunManager" selected="Spring Boot.FilRougeApplication">
     <configuration name="ClientServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="filRouge" />
       <extension name="coverage">
@@ -207,7 +203,7 @@
       <workItem from="1727090214494" duration="225000" />
       <workItem from="1727090458762" duration="553000" />
       <workItem from="1727091022622" duration="2069000" />
-      <workItem from="1727124202790" duration="8447000" />
+      <workItem from="1727124202790" duration="9574000" />
     </task>
     <servers />
   </component>

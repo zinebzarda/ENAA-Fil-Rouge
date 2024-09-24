@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/feedbacks")
+@RequestMapping("/feedback")
 public class FeedbackController {
 
     @Autowired
@@ -37,7 +37,7 @@ public class FeedbackController {
         return new ResponseEntity<>(feedback, HttpStatus.OK);
     }
 
-    @PutMapping("/{id}")
+    @PutMapping("/update/{id}")
     public ResponseEntity<Feedback> updateFeedback(
             @PathVariable Long id,
             @RequestParam int note,
@@ -46,7 +46,7 @@ public class FeedbackController {
         return new ResponseEntity<>(updatedFeedback, HttpStatus.OK);
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/delete/{id}")
     public ResponseEntity<Void> deleteFeedback(@PathVariable Long id) {
         feedbackService.deleteFeedback(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);

@@ -37,7 +37,7 @@ public class SecurityConfig {
                         expressionInterceptUrlRegistry
                                 .requestMatchers("/connexion").permitAll()
                                 .requestMatchers("/clients/inscription").permitAll()
-                                .requestMatchers("/clients/**").hasRole("CLIENT")
+                                .requestMatchers(PUT,"/clients/**").hasRole("CLIENT")
                                 .requestMatchers("/clients/allClients").hasRole("ADMIN")
                                 .requestMatchers(DELETE,"/clients/**").hasRole("ADMIN")
 
@@ -51,7 +51,7 @@ public class SecurityConfig {
 
 
                                 .requestMatchers(POST,"/feedback/**").hasRole("CLIENT")
-                                .requestMatchers(GET,"/feedback/**").hasAnyRole("ADMIN", "CLIENT")
+                                .requestMatchers(GET,"/feedback/**").hasRole("ADMIN")
                                 .requestMatchers(DELETE,"/feedback/**").hasRole("ADMIN")
 
 
@@ -62,9 +62,31 @@ public class SecurityConfig {
 
                                 .requestMatchers("/prestataires/inscription").permitAll()
                                 .requestMatchers(PUT,"/prestataires/**").hasRole("ADMIN")
+                                .requestMatchers(DELETE,"/prestataires/**").hasRole("ADMIN")
+                                .requestMatchers(GET,"/prestataires/**").hasRole("ADMIN")
 
 
+
+//                                // Client demande endpoints
+//                                .requestMatchers(POST, "/client/demandes").hasRole("CLIENT")
+//                                .requestMatchers(GET, "/client/demandes").hasRole("CLIENT")
+//                                .requestMatchers(PUT, "/client/demandes/*/cancel").hasRole("CLIENT")
+//                                .requestMatchers(POST, "/client/demandes/*/feedback").hasRole("CLIENT")
+//                                .requestMatchers(POST, "/client/demandes/contact-support").hasRole("CLIENT")
 //
+//                                // Prestataire demande endpoints
+//                                .requestMatchers(GET, "/prestataire/demandes").hasRole("PRESTATAIRE")
+//                                .requestMatchers(PUT, "/prestataire/demandes/*/accept").hasRole("PRESTATAIRE")
+//                                .requestMatchers(PUT, "/prestataire/demandes/*/refuse").hasRole("PRESTATAIRE")
+//
+//                                // Admin demande endpoints
+//                                .requestMatchers(GET, "/admin/demandes").hasRole("ADMIN")
+//                                .requestMatchers(PUT, "/admin/demandes/*/confirm").hasRole("ADMIN")
+//                                .requestMatchers(DELETE, "/admin/demandes/*").hasRole("ADMIN")
+//                                .requestMatchers(PUT, "/admin/demandes/*").hasRole("ADMIN")
+
+
+
                                 .anyRequest().authenticated()
                 )
                 .formLogin(formLogin -> formLogin.disable());
