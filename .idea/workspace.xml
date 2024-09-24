@@ -92,7 +92,22 @@
       <recent name="com.filRouge" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FeedbackServiceTest">
+  <component name="RunManager" selected="JUnit.DemandeServiceServiceTest">
+    <configuration name="DemandeServiceServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="filRouge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.filRouge.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.filRouge" />
+      <option name="MAIN_CLASS_NAME" value="com.filRouge.DemandeServiceServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FeedbackServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="filRouge" />
       <extension name="coverage">
@@ -104,22 +119,6 @@
       <option name="PACKAGE_NAME" value="com.filRouge" />
       <option name="MAIN_CLASS_NAME" value="com.filRouge.FeedbackServiceTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PrestataireServiceTest.testUpdatePrestataire" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="filRouge" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.filRouge.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.filRouge" />
-      <option name="MAIN_CLASS_NAME" value="com.filRouge.PrestataireServiceTest" />
-      <option name="METHOD_NAME" value="testUpdatePrestataire" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -180,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DemandeServiceServiceTest" />
         <item itemvalue="JUnit.FeedbackServiceTest" />
         <item itemvalue="JUnit.ServiceServiceTest" />
         <item itemvalue="JUnit.ServiceServiceTest.findById_shouldThrowException_whenServiceNotFound" />
         <item itemvalue="JUnit.ServiceServiceTest.findById" />
-        <item itemvalue="JUnit.PrestataireServiceTest.testUpdatePrestataire" />
       </list>
     </recent_temporary>
   </component>
