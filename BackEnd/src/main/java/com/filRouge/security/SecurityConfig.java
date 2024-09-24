@@ -3,6 +3,7 @@ package com.filRouge.security;
 import com.filRouge.service.CustomUserDetailsService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.annotation.MergedAnnotations;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -45,6 +46,8 @@ public class SecurityConfig {
                                 .requestMatchers("/Services/all").hasAnyRole("ADMIN", "CLIENT")
                                 .requestMatchers(PUT,"/Services/**").hasAnyRole("ADMIN","PRESTATAIRE")
                                 .requestMatchers(DELETE,"/Services/**").hasAnyRole("ADMIN", "PRESTATAIRE")
+                                .requestMatchers("/Services/search").hasRole("CLIENT")
+
 
 
                                 .requestMatchers(POST,"/feedback/**").hasRole("CLIENT")

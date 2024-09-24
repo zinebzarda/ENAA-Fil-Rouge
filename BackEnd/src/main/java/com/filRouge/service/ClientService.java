@@ -81,28 +81,28 @@ public class ClientService {
     }
 
 
-    public List<Services> rechercherServices(String keyword) {
-        if (keyword != null && !keyword.isEmpty()) {
-            return serviceRepository.findByTitreContainingOrDescriptionContaining(keyword, keyword);
-        }
-        return serviceRepository.findAll();
-    }
+//    public List<Services> rechercherServices(String keyword) {
+//        if (keyword != null && !keyword.isEmpty()) {
+//            return serviceRepository.findByTitreContainingOrDescriptionContaining(keyword, keyword);
+//        }
+//        return serviceRepository.findAll();
+//    }
 
 
-    public DemandeService demanderService(Long clientId, Long serviceId) {
-        Client client = clientRepository.findById(clientId)
-                .orElseThrow(() -> new ResourceNotFoundException("Client non trouvé"));
-        Services service = serviceRepository.findById(serviceId)
-                .orElseThrow(() -> new ResourceNotFoundException("Service non trouvé"));
-
-        DemandeService demandeService = new DemandeService();
-        demandeService.setClient(client);
-        demandeService.setService(service);
-        demandeService.setDateDemmande(LocalDate.now());
-        demandeService.setStatut(ValidateStatus.EN_ATTENTE);
-
-        return demandeServiceRepository.save(demandeService);
-    }
+//    public DemandeService demanderService(Long clientId, Long serviceId) {
+//        Client client = clientRepository.findById(clientId)
+//                .orElseThrow(() -> new ResourceNotFoundException("Client non trouvé"));
+//        Services service = serviceRepository.findById(serviceId)
+//                .orElseThrow(() -> new ResourceNotFoundException("Service non trouvé"));
+//
+//        DemandeService demandeService = new DemandeService();
+//        demandeService.setClient(client);
+//        demandeService.setService(service);
+//        demandeService.setDateDemmande(LocalDate.now());
+//        demandeService.setStatut(ValidateStatus.EN_ATTENTE);
+//
+//        return demandeServiceRepository.save(demandeService);
+//    }
 
 
 

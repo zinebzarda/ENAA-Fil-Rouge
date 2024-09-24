@@ -90,6 +90,6 @@ class ServiceServiceTest {
         assertEquals("Test Service", foundService.get().getTitre());
     }
 
-    
+
 }
 

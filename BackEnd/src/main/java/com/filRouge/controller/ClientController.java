@@ -49,15 +49,15 @@ public class ClientController {
         clientService.deleteClient(id);
     }
 
-    // Rechercher des services
-    @GetMapping("/search")
-    public List<Services> rechercherServices(@RequestParam(required = false) String keyword) {
-        return clientService.rechercherServices(keyword);
-    }
-
-    // Demander un service
-    @PostMapping("/{clientId}/demandeService/{serviceId}")
-    public DemandeService demanderService(@PathVariable Long clientId, @PathVariable Long serviceId) {
-        return clientService.demanderService(clientId, serviceId);
-    }
+//    // Rechercher des services
+//    @GetMapping("/search")
+//    public List<Services> rechercherServices(@RequestParam(required = false) String keyword) {
+//        return clientService.rechercherServices(keyword);
+//    }
+//
+//    // Demander un service
+//    @PostMapping("/{clientId}/demandeService/{serviceId}")
+//    public DemandeService demanderService(@PathVariable Long clientId, @PathVariable Long serviceId) {
+//        return clientService.demanderService(clientId, serviceId);
+//    }
 }
