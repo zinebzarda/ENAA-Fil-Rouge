@@ -40,20 +40,42 @@ pipeline {
             }
         }
 
-        stage('Build Docker Image & Push') {
-            steps {
-                dir('BackEnd') {
-                    script {
-                        bat 'docker context use default'
+//         stage('Build Docker Image & Push') {
+//             steps {
+//                 dir('BackEnd') {
+//                     script {
+//                         bat 'docker context use default'
+//
+//                         def dockerImage = docker.build("zinebaz/filrouge:${env.TAG_VERSION ?: '17'}")
+//                             docker.withRegistry('https://index.docker.io/v1/', 'dockerHubCredentials') {
+//                             dockerImage.push()
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+          stage('Build Docker Image & Push') {
+              steps {
+                  dir('BackEnd') {
+                      script {
+                          try {
+                              bat 'docker context use default'
 
-                        def dockerImage = docker.build("zinebaz/filrouge:${env.TAG_VERSION ?: '17'}")
-                            docker.withRegistry('https://index.docker.io/v1/', 'dockerHubCredentials') {
-                            dockerImage.push()
-                        }
-                    }
-                }
-            }
-        }
+                              def dockerImage = docker.build("zinebaz/filrouge:${env.TAG_VERSION ?: '17'}", "--no-cache .")
+
+                              docker.withRegistry('https://index.docker.io/v1/', 'dockerHubCredentials') {
+                                  dockerImage.push()
+                              }
+                          } catch (Exception e) {
+                              echo "Docker build or push failed: ${e.message}"
+                              bat 'docker info'
+                              bat 'docker version'
+                              error "Docker stage failed"
+                          }
+                      }
+                  }
+              }
+          }
     }
 
 //         stage('Deploy with Docker Compose') {
