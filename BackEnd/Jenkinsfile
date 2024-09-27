@@ -61,26 +61,25 @@ pipeline {
                          try {
                              bat 'docker context use default'
 
-                             // Add logging
                              echo "Starting Docker build..."
-
-                             // Use --no-cache and redirect error output
-                             def dockerImage = docker.build("zinebaz/filrouge:${env.TAG_VERSION ?: '17'}", "--no-cache . 2>&1")
-
+                             def dockerImage = docker.build("zinebaz/filrouge:${env.TAG_VERSION ?: '17'}", "--no-cache .")
                              echo "Docker build completed successfully."
 
-                             echo "Starting Docker push..."
+                             echo "Attempting Docker login..."
                              docker.withRegistry('https://index.docker.io/v1/', 'dockerHubCredentials') {
+                                 echo "Docker login successful. Starting image push..."
                                  dockerImage.push()
+                                 echo "Docker push completed successfully."
                              }
-                             echo "Docker push completed successfully."
-
                          } catch (Exception e) {
-                             echo "Docker build or push failed: ${e.message}"
-                             bat 'docker info'
-                             bat 'docker version'
-                             bat 'dir target'  // Check if JAR file exists
-                             error "Docker stage failed: ${e.message}"
+                             echo "Docker operation failed: ${e.message}"
+                             if (e.message.contains("unauthorized: incorrect username or password")) {
+                                 error "Docker Hub authentication failed. Please check your credentials in Jenkins."
+                             } else {
+                                 bat 'docker info'
+                                 bat 'docker version'
+                                 error "Docker stage failed: ${e.message}"
+                             }
                          }
                      }
                  }
