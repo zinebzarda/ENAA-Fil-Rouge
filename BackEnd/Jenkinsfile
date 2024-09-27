@@ -32,7 +32,6 @@ pipeline {
             steps {
                 script {
                     def scannerHome = tool 'SonarQubeScanner'
-
                     dir('BackEnd') {
                         bat "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=BackEnd -Dsonar.sources=. -Dsonar.host.url=${SONARQUBE_SERVER} -Dsonar.login=${SONARQUBE_TOKEN} -Dsonar.java.binaries=target/classes"
                     }
@@ -47,25 +46,16 @@ pipeline {
                         try {
                             bat 'docker context use default'
 
-                            echo "Starting Docker build..."
-                            def dockerImage = docker.build("zinebaz/filrouge:${env.TAG_VERSION ?: '17'}", "--no-cache .")
-                            echo "Docker build completed successfully."
+                            // Define Docker image name and tag
+                            def imageTag = env.TAG_VERSION ?: 'latest'
+                            def dockerImage = docker.build("zinebaz/filrouge:${imageTag}")
 
-                            echo "Attempting Docker login..."
+                            // Push the Docker image to Docker Hub
                             docker.withRegistry('https://index.docker.io/v1/', 'dockerHubCredentials') {
-                                echo "Docker login successful. Starting image push..."
                                 dockerImage.push()
-                                echo "Docker push completed successfully."
                             }
                         } catch (Exception e) {
-                            echo "Docker operation failed: ${e.message}"
-                            if (e.message.contains("unauthorized: incorrect username or password")) {
-                                error "Docker Hub authentication failed. Please check your credentials in Jenkins."
-                            } else {
-                                bat 'docker info'
-                                bat 'docker version'
-                                error "Docker stage failed: ${e.message}"
-                            }
+                            error "Docker build or push failed: ${e.message}"
                         }
                     }
                 }
@@ -75,7 +65,7 @@ pipeline {
         stage('Deploy with Docker Compose') {
             steps {
                 dir('BackEnd') {
-                    bat 'docker-compose up'
+                    bat 'docker-compose up -d'
                 }
             }
         }
