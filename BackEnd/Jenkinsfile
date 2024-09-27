@@ -46,7 +46,7 @@ pipeline {
                     script {
                         bat 'docker context use default'
 
-                        def dockerImage = docker.build("zinebaz/filrouge:${env.TAG_VERSION ?: 'latest'}")
+                        def dockerImage = docker.build("zinebaz/filrouge:${env.TAG_VERSION ?: '17'}")
                             docker.withRegistry('https://index.docker.io/v1/', 'dockerHubCredentials') {
                             dockerImage.push()
                         }
