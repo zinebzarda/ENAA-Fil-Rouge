@@ -4,11 +4,11 @@ services:
   filRouge:
     image: zinebaz/filrouge:latest
     ports:
-      - "9092:8080"
+      - '9092:8080'
     depends_on:
       - mysqldb
     networks:
-      - jobRabbitJenkinsfile-network
+      - jobRabbit-network
 
   mysqldb:
     image: "mysql:latest"
