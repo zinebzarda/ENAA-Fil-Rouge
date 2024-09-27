@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d580e07-d143-4b6b-8644-6fec88509950" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/DemandeServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/DemandeServiceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/FeedbackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/FeedbackController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BackEnd/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -51,45 +50,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.ClientServiceTest.executor": "Run",
-    "JUnit.ContactServiceTest.executor": "Run",
-    "JUnit.DemandeServiceServiceTest.executor": "Run",
-    "JUnit.FeedbackServiceTest.executor": "Run",
-    "JUnit.PrestataireServiceTest.executor": "Run",
-    "JUnit.PrestataireServiceTest.testUpdatePrestataire.executor": "Run",
-    "JUnit.ServiceServiceTest.executor": "Run",
-    "JUnit.ServiceServiceTest.findById.executor": "Run",
-    "JUnit.ServiceServiceTest.findById_shouldThrowException_whenServiceNotFound.executor": "Run",
-    "Maven.filRouge [clean].executor": "Run",
-    "Maven.filRouge [install].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.FilRougeApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/user/Desktop/filRouge",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.BackEnd: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClientServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContactServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DemandeServiceServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.FeedbackServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PrestataireServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PrestataireServiceTest.testUpdatePrestataire.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ServiceServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ServiceServiceTest.findById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ServiceServiceTest.findById_shouldThrowException_whenServiceNotFound.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.filRouge [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.filRouge [install].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.FilRougeApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/filRouge&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\filRouge\BackEnd" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.filRouge" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.FilRougeApplication">
+  <component name="RunManager" selected="Docker.BackEnd: Compose Deployment">
     <configuration name="ClientServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="filRouge" />
       <extension name="coverage">
@@ -135,36 +139,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FeedbackServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="filRouge" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.filRouge.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.filRouge" />
-      <option name="MAIN_CLASS_NAME" value="com.filRouge.FeedbackServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ServiceServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="filRouge" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.filRouge.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.filRouge" />
-      <option name="MAIN_CLASS_NAME" value="com.filRouge.ServiceServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FilRougeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="filRouge" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.filRouge.FilRougeApplication" />
@@ -172,13 +146,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BackEnd: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="BackEnd/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.BackEnd: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="JUnit.ClientServiceTest" />
         <item itemvalue="JUnit.ContactServiceTest" />
         <item itemvalue="JUnit.DemandeServiceServiceTest" />
-        <item itemvalue="JUnit.FeedbackServiceTest" />
-        <item itemvalue="JUnit.ServiceServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +199,7 @@
       <workItem from="1727090214494" duration="225000" />
       <workItem from="1727090458762" duration="553000" />
       <workItem from="1727091022622" duration="2069000" />
-      <workItem from="1727124202790" duration="9574000" />
+      <workItem from="1727124202790" duration="29255000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+  server:
+    build: .
+    ports:
+      - "9092:8080"
+    depends_on:
+      - mysqldb
+    networks:
+      - jobRabbitJenkinsfile-network
+
+  mysqldb:
+    image: "mysql:latest"
+    environment:
+      MYSQL_DATABASE: filRouge2
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysqldb:/var/lib/mysql
+    networks:
+      - jobRabbit-network
+
+
+volumes:
+  mysqldb:
+
+networks:
+  jobRabbit-network:
+    driver: bridge
+

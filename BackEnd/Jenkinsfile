@@ -1,0 +1,66 @@
+pipeline {
+    agent any
+
+    tools {
+        maven 'mvn'
+    }
+
+    environment {
+        DOCKERHUB_CREDENTIALS = credentials('dockerHubCredentials')
+        SONARQUBE_TOKEN = 'sqp_48c0aeb7379b8888b0f777e1888b41b4bbb1b42f'
+        SONARQUBE_SERVER = 'http://localhost:9000'
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/zinebzarda/ENAA-Fil-Rouge.git'
+            }
+        }
+
+        stage('Build & Test filRouge') {
+            steps {
+                dir('BackEnd') {
+                    withMaven(maven: 'mvn') {
+                        bat 'mvn clean install'
+                    }
+                }
+            }
+        }
+
+        stage('SonarQube Analysis') {
+            steps {
+                script {
+                    def scannerHome = tool 'SonarQubeScanner'
+
+                    dir('BackEnd') {
+                        bat "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=BackEnd -Dsonar.sources=. -Dsonar.host.url=${SONARQUBE_SERVER} -Dsonar.login=${SONARQUBE_TOKEN} -Dsonar.java.binaries=target/classes"
+                    }
+                }
+            }
+        }
+
+        stage('Build Docker Image & Push') {
+            steps {
+                dir('BackEnd') {
+                    script {
+                        bat 'docker context use default'
+
+                        def dockerImage = docker.build("zinebaz/filrouge:${env.TAG_VERSION ?: 'latest'}")
+                        docker.withRegistry('https://index.docker.io/v1/', DOCKERHUB_CREDENTIALS) {
+                            dockerImage.push()
+                        }
+                    }
+                }
+            }
+        }
+
+        stage('Deploy with Docker Compose') {
+            steps {
+                dir('BackEnd') {
+                    bat 'docker-compose up -d'
+                }
+            }
+        }
+    }
+}
