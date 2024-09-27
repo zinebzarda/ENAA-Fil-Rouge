@@ -75,7 +75,7 @@ pipeline {
         stage('Deploy with Docker Compose') {
             steps {
                 dir('BackEnd') {
-                    bat 'docker-compose up -d'
+                    bat 'docker-compose up'
                 }
             }
         }
