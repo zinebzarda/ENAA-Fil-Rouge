@@ -5,36 +5,168 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d580e07-d143-4b6b-8644-6fec88509950" name="Changes" comment="changement Jenkinsfile v67">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/Jenkinsfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/.vscode/extensions.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/.vscode/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/.vscode/tasks.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/angular.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/server.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/app-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/app.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/app.module.server.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/main.server.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/tsconfig.spec.json" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/css/flaticon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/css/line-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/css/nice-select.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/css/slick.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/fonts/flaticon5988.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/fonts/flaticon5988.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/fonts/flaticon5988.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/fonts/flaticon5988.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/fonts/flaticon5988.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/fonts/la-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/fonts/la-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/fonts/la-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/fonts/la-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/fonts/la-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/fonts/la-brands-400d41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/fonts/la-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/fonts/la-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/fonts/la-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/fonts/la-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/fonts/la-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/fonts/la-regular-400d41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/fonts/la-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/fonts/la-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/fonts/la-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/fonts/la-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/fonts/la-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/fonts/la-solid-900d41d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/404.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/about/about-shape.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/about/about.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/author-nav.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/banner/banner-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/banner/banner-smile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/banner/banner1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/banner/banner2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/banner/dot-square.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/banner/line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/blog/b1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/blog/b2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/blog/b3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/blog/b4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/blog/b5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/blog/b6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/blog/b7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/blog/b8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/blog/b9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/blog/bd1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/blog/bd2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/category/c1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/category/c2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/category/c3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/category/c4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/category/c5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/category/c6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/clientlogo/cl1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/clientlogo/cl2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/clientlogo/cl3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/clientlogo/cl4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/dashboard/ads.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/dashboard/authors.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/dashboard/dashboard-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/dashboard/e_service1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/dashboard/order1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/dashboard/order2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/dashboard/orders-shapes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/dashboard/orders-shapes2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/dashboard/orders-shapes3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/dashboard/orders-shapes4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/dashboard/profile-man.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/dashboard/serviece1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/dashboard/serviece2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/dashboard/serviece3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/footer/c1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/footer/c2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/footer/c3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/footer/c4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/footer/n1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/footer/n2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/join/circle1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/join/circle2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/join/dot-square.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/join/line-cross.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/logo-01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/logo-02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/logo-03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/logo-footer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/marketplace/m1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/marketplace/m2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/marketplace/m3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/marketplace/m4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/marketplace/market-shape.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/seller/seller-s2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/seller/seller-small.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/seller/seller-small2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/seller/seller-small3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/seller/seller-small4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/seller/seller-small5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/seller/seller-small6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/seller/seller-small7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/seller/seller-small8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/seller/seller.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/seller/seller2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/author.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/author10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/author11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/author12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/author2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/author3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/author4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/author5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/author6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/author7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/author8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/author9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/extra1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/extra2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/extra3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/extra4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/fs1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/fs2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/fs3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/fs4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/overview1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/overview2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/payment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/ps1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/ps2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/ps3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/ps4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/ps5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/s1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/s10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/s11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/s12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/s2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/s3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/s4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/s5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/s6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/s7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/s8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/s9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/sd.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/sd2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/sd3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/img/service/sd4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/jquery-3.6.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/jquery-migrate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/jquery.nice-select.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/jquery.nicescroll.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/slick.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/wow.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/services/feedback.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/services/feedback.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/services/services.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/services/services.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +176,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Dockerfile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -79,44 +211,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Docker.BackEnd: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ClientServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ContactServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DemandeServiceServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FeedbackServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PrestataireServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PrestataireServiceTest.testUpdatePrestataire.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ServiceServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ServiceServiceTest.findById.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ServiceServiceTest.findById_shouldThrowException_whenServiceNotFound.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.filRouge [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.filRouge [install].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.FilRougeApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/Les Projets/Event&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\user\\Desktop\\filRouge\\FrontEnd\\JobRabbit\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.BackEnd: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "JUnit.ClientServiceTest.executor": "Run",
+    "JUnit.ContactServiceTest.executor": "Run",
+    "JUnit.DemandeServiceServiceTest.executor": "Run",
+    "JUnit.FeedbackServiceTest.executor": "Run",
+    "JUnit.PrestataireServiceTest.executor": "Run",
+    "JUnit.PrestataireServiceTest.testUpdatePrestataire.executor": "Run",
+    "JUnit.ServiceServiceTest.executor": "Run",
+    "JUnit.ServiceServiceTest.findById.executor": "Run",
+    "JUnit.ServiceServiceTest.findById_shouldThrowException_whenServiceNotFound.executor": "Run",
+    "Maven.filRouge [clean].executor": "Run",
+    "Maven.filRouge [install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.FilRougeApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/user/Desktop/filRouge/FrontEnd/JobRabbit/src/assets",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.start.executor": "Run",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "ts.external.directory.path": "C:\\Users\\user\\Desktop\\filRouge\\FrontEnd\\JobRabbit\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\filRouge\FrontEnd\JobRabbit\src\assets" />
       <recent name="C:\Users\user\Desktop\filRouge\BackEnd" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -126,7 +260,7 @@
       <recent name="com.filRouge" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.BackEnd: Compose Deployment">
+  <component name="RunManager" selected="Spring Boot.FilRougeApplication">
     <configuration name="ClientServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="filRouge" />
       <extension name="coverage">
@@ -152,21 +286,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.filRouge" />
       <option name="MAIN_CLASS_NAME" value="com.filRouge.ContactServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DemandeServiceServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="filRouge" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.filRouge.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.filRouge" />
-      <option name="MAIN_CLASS_NAME" value="com.filRouge.DemandeServiceServiceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -201,13 +320,23 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/FrontEnd/JobRabbit/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
         <item itemvalue="Docker.BackEnd: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="JUnit.ClientServiceTest" />
         <item itemvalue="JUnit.ContactServiceTest" />
-        <item itemvalue="JUnit.DemandeServiceServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -237,6 +366,7 @@
       <workItem from="1727450346102" duration="14250000" />
       <workItem from="1727527839241" duration="5338000" />
       <workItem from="1727534754401" duration="31000" />
+      <workItem from="1727534809031" duration="27562000" />
     </task>
     <task id="LOCAL-00001" summary="changement Jenkinsfile">
       <option name="closed" value="true" />
