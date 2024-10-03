@@ -7,7 +7,7 @@
         $(".dashboard-bottom, .notification-list").niceScroll({});
 
         /*-------------------------------------------
-        	On Click Open Navbar right contents 
+        	On Click Open Navbar right contents
         ------------------------------------------*/
         $(document).on('click', '.click_show_icon', function() {
             $(".nav-right-content").toggleClass("active");
@@ -16,7 +16,7 @@
             wow js init
         ---------------------*/
         new WOW().init();
-        /* 
+        /*
         ----------------------------------------
             Location click
         ----------------------------------------
@@ -25,7 +25,7 @@
             $(this).siblings().removeClass('active');
             $(this).addClass('active');
         });
-        /* 
+        /*
         ========================================
             Dashboard Dropdown Side Menu
         ========================================
@@ -35,7 +35,7 @@
             var db = $(this).parent('.has-children');
             if (db.hasClass('open')) {
                 db.removeClass('open');
-                db.find('.submenu').children('.has-children').removeClass("open"); //2nd children remove 
+                db.find('.submenu').children('.has-children').removeClass("open"); //2nd children remove
                 db.find('.submenu').removeClass('open');
                 db.find('.submenu').slideUp(300, "swing");
             } else {
@@ -45,7 +45,7 @@
                 db.siblings('.has-children').removeClass('open');
             }
         });
-        /* 
+        /*
         ========================================
             Dashboard Responsive Sidebar
         ========================================
@@ -232,7 +232,7 @@
             Nice Select
         ------------------*/
         $('select').niceSelect();
-        /* 
+        /*
         ========================================
             Tab
         ========================================
@@ -247,9 +247,9 @@
             $("#" + tab_id).addClass('active');
         });
 
-        /* 
+        /*
         ========================================
-            Pagination 
+            Pagination
         ========================================
         */
         $(document).on('click', '.pagination-list li', function() {
@@ -352,10 +352,10 @@
     $(window).on('scroll', function() {
         //back to top show/hide
         var ScrollTop = $('.back-to-top');
-        if ($(window).scrollTop() > 300) {
-            ScrollTop.fadeIn(300);
+        if ($(window).scrollTop() > 100) {
+            ScrollTop.fadeIn(100);
         } else {
-            ScrollTop.fadeOut(300);
+            ScrollTop.fadeOut(100);
         }
     });
 
@@ -363,8 +363,8 @@
     preloader
     ------------------*/
     $(window).on('load', function() {
-        $('#preloader').delay(300).fadeOut('fast');
-        $('body').delay(300).css({
+        $('#preloader').delay(200).fadeOut('fast');
+        $('body').delay(200).css({
             'overflow': 'visible'
         });
     });

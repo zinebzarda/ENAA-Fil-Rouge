@@ -6,8 +6,15 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import {FormsModule} from "@angular/forms";
-import { HomeComponent } from './home/home.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { CategoryComponent } from './Homes/category/category.component';
+import {HomeComponent} from "./Homes/home/home.component";
+import { NavBarComponent } from './Homes/nav-bar/nav-bar.component';
+import { FooterComponent } from './Homes/footer/footer.component';
+import { BlogComponent } from './Homes/blog/blog.component';
+import {HttpClientModule} from "@angular/common/http";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { AboutComponent } from './Homes/about/about.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +22,20 @@ import { HomeComponent } from './home/home.component';
     LoginComponent,
     LogoutComponent,
     PageNotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    CategoryComponent,
+    NavBarComponent,
+    FooterComponent,
+    BlogComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
