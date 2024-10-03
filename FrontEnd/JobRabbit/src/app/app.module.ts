@@ -15,6 +15,8 @@ import { BlogComponent } from './Homes/blog/blog.component';
 import {HttpClientModule} from "@angular/common/http";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { AboutComponent } from './Homes/about/about.component';
+import { ClientComponent } from './register/client/client.component';
+import { PrestataireComponent } from './register/prestataire/prestataire.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { AboutComponent } from './Homes/about/about.component';
     NavBarComponent,
     FooterComponent,
     BlogComponent,
-    AboutComponent
+    AboutComponent,
+    ClientComponent,
+    PrestataireComponent
   ],
   imports: [
     BrowserModule,
