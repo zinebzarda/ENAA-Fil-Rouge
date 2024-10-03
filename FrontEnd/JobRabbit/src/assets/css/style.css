@@ -1,59 +1,6 @@
 @charset "UTF-8";
 /*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
 
-# Google Fonts
-# Normalize
-# Global Padding
-# Alignments
-# Clearings
-# Sections
-    ## Nav bar 
-    ## Banner Area
-    ## Category area
-    ## Service area
-    ## Marketplace area
-    ## Professional Services
-    ## Seller area
-    ## Blog area
-    ## WIdgets
-    ## Banner Inner
-    ## Category Service area
-    ## Details Overview
-    ## Contact Map
-    ## Service Overview
-    ## Join area
-    ## Signup area
-    ## Register Step area
-    ## Service Details area
-    ## Blog Details
-    ## Details Tag area
-    ## Contact area
-    ## About area
-    ## Client logo area
-    ## Error area
-    ## Profile
-    ## Dashboard area
-    ## Seller Profile Details area
-    ## Seller Order View
-    ## Invoice area
-
-# Elements
-    ## section_title
-    ## button
-    ## back_top
-    ## preloader
-    ## Author tag
-    ## Tag list
-    ## Nice Select Style
-    ## inner menu
-    ## Pagination
-    ## Overview
-    ## Checkbox
-    ## Multi Step Form
-    ## Faq
-    ## Table Css
 
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -64,11 +11,11 @@
 # Normalize
 --------------------------------------------------------------*/
 :root {
-  --main-color-one: #1DBF73;
+  --main-color-one: #aa41aa;
   --main-color-one-rgb: 29, 191, 115;
   --main-color-two: #47C8ED;
   --main-color-two-rgb: 71, 200, 237;
-  --main-color-three: #FF6B2C;
+  --main-color-three: #a83fa8;
   --main-color-three-rgb: 255, 107, 44;
   --heading-color: #333333;
   --light-color: #666666;
@@ -230,7 +177,7 @@ select:focus {
 }
 
 code {
-  color: #faa603;
+  color: #a83fa8;
 }
 
 .common-para {
@@ -531,7 +478,7 @@ code {
 }
 
 .gradient-bg-1 {
-  background: -webkit-gradient(linear, left top, right top, from(#fdf7f0), color-stop(50%, #ffe9f7), to(#efdff4));
+  background: -webkit-gradient(linear, left top, right top, from(#fdf7f0), color-stop(50%, #ffe9fb), to(#efdff4));
   background: linear-gradient(90deg, #fdf7f0 0%, #ffe9f7 50%, #efdff4 100%);
 }
 
@@ -1374,7 +1321,7 @@ code {
 }
 
 /*----------------------------------------------
-    # Nav bar 
+    # Nav bar
 ----------------------------------------------*/
 .white .click_show_icon {
   color: rgba(255, 255, 255, 0.8);
@@ -1567,8 +1514,8 @@ code {
     padding: 15px 0;
   }
 }
-.navbar-area .nav-container .logo-wrapper .logo img {
-  max-width: 200px;
+.navbar-area .nav-container .logo-wrapper .logo .imgLogo {
+  max-width: 67px;
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .navbar-area .nav-container .logo-wrapper .logo img {
@@ -1577,7 +1524,7 @@ code {
 }
 @media (min-width: 320px) and (max-width: 991.98px) {
   .navbar-area .nav-container .logo-wrapper .logo img {
-    max-width: 150px;
+    max-width: 68px;
   }
 }
 .navbar-area .nav-container .nav-right-content {
@@ -3824,10 +3771,10 @@ code {
   background: rgba(15, 195, 147, 0.08);
 }
 .marketplace-child:nth-child(6n+5) .single-marketplace .icon {
-  background: #0FC393;
+  background: #c54cc5;
 }
 .marketplace-child:nth-child(6n+5) .single-marketplace .marketplace-contents .common-title:hover {
-  color: #0FC393;
+  color: #c54cc5;
 }
 .marketplace-child:nth-child(6n+6) .single-marketplace {
   background: rgba(190, 62, 255, 0.08);
@@ -4453,6 +4400,8 @@ code {
   }
 }
 
+
+
 .copyright-area {
   padding: 25px 0;
 }
@@ -4604,6 +4553,12 @@ code {
 }
 .color-three .copyright-list .list a:hover {
   color: var(--main-color-three);
+}
+img .logoFooter{
+
+  max-width: 70%;
+
+
 }
 
 /* Banner Inner */
@@ -5044,7 +4999,7 @@ code {
   border-radius: 10px;
 }
 .overview-single .overview-extra.style-02 {
-  border: 1px solid #1DBF73;
+  border: 1px solid #aa41aa;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10450,7 +10405,7 @@ code {
 .loader_bars {
   width: 130px;
   height: 130px;
-  border-right: 4px solid #1dbf73;
+  border-right: 4px solid #a83fa8;
   border-radius: 100%;
   -webkit-animation: spinRight 800ms linear infinite;
           animation: spinRight 800ms linear infinite;
@@ -10463,7 +10418,7 @@ code {
   position: absolute;
   top: calc(50% - 50px);
   left: calc(50% - 50px);
-  border-left: 3px solid #1dbf73;
+  border-left: 3px solid #c54cc5;
   border-radius: 100%;
   -webkit-animation: spinLeft 800ms linear infinite;
           animation: spinLeft 800ms linear infinite;
@@ -10474,7 +10429,7 @@ code {
   top: calc(50% - 35px);
   left: calc(50% - 35px);
   border: 0;
-  border-right: 2px solid #1dbf73;
+  border-right: 2px solid #aa41aa;
   -webkit-animation: none;
           animation: none;
 }
@@ -10487,7 +10442,7 @@ code {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background: #1dbf73;
+  background: #c54cc5;
 }
 
 @-webkit-keyframes spinLeft {
