@@ -20,6 +20,7 @@ public class Prestataire extends Personne {
     private String domaineExpertise;
     private String disponibilites;
     private String experience;
+    private Integer tel;
 
     @Enumerated(EnumType.STRING)
     private ValidateStatus validateStatus = ValidateStatus.EN_ATTENTE;
