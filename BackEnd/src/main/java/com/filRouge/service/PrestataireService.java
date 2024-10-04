@@ -23,7 +23,7 @@ public class PrestataireService {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-
+    // Création d'un nouveau prestataire
     public PrestataireResponseDTO createPrestataire(PrestataireRequestDTO prestataireRequestDTO) {
         Prestataire prestataire = new Prestataire();
         prestataire.setUsername(prestataireRequestDTO.getUsername());
@@ -32,6 +32,7 @@ public class PrestataireService {
         prestataire.setDomaineExpertise(prestataireRequestDTO.getDomaineExpertise());
         prestataire.setDisponibilites(prestataireRequestDTO.getDisponibilites());
         prestataire.setExperience(prestataireRequestDTO.getExperience());
+        prestataire.setTel(prestataireRequestDTO.getTel()); // Ajout du téléphone
         prestataire.setRole(Role.PRESTATAIRE);
 
         Prestataire savedPrestataire = prestataireRepository.save(prestataire);
@@ -39,20 +40,21 @@ public class PrestataireService {
         return convertToPrestataireResponseDTO(savedPrestataire);
     }
 
-
+    // Récupérer tous les prestataires
     public List<PrestataireResponseDTO> getAllPrestataires() {
         return prestataireRepository.findAll().stream()
                 .map(this::convertToPrestataireResponseDTO)
                 .collect(Collectors.toList());
     }
 
-
+    // Trouver un prestataire par ID
     public PrestataireResponseDTO findById(Long id) {
         Prestataire prestataire = prestataireRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Prestataire non trouvé avec l'id : " + id));
         return convertToPrestataireResponseDTO(prestataire);
     }
 
+    // Mise à jour d'un prestataire
     public PrestataireResponseDTO updatePrestataire(Long id, PrestataireRequestDTO prestataireRequestDTO) {
         Prestataire existingPrestataire = prestataireRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Prestataire non trouvé avec l'id : " + id));
@@ -63,7 +65,7 @@ public class PrestataireService {
         existingPrestataire.setDisponibilites(prestataireRequestDTO.getDisponibilites());
         existingPrestataire.setExperience(prestataireRequestDTO.getExperience());
         existingPrestataire.setValidateStatus(prestataireRequestDTO.getStatus());
-
+        existingPrestataire.setTel(prestataireRequestDTO.getTel()); // Mise à jour du téléphone
 
         if (prestataireRequestDTO.getPassword() != null && !prestataireRequestDTO.getPassword().isEmpty()) {
             existingPrestataire.setPassword(passwordEncoder.encode(prestataireRequestDTO.getPassword()));
@@ -74,10 +76,12 @@ public class PrestataireService {
         return convertToPrestataireResponseDTO(updatedPrestataire);
     }
 
+    // Suppression d'un prestataire
     public void deletePrestataire(Long id) {
         prestataireRepository.deleteById(id);
     }
 
+    // Conversion de Prestataire vers PrestataireResponseDTO
     private PrestataireResponseDTO convertToPrestataireResponseDTO(Prestataire prestataire) {
         PrestataireResponseDTO prestataireResponseDTO = new PrestataireResponseDTO();
         prestataireResponseDTO.setUsername(prestataire.getUsername());
@@ -85,27 +89,17 @@ public class PrestataireService {
         prestataireResponseDTO.setDomaineExpertise(prestataire.getDomaineExpertise());
         prestataireResponseDTO.setDisponibilites(prestataire.getDisponibilites());
         prestataireResponseDTO.setExperience(prestataire.getExperience());
+        prestataireResponseDTO.setTel(prestataire.getTel()); // Conversion du téléphone
         prestataireResponseDTO.setStatus(prestataire.getValidateStatus());
         return prestataireResponseDTO;
     }
 
-    /**
-     * Récupérer tous les prestataires en attente de validation.
-     *
-     * @return Liste des prestataires en attente
-     */
+    // Récupérer tous les prestataires en attente de validation
     public List<Prestataire> getPendingPrestataires() {
         return prestataireRepository.findByValidateStatus(ValidateStatus.EN_ATTENTE);
     }
 
-    /**
-     * Vérifier un prestataire en modifiant son statut de validation.
-     *
-     * @param prestataireId ID du prestataire à vérifier
-     * @param status Nouveau statut de validation
-     * @return Le prestataire mis à jour
-     */
-
+    // Vérifier un prestataire en modifiant son statut
     public Prestataire verifyPrestataire(Long prestataireId, ValidateStatus status) {
         Prestataire prestataire = prestataireRepository.findById(prestataireId)
                 .orElseThrow(() -> new EntityNotFoundException("Prestataire non trouvé"));

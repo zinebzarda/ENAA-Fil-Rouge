@@ -15,5 +15,6 @@ public class PrestataireResponseDTO {
     private String domaineExpertise;
     private String disponibilites;
     private String experience;
+    private Integer tel;
     private ValidateStatus status;
 }

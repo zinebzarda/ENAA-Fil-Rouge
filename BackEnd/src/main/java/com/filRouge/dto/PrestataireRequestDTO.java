@@ -14,6 +14,7 @@ public class PrestataireRequestDTO {
     private String domaineExpertise;
     private String disponibilites;
     private String experience;
+    private Integer tel;
     private String role;
     private ValidateStatus status;
 }
