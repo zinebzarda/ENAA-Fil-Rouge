@@ -8,7 +8,7 @@ import {Prestataire} from "../models/prestataire";
   providedIn: 'root'
 })
 export class PrestataireService {
-  private apiUrl = 'http://localhost:9092/prestataires';
+  private apiUrl = 'http://localhost:8080/prestataires';
 
   constructor(private http: HttpClient) {}
 

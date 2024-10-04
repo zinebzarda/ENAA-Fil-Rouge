@@ -7,7 +7,7 @@ import { DemandeService } from '../models/demande-service';
   providedIn: 'root'
 })
 export class DemandeServiceService {
-  private apiUrl = 'http://localhost:9092/demandes';
+  private apiUrl = 'http://localhost:8080/demandes';
 
   constructor(private http: HttpClient) {}
 
