@@ -3,15 +3,22 @@ import { CommonModule } from '@angular/common';
 
 import { PrestataireRoutingModule } from './prestataire-routing.module';
 import { PrestataireComponent } from './prestataire.component';
+import { RegisterPraistataireComponent } from './register-praistataire/register-praistataire.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 
 @NgModule({
   declarations: [
-    PrestataireComponent
+    PrestataireComponent,
+    RegisterPraistataireComponent
+  ],
+  exports: [
+    RegisterPraistataireComponent
   ],
   imports: [
     CommonModule,
-    PrestataireRoutingModule
+    PrestataireRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class PrestataireModule { }
