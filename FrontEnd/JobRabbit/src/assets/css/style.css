@@ -3414,7 +3414,7 @@ code {
 .single-category {
   background: #0FC393;
   text-align: center;
-  padding: 30px 20px;
+  padding: 30px 8px;
   border-radius: 10px;
   margin: 15px;
   -webkit-transition: all 0.3s;
