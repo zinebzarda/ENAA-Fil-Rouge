@@ -15,11 +15,9 @@ import { BlogComponent } from './Homes/blog/blog.component';
 import {HttpClientModule} from "@angular/common/http";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { AboutComponent } from './Homes/about/about.component';
-import { ClientComponent } from './register/client/client.component';
-import { PrestataireComponent } from './register/prestataire/prestataire.component';
-import { ClientRegisterComponent } from './register/client-register/client-register.component';
-import { PrestataireRegisterComponent } from './register/prestataire-register/prestataire-register.component';
-
+import { RegisterComponent } from './register/register.component';
+import {ClientModule} from "./client/client.module";
+import {PrestataireModule} from "./prestataire/prestataire.module";
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,10 +30,7 @@ import { PrestataireRegisterComponent } from './register/prestataire-register/pr
     FooterComponent,
     BlogComponent,
     AboutComponent,
-    ClientComponent,
-    PrestataireComponent,
-    ClientRegisterComponent,
-    PrestataireRegisterComponent
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,8 +39,14 @@ import { PrestataireRegisterComponent } from './register/prestataire-register/pr
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    ClientModule,
+    PrestataireModule,
   ],
   providers: [],
+  exports: [
+    FooterComponent,
+    NavBarComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
