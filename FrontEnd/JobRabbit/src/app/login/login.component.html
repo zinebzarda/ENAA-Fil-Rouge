@@ -27,28 +27,14 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- preloader area start -->
-<div class="preloader" id="preloader">
-  <div class="preloader-inner">
-    <div class="loader_bars">
-      <span></span>
-    </div>
-  </div>
-</div>
+<!--<div class="preloader" id="preloader">-->
+<!--  <div class="preloader-inner">-->
+<!--    <div class="loader_bars">-->
+<!--      <span></span>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
 <!-- preloader area end -->
 <!-- Header area Starts -->
 <header class="header-style-01">
@@ -83,29 +69,26 @@
         <h3 class="signup-title"> Log In </h3>
         <form class="signup-forms" (ngSubmit)="onSubmit()">
           <div class="single-signup margin-top-30">
-            <label class="signup-label" for="username"> User Name* </label>
+            <label class="signup-label" for="username">User Name*</label>
             <input class="form--control" id="username" type="text" [(ngModel)]="username" name="username" placeholder="Type Name" required>
-
           </div>
           <div class="single-signup margin-top-30">
-            <label class="signup-label" for="password"> Password* </label>
-            <input class="form--control" id="password" type="password"  [(ngModel)]="password" name="password" placeholder="Type Password" required>
+            <label class="signup-label" for="password">Password*</label>
+            <input class="form--control" id="password" type="password" [(ngModel)]="password" name="password" placeholder="Type Password" required>
           </div>
-          <div class="signup-checkbox">
-            <div class="checkbox-inlines">
-              <input class="check-input" type="checkbox" id="check8">
-              <label class="checkbox-label" for="check8"> Remember me </label>
-            </div>
-            <div class="forgot-btn">
-              <a href="javascript:void(0)" class="forgot-pass"> Forgot Password </a>
-            </div>
-          </div>
-          <button type="submit"> Login Now </button>
-          <div *ngIf="errorMessage" class="error-message">
+          <button type="submit">Login Now</button>
+
+          <!-- Error message display -->
+          <div *ngIf="errorMessage" style="color: red; font-weight: bold; margin-top: 10px;">
             {{ errorMessage }}
           </div>
-          <span class="bottom-register"> Don't have Account? <a class="resgister-link" href="javascript:void(0)"> Register </a> </span>
+
+          <span class="bottom-register">
+    Don't have Account?
+    <a class="resgister-link" href="#" routerLink="/register">Register</a>
+  </span>
         </form>
+
       </div>
     </div>
   </div>

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import {AuthService} from "../services/auth.service";
-import {Router} from "@angular/router";
+import { AuthService } from "../services/auth.service";
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-login',
@@ -27,8 +27,14 @@ export class LoginComponent {
           this.router.navigate(['/client']);
         }
       },
-      error: () => {
-        this.errorMessage = 'Invalid username or password';
+      error: (errorResponse) => {
+        if (errorResponse.status === 401) {
+          this.errorMessage = 'Invalid username or password';
+        } else if (errorResponse.status === 404) {
+          this.errorMessage = 'User not registered. Please sign up first.';
+        } else {
+          this.errorMessage = 'An error occurred. Please try again later.';
+        }
       }
     });
   }
