@@ -1,0 +1,98 @@
+<form [formGroup]="registerForm" (ngSubmit)="submitForm()" id="msform-three" class="msform">
+  <ul class="registration-list step-list-two">
+    <li class="list active">
+      <a class="list-click" href="javascript:void(0)"> 1 </a>
+    </li>
+    <li class="list">
+      <a class="list-click" href="javascript:void(0)"> 2 </a>
+    </li>
+  </ul>
+
+  <!-- Provider Information -->
+  <fieldset class="fieldset-info">
+    <div class="information-all margin-top-55">
+      <h3 class="register-title"> Provider Information </h3>
+      <div class="info-forms">
+        <div class="single-forms margin-top-30">
+          <div class="single-content">
+            <label class="forms-label"> Username* </label>
+            <input class="form--control" formControlName="username" type="text" placeholder="Username" />
+          </div>
+          <div class="single-content">
+            <label class="forms-label"> Email Address* </label>
+            <input class="form--control" formControlName="email" type="email" placeholder="Type Email" />
+          </div>
+        </div>
+        <div class="single-forms margin-top-30">
+          <div class="single-content">
+            <label class="forms-label"> Password* </label>
+            <input class="form--control" formControlName="password" type="password" placeholder="Type Password" />
+          </div>
+          <div class="single-content">
+            <label class="forms-label"> Confirm Password* </label>
+            <input class="form--control" formControlName="confirmPassword" type="password" placeholder="Retype Password" />
+          </div>
+        </div>
+        <div class="single-forms margin-top-30">
+          <div class="single-content">
+            <label class="forms-label"> Domaine Expertise </label>
+            <input class="form--control" formControlName="domaineExpertise" type="text" placeholder="Expertise Domain" />
+          </div>
+          <div class="single-content">
+            <label class="forms-label"> Disponibilités </label>
+            <input class="form--control" formControlName="disponibilites" type="text" placeholder="Availability" />
+          </div>
+        </div>
+        <div class="single-forms margin-top-30">
+          <div class="single-content">
+            <label class="forms-label"> Expérience </label>
+            <input class="form--control" formControlName="experience" type="text" placeholder="Experience" />
+          </div>
+          <div class="single-content">
+            <label class="forms-label"> Tel </label>
+            <input class="form--control" formControlName="tel" type="text" placeholder="Phone Number" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+
+  <!-- Terms & Condition -->
+  <fieldset class="fieldset-condition">
+    <div class="information-all margin-top-55">
+      <h3 class="register-title"> Terms and Conditions </h3>
+      <div class="condition-info">
+        <div class="single-condition margin-top-30">
+          <div class="condition-content">
+            <div class="checkbox-inlines">
+              <input class="check-input" type="checkbox" id="check11" />
+              <label class="checkbox-label" for="check11"> I agree to the terms and conditions. </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <input type="submit" name="submit" class="next action-button" value="Submit" [disabled]="registerForm.invalid" />
+    <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+  </fieldset>
+
+  <!-- Registration Successful -->
+  <fieldset>
+    <div class="information-all margin-top-60">
+      <div class="info-success">
+        <div class="single-success margin-top-30">
+          <div class="success-content">
+            <div class="icon">
+              <i class="las la-check"></i>
+            </div>
+            <h3 class="success-title"> <small> Your provider Account </small> Registration Successful </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="btn-wrapper text-center margin-top-35">
+      <a href="#" routerLink="/home" class="cmn-btn btn-bg-1"> Back To Home </a>
+    </div>
+  </fieldset>
+</form>
