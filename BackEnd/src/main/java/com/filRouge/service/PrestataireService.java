@@ -32,8 +32,9 @@ public class PrestataireService {
         prestataire.setDomaineExpertise(prestataireRequestDTO.getDomaineExpertise());
         prestataire.setDisponibilites(prestataireRequestDTO.getDisponibilites());
         prestataire.setExperience(prestataireRequestDTO.getExperience());
-        prestataire.setTel(prestataireRequestDTO.getTel()); // Ajout du téléphone
+        prestataire.setTel(prestataireRequestDTO.getTel());
         prestataire.setRole(Role.PRESTATAIRE);
+        prestataire.setValidateStatus(ValidateStatus.EN_ATTENTE);
 
         Prestataire savedPrestataire = prestataireRepository.save(prestataire);
 
@@ -94,12 +95,12 @@ public class PrestataireService {
         return prestataireResponseDTO;
     }
 
-    // Récupérer tous les prestataires en attente de validation
+
     public List<Prestataire> getPendingPrestataires() {
         return prestataireRepository.findByValidateStatus(ValidateStatus.EN_ATTENTE);
     }
 
-    // Vérifier un prestataire en modifiant son statut
+
     public Prestataire verifyPrestataire(Long prestataireId, ValidateStatus status) {
         Prestataire prestataire = prestataireRepository.findById(prestataireId)
                 .orElseThrow(() -> new EntityNotFoundException("Prestataire non trouvé"));

@@ -49,7 +49,7 @@ public class PrestataireController {
      *
      * @return Liste des prestataires en attente
      */
-    @GetMapping("/pending")
+    @GetMapping("/enAttente")
     public List<Prestataire> getPendingPrestataires() {
         return prestataireService.getPendingPrestataires();
     }
