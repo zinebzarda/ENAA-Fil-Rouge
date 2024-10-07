@@ -1,5 +1,6 @@
 package com.filRouge.security;
 
+import com.filRouge.service.CustomUserDetailsService;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import jakarta.servlet.FilterChain;
@@ -18,7 +19,7 @@ public class JwtAuthorizationFilter extends OncePerRequestFilter {
 
     private final UserDetailsService userDetailsService;
 
-    public JwtAuthorizationFilter(UserDetailsService userDetailsService) {
+    public JwtAuthorizationFilter(CustomUserDetailsService userDetailsService) {
         this.userDetailsService = userDetailsService;
     }
 
