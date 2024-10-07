@@ -28,4 +28,7 @@ public class Services {
     @OneToMany(mappedBy = "service")
     private List<DemandeService> demandes;
 
+    @OneToMany(mappedBy = "services", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Review> reviews;
+
 }

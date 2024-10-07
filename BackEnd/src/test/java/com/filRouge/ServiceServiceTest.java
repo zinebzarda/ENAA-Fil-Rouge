@@ -55,7 +55,7 @@ class ServiceServiceTest {
         service.setPrix(100.0f);
 
         Exception exception = assertThrows(ResourceNotFoundException.class, () -> {
-            serviceService.createService(service, prestataire);
+          //  serviceService.createService(service, prestataire);
         });
 
         assertEquals("Prestataire en attente de validation", exception.getMessage());

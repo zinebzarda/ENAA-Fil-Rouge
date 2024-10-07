@@ -34,36 +34,36 @@ public class SecurityConfig {
         http.csrf(csrf -> csrf.disable())
                 .cors(withDefaults())
                 .authorizeHttpRequests(expressionInterceptUrlRegistry ->
-                        expressionInterceptUrlRegistry
-                                .requestMatchers("/connexion").permitAll()
-                                .requestMatchers("/clients/inscription").permitAll()
-                                .requestMatchers(PUT,"/clients/**").hasRole("CLIENT")
-                                .requestMatchers("/clients/allClients").hasRole("ADMIN")
-                                .requestMatchers(DELETE,"/clients/**").hasRole("ADMIN")
+                                expressionInterceptUrlRegistry
+                                        .requestMatchers("/auth/**").permitAll()
+                                        .requestMatchers("/clients/inscription").permitAll()
+                                        .requestMatchers(PUT,"/clients/**").hasRole("CLIENT")
+                                        .requestMatchers("/clients/allClients").hasRole("ADMIN")
+                                        .requestMatchers(DELETE,"/clients/**").hasRole("ADMIN")
 
 
-                                .requestMatchers(POST,"/Services/**").hasRole("PRESTATAIRE")
-                                .requestMatchers("/Services/all").hasAnyRole("ADMIN", "CLIENT")
-                                .requestMatchers(PUT,"/Services/**").hasAnyRole("ADMIN","PRESTATAIRE")
-                                .requestMatchers(DELETE,"/Services/**").hasAnyRole("ADMIN", "PRESTATAIRE")
-                                .requestMatchers("/Services/search").hasRole("CLIENT")
+                                        .requestMatchers(POST,"/services/**").hasRole("PRESTATAIRE")
+                                        .requestMatchers("/services/all").hasAnyRole("ADMIN", "CLIENT")
+                                        .requestMatchers(PUT,"/services/**").hasAnyRole("ADMIN","PRESTATAIRE")
+                                        .requestMatchers(DELETE,"/services/**").hasAnyRole("ADMIN", "PRESTATAIRE")
+                                        .requestMatchers("/services/search").hasRole("CLIENT")
 
 
 
-                                .requestMatchers(POST,"/feedback/**").hasRole("CLIENT")
-                                .requestMatchers(GET,"/feedback/**").hasRole("ADMIN")
-                                .requestMatchers(DELETE,"/feedback/**").hasRole("ADMIN")
+                                        .requestMatchers(POST,"/feedback/**").hasRole("CLIENT")
+                                        .requestMatchers(GET,"/feedback/**").hasRole("ADMIN")
+                                        .requestMatchers(DELETE,"/feedback/**").hasRole("ADMIN")
 
 
-                                .requestMatchers(POST,"/contacts/**").hasRole("CLIENT")
-                                .requestMatchers(GET,"/contacts/**").hasRole("ADMIN")
-                                .requestMatchers(DELETE,"/contacts/**").hasRole("ADMIN")
+                                        .requestMatchers(POST,"/contacts/**").hasRole("CLIENT")
+                                        .requestMatchers(GET,"/contacts/**").hasRole("ADMIN")
+                                        .requestMatchers(DELETE,"/contacts/**").hasRole("ADMIN")
 
 
-                                .requestMatchers("/prestataires/inscription").permitAll()
-                                .requestMatchers(PUT,"/prestataires/**").hasRole("ADMIN")
-                                .requestMatchers(DELETE,"/prestataires/**").hasRole("ADMIN")
-                                .requestMatchers(GET,"/prestataires/**").hasRole("ADMIN")
+                                        .requestMatchers("/prestataires/inscription").permitAll()
+                                        .requestMatchers(PUT,"/prestataires/**").hasRole("ADMIN")
+                                        .requestMatchers(DELETE,"/prestataires/**").hasRole("ADMIN")
+                                        .requestMatchers(GET,"/prestataires/**").hasRole("ADMIN")
 
 
 
@@ -87,7 +87,7 @@ public class SecurityConfig {
 
 
 
-                                .anyRequest().authenticated()
+                                        .anyRequest().authenticated()
                 )
                 .formLogin(formLogin -> formLogin.disable());
         http.addFilterBefore(new JwtAuthorizationFilter(customUserDetailsService), UsernamePasswordAuthenticationFilter.class);
