@@ -7,6 +7,6 @@ export interface Prestataire extends Personne {
   disponibilites: string;
   experience: string;
   tel: number;
-  validateStatus: ValidateStatus;
+  status: ValidateStatus;
   services: Services[];
 }
