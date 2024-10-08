@@ -16,10 +16,12 @@ import { ListComponent } from './list/list.component';
     EditComponent,
     ListComponent
   ],
-  exports: [
-    ClientComponent,
-    RegisterClientComponent
-  ],
+    exports: [
+        ClientComponent,
+        RegisterClientComponent,
+        ListComponent,
+        EditComponent
+    ],
   imports: [
     CommonModule,
     ClientRoutingModule,
