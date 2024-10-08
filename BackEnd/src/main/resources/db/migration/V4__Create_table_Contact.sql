@@ -1,6 +1,7 @@
 CREATE TABLE contact (
-                         id BIGINT AUTO_INCREMENT PRIMARY KEY,
-                         message VARCHAR(255),
-                         client_id BIGINT,
-                         FOREIGN KEY (client_id) REFERENCES client(id)
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    message TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
