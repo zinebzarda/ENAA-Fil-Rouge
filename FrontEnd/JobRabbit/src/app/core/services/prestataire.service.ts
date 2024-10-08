@@ -1,8 +1,9 @@
 // prestataire.service.ts
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { Observable } from 'rxjs';
-import {Prestataire} from "../models/prestataire";
+import {Prestataire} from "../../models/prestataire";
+import {Client} from "../../models/client";
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +11,18 @@ import {Prestataire} from "../models/prestataire";
 export class PrestataireService {
   private apiUrl = 'http://localhost:8080/prestataires';
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
+
+  private getToken(): string | null {
+    return localStorage.getItem('authToken'); // Retrieve JWT token
+  }
+
+  private getHeaders(): HttpHeaders {
+    const token = this.getToken();
+    return new HttpHeaders({
+      'Authorization': `Bearer ${token}` // Add JWT token to headers
+    });
+  }
 
   createPrestataire(prestataire: Prestataire): Observable<Prestataire> {
     return this.http.post<Prestataire>(`${this.apiUrl}/inscription`, prestataire);
@@ -24,9 +36,11 @@ export class PrestataireService {
     return this.http.get<Prestataire>(`${this.apiUrl}/${id}`);
   }
 
-  updatePrestataire(id: number, prestataire: Prestataire): Observable<Prestataire> {
-    return this.http.put<Prestataire>(`${this.apiUrl}/update/${id}`, prestataire);
+
+  updatePrestataire(prestataire: Prestataire): Observable<Client> {
+    return this.http.put<Client>(`${this.apiUrl}/update/${prestataire.id}`, prestataire, { headers: this.getHeaders() });
   }
+
 
   deletePrestataire(id: number): Observable<void> {
     return this.http.delete<void>(`${this.apiUrl}/delete/${id}`);
