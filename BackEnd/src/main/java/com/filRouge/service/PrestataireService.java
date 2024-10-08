@@ -85,6 +85,7 @@ public class PrestataireService {
     // Conversion de Prestataire vers PrestataireResponseDTO
     private PrestataireResponseDTO convertToPrestataireResponseDTO(Prestataire prestataire) {
         PrestataireResponseDTO prestataireResponseDTO = new PrestataireResponseDTO();
+        prestataireResponseDTO.setId(prestataire.getId());
         prestataireResponseDTO.setUsername(prestataire.getUsername());
         prestataireResponseDTO.setEmail(prestataire.getEmail());
         prestataireResponseDTO.setDomaineExpertise(prestataire.getDomaineExpertise());

@@ -30,11 +30,10 @@ public class ServiceService {
        var username = SecurityContextHolder.getContext().getAuthentication().getName();
         Prestataire prestataire = prestataireRepository.findByUsername(username);
         if (prestataire.getValidateStatus().equals(ValidateStatus.EN_ATTENTE)) {
-            service.setPrestataire(prestataire);
-            return serviceRepository.save(service);
+            throw new IllegalArgumentException("Prestataire en attente de validation");
         }
-        System.out.println("Prestataire en attente de validation");
-        return null;
+        service.setPrestataire(prestataire);
+        return serviceRepository.save(service);
     }
 
     public Optional<Services> findById(Long id) {
