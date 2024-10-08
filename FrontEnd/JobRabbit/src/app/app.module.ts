@@ -9,7 +9,7 @@ import {HomeComponent} from "./Homes/home/home.component";
 import { NavBarComponent } from './Homes/nav-bar/nav-bar.component';
 import { FooterComponent } from './Homes/footer/footer.component';
 import { BlogComponent } from './Homes/blog/blog.component';
-import {HttpClientModule} from "@angular/common/http";
+import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { AboutComponent } from './Homes/about/about.component';
 import { RegisterComponent } from './component/register/register.component';
@@ -18,6 +18,7 @@ import {PrestataireModule} from "./prestataire/prestataire.module";
 import {LoginComponent} from "./component/login/login.component";
 import {PageNotFoundComponent} from "./component/page-not-found/page-not-found.component";
 import {LogoutComponent} from "./component/logout/logout.component";
+import {Interceptor} from "./core/interceptor/interceptor.interceptor";
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +43,13 @@ import {LogoutComponent} from "./component/logout/logout.component";
     ClientModule,
     PrestataireModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: Interceptor,
+      multi: true
+    }
+  ],
   exports: [
     FooterComponent,
     NavBarComponent
