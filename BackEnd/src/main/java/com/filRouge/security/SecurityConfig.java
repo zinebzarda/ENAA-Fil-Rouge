@@ -55,7 +55,7 @@ public class SecurityConfig {
                                         .requestMatchers(DELETE,"/feedback/**").hasRole("ADMIN")
 
 
-                                        .requestMatchers(POST,"/contacts/**").hasRole("CLIENT")
+                                        .requestMatchers(POST,"/contacts/**").permitAll()
                                         .requestMatchers(GET,"/contacts/**").hasRole("ADMIN")
                                         .requestMatchers(DELETE,"/contacts/**").hasRole("ADMIN")
 

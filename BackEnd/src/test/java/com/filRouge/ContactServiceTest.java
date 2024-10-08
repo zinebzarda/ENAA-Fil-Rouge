@@ -48,10 +48,9 @@ class ContactServiceTest {
 
     @Test
     void testCreateContact() {
-        when(clientRepository.findById(1L)).thenReturn(Optional.of(client));
         when(contactRepository.save(contact)).thenReturn(contact);
 
-        Contact createdContact = contactService.createContact(1L, contact);
+        Contact createdContact = contactService.createContact(contact);
 
         assertNotNull(createdContact);
         assertEquals(contact.getId(), createdContact.getId());
@@ -60,17 +59,6 @@ class ContactServiceTest {
         verify(contactRepository, times(1)).save(contact);
     }
 
-    @Test
-    void testCreateContact_ClientNotFound() {
-        when(clientRepository.findById(1L)).thenReturn(Optional.empty());
-
-        Exception exception = assertThrows(ResourceNotFoundException.class, () -> {
-            contactService.createContact(1L, contact);
-        });
-
-        assertEquals("Client non trouvé avec l'id : 1", exception.getMessage());
-        verify(contactRepository, never()).save(contact);
-    }
 
     @Test
     void testFindById() {

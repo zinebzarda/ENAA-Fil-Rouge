@@ -16,9 +16,8 @@ public class ContactController {
     private ContactService contactService;
 
     @PostMapping
-    public ResponseEntity<Contact> createContact(@RequestParam Long clientId, @RequestBody Contact contact) {
-        // Crée un contact avec l'ID du client
-        Contact createdContact = contactService.createContact(clientId, contact);
+    public ResponseEntity<Contact> createContact(@RequestBody Contact contact) {
+        Contact createdContact = contactService.createContact(contact);
         return ResponseEntity.ok(createdContact);
     }
 
