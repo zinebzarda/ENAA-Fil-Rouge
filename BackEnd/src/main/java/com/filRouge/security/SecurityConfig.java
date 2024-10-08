@@ -35,6 +35,7 @@ public class SecurityConfig {
                 .cors(withDefaults())
                 .authorizeHttpRequests(expressionInterceptUrlRegistry ->
                                 expressionInterceptUrlRegistry
+                                        .requestMatchers("/reviews/**").permitAll()
                                         .requestMatchers("/auth/**").permitAll()
                                         .requestMatchers("/clients/inscription").permitAll()
                                         .requestMatchers(PUT,"/clients/**").hasRole("CLIENT")

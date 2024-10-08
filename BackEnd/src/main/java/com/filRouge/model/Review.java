@@ -1,6 +1,7 @@
 package com.filRouge.model;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.data.annotation.CreatedBy;
@@ -29,10 +30,12 @@ public class Review {
 
     @ManyToOne()
     @JoinColumn(name = "client_id", referencedColumnName = "id")
+    @JsonIgnore
     private Client client;
 
     @ManyToOne()
     @JoinColumn(name = "service_id", referencedColumnName = "id")
+    @JsonIgnore
     private Services services;
 
 
