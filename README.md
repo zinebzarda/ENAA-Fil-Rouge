@@ -1,36 +1,36 @@
-# Service Booking Application
+# Application de Réservation de Services
 
-Welcome to the Service Booking Application! This platform allows users to connect with service providers such as plumbers and mechanics, enabling easy booking and management of services. The application supports three user roles: **Service Provider (Prestatire)**, **Client**, and **Admin**.
+Bienvenue dans l'Application de Réservation de Services ! Cette plateforme permet aux utilisateurs de se connecter avec des prestataires de services tels que des plombiers et des mécaniciens, facilitant ainsi la réservation et la gestion de services. L'application prend en charge trois rôles d'utilisateur : **Prestataire de Services**, **Client**, et **Administrateur**.
 
-## Table of Contents
+## Table des Matières
 
-- [Features](#features)
-- [Technologies Used](#technologies-used)
+- [Fonctionnalités](#fonctionnalités)
+- [Technologies Utilisées](#technologies-utilisées)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Utilisation](#utilisation)
+- [Contribuer](#contribuer)
+- [Licence](#licence)
 - [Contact](#contact)
 
-## Features
+## Fonctionnalités
 
-- **User Roles:**
-  - **Service Provider (Prestatire):** Can list their services, manage bookings, and update their profile.
-  - **Client:** Can browse services, book appointments, and manage their bookings.
-  - **Admin:** Can manage users, oversee service listings, and handle system configurations.
+- **Rôles Utilisateurs :**
+  - **Prestataire de Services :** Peut lister ses services, gérer les réservations et mettre à jour son profil.
+  - **Client :** Peut parcourir les services, réserver des rendez-vous et gérer ses réservations.
+  - **Administrateur :** Peut gérer les utilisateurs, superviser les listings de services et gérer les configurations du système.
 
-- **Authentication & Security:** 
-  - Implemented using Spring Boot Security with JWT for secure user authentication.
+- **Authentification & Sécurité :** 
+  - Implémentée avec Spring Boot Security et JWT pour une authentification sécurisée des utilisateurs.
 
-- **Service Management:** 
-  - Clients can search and filter available services, and Service Providers can manage their service listings.
+- **Gestion des Services :** 
+  - Les clients peuvent rechercher et filtrer les services disponibles, et les prestataires de services peuvent gérer leurs listings.
 
-- **Responsive Design:**
-  - Built using Angular with Bootstrap and Angular Material for a user-friendly interface.
+- **Design Réactif :**
+  - Développé avec Angular et Bootstrap, ainsi qu'Angular Material pour une interface conviviale.
 
-## Technologies Used
+## Technologies Utilisées
 
-- **Backend:**
+- **Backend :**
   - Spring Boot
   - Spring Security (JWT)
   - Maven
@@ -41,22 +41,22 @@ Welcome to the Service Booking Application! This platform allows users to connec
   - JUnit
   - Mockito
 
-- **Frontend:**
+- **Frontend :**
   - Angular
   - Angular CLI
   - Bootstrap
   - CSS
   - Angular Material
 
-- **Design Tools:**
-  - Figma for UI/UX design
-  - UML for application modeling
+- **Outils de Design :**
+  - Figma pour la conception UI/UX
+  - UML pour la modélisation de l'application
 
 ## Installation
 
-To run the application locally, follow these steps:
+Pour exécuter l'application localement, suivez ces étapes :
 
-1. Clone the repository:
+1. Clonez le dépôt :
 
    ```bash
    git clone https://github.com/yourusername/service-booking-app.git
