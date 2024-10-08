@@ -139,6 +139,7 @@ public class ClientService {
     // Convertir Client en ClientResponseDTO
     private ClientResponseDTO convertToClientResponseDTO(Client client) {
         ClientResponseDTO clientResponseDTO = new ClientResponseDTO();
+        clientResponseDTO.setId(client.getId());
         clientResponseDTO.setUsername(client.getUsername());
         clientResponseDTO.setEmail(client.getEmail());
         clientResponseDTO.setAdresse(client.getAdresse());
