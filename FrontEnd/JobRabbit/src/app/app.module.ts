@@ -21,6 +21,7 @@ import {LogoutComponent} from "./component/logout/logout.component";
 import {Interceptor} from "./core/interceptor/interceptor.interceptor";
 import { AddComponent } from './contact/add/add.component';
 import { ListContactComponent } from './contact/list-contact/list-contact.component';
+import { ReviewComponent } from './review/review/review.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +37,7 @@ import { ListContactComponent } from './contact/list-contact/list-contact.compon
     RegisterComponent,
     AddComponent,
     ListContactComponent,
+    ReviewComponent,
   ],
   imports: [
     BrowserModule,
