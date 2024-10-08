@@ -11,6 +11,8 @@ import {RegisterComponent} from "./component/register/register.component";
 import {LoginComponent} from "./component/login/login.component";
 import {LogoutComponent} from "./component/logout/logout.component";
 import {PageNotFoundComponent} from "./component/page-not-found/page-not-found.component";
+import {AddComponent} from "./contact/add/add.component";
+import {ListContactComponent} from "./contact/list-contact/list-contact.component";
 
 const routes: Routes = [
   { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
@@ -24,6 +26,8 @@ const routes: Routes = [
   { path: 'blog', component: BlogComponent },
   { path: 'about', component: AboutComponent },
   { path: 'footer', component: FooterComponent },
+  { path: 'addContact', component: AddComponent },
+  { path: 'listContact', component: ListContactComponent },
   { path: 'home', component: HomeComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }

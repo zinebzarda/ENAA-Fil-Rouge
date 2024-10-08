@@ -15,13 +15,13 @@ public class ContactController {
     @Autowired
     private ContactService contactService;
 
-    @PostMapping
+    @PostMapping("add")
     public ResponseEntity<Contact> createContact(@RequestBody Contact contact) {
         Contact createdContact = contactService.createContact(contact);
         return ResponseEntity.ok(createdContact);
     }
 
-    @GetMapping
+    @GetMapping("/all")
     public ResponseEntity<List<Contact>> getAllContacts() {
         List<Contact> contacts = contactService.getAllContacts();
         return ResponseEntity.ok(contacts);
@@ -31,12 +31,12 @@ public class ContactController {
     public ResponseEntity<Contact> getContactById(@PathVariable Long id) {
         Contact contact = contactService.findById(id);
         if (contact == null) {
-            return ResponseEntity.notFound().build(); // Retourne 404 si le contact n'est pas trouvé
+            return ResponseEntity.notFound().build();
         }
         return ResponseEntity.ok(contact);
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("delete/{id}")
     public ResponseEntity<Void> deleteContact(@PathVariable Long id) {
         contactService.deleteContact(id);
         return ResponseEntity.noContent().build(); // Retourne 204 No Content

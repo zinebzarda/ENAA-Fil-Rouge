@@ -19,6 +19,8 @@ import {LoginComponent} from "./component/login/login.component";
 import {PageNotFoundComponent} from "./component/page-not-found/page-not-found.component";
 import {LogoutComponent} from "./component/logout/logout.component";
 import {Interceptor} from "./core/interceptor/interceptor.interceptor";
+import { AddComponent } from './contact/add/add.component';
+import { ListContactComponent } from './contact/list-contact/list-contact.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +34,8 @@ import {Interceptor} from "./core/interceptor/interceptor.interceptor";
     BlogComponent,
     AboutComponent,
     RegisterComponent,
+    AddComponent,
+    ListContactComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,7 +56,8 @@ import {Interceptor} from "./core/interceptor/interceptor.interceptor";
   ],
   exports: [
     FooterComponent,
-    NavBarComponent
+    NavBarComponent,
+    ListContactComponent
   ],
   bootstrap: [AppComponent]
 })
