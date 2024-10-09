@@ -3,13 +3,13 @@
 Bienvenue dans l'**Application de Réservation de Services** ! 🌟 Cette plateforme connecte les utilisateurs avec des prestataires de services comme des plombiers et des mécaniciens, facilitant ainsi la réservation et la gestion de services. Nous avons trois rôles d'utilisateur pour rendre les choses intéressantes : Prestataires de Services, Clients, et Administrateurs. 💼
 
 ## Table des Matières 📚
-- [Fonctionnalités](#fonctionnalités)
+- [Fonctionnalités](#Fonctionnalités)
 - [Technologies Utilisées](#technologies-utilisées)
-- [Installation](#installation)
-- [Utilisation](#utilisation)
-- [Contribuer](#contribuer)
-- [Licence](#licence)
-- [Contact](#contact)
+- [Installation](#Installation)
+- [Utilisation](#Utilisation)
+- [Contribuer](#Contribuer)
+- [Licence](#Licence)
+- [Contact](#Contact)
 
 ## Fonctionnalités 🌈
 
