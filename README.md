@@ -145,6 +145,6 @@ Ce projet est sous licence **MIT**. Vous êtes libre de l'utiliser et de le modi
 Si vous avez des questions ou des suggestions, n'hésitez pas à nous contacter :
 
 - **Nom** : Zineb Zarda
-- **Email** : [zinab.zarda@gmail.com](mailto:zinab.zarda@gmail.com)
+- **Email** : [zinabzarda1@gmail.com](mailto:zinab.zarda@gmail.com)
 
 Merci d'avoir consulté **TaskRabbit** ! Nous espérons que cette plateforme facilitera la mise en relation rapide et sécurisée entre prestataires et clients. 😊
