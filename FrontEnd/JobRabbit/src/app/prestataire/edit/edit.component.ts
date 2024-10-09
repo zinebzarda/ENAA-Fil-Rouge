@@ -1,8 +1,6 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {Prestataire} from "../../models/prestataire";
 import {PrestataireService} from "../../core/services/prestataire.service";
-import {Client} from "../../models/client";
-import {ClientService} from "../../core/services/client.service";
 
 @Component({
   selector: 'app-edit',

@@ -1,52 +1,77 @@
-.edit-prestataire-form {
-  background-color: #ffffff; /* Fond blanc pour le formulaire */
-  border-radius: 8px; /* Coins arrondis */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
-  padding: 20px; /* Espacement interne */
-  max-width: 500px; /* Largeur maximum */
-  margin: 20px auto; /* Centre le formulaire horizontalement */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: opacity 0.3s ease;
 }
 
-/* Styles des labels */
-.edit-prestataire-form label {
-  display: block; /* Affichage en bloc pour les labels */
-  margin-bottom: 5px; /* Marge en bas des labels */
-  font-weight: bold; /* Texte en gras */
+.popup-content {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 630px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease;
+  opacity: 0.9;
 }
 
-/* Styles des champs d'entrée */
-.edit-prestataire-form input,
-.edit-prestataire-form select,
-.edit-prestataire-form textarea {
-  width: 100%; /* Prend toute la largeur */
-  padding: 10px; /* Espacement interne */
-  margin-bottom: 15px; /* Marge en bas des champs */
-  border: 1px solid #ccc; /* Bordure grise */
-  border-radius: 4px; /* Coins arrondis */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
 }
 
-/* Styles pour le bouton */
-.edit-prestataire-form button {
-  background-color: #4CAF50; /* Couleur de fond verte */
-  color: white; /* Couleur du texte en blanc */
-  border: none; /* Pas de bordure */
-  padding: 10px 15px; /* Espacement interne */
-  border-radius: 5px; /* Coins arrondis */
-  cursor: pointer; /* Curseur pointer */
-  transition: background-color 0.3s; /* Transition pour l'effet de survol */
+.form-group {
+  flex: 1;
+  margin-right: 10px;
 }
 
-/* Effet de survol pour les boutons */
-.edit-prestataire-form button:hover {
-  background-color: #45a049; /* Couleur plus sombre au survol */
+.form-row:last-child .form-group {
+  margin-right: 0;
 }
 
-/* Styles pour le bouton d'annulation */
-.edit-prestataire-form button[type="button"] {
-  background-color: #f44336; /* Couleur rouge pour le bouton d'annulation */
+.popup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
-/* Effet de survol pour le bouton d'annulation */
-.edit-prestataire-form button[type="button"]:hover {
-  background-color: #d32f2f; /* Couleur plus sombre au survol */
+.popup input,
+.popup select,
+.popup textarea {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 12px;
+  border: 1px solid #700caa;
+  border-radius: 5px;
+}
+
+.popup button {
+  background-color: #2bd686;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.popup button:hover {
+  background-color: #2bd686;
+}
+
+.popup button[type="button"] {
+  background-color: #a940a9;
+}
+
+.popup button[type="button"]:hover {
+  background-color: #a940a9;
 }

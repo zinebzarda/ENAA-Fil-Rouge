@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Prestataire } from "../../models/prestataire";
 import { PrestataireService } from "../../core/services/prestataire.service";
-import { PageEvent } from '@angular/material/paginator'; // Import PageEvent
+import { PageEvent } from '@angular/material/paginator';
 import { ValidateStatus } from "../../models/enums/validate-status.enum";
 
 @Component({
@@ -24,7 +24,7 @@ export class ListComponent implements OnInit {
   activeCount: number = 0;
   totalPrestataires: number = 0;
 
-  activeTab: string = 'all'; // Valeur par défaut pour afficher tous les prestataires
+  activeTab: string = 'all';
 
   constructor(private prestataireService: PrestataireService) { }
 
@@ -49,7 +49,7 @@ export class ListComponent implements OnInit {
   updatePaginatedPrestataires(): void {
     const startIndex = this.pageIndex * this.pageSize;
 
-    // Filtrer les prestataires en fonction de l'onglet actif
+
     let filteredPrestataires: Prestataire[];
     if (this.activeTab === 'validated') {
       filteredPrestataires = this.prestataires.filter(p => p.status === ValidateStatus.ACCEPTE);
@@ -58,7 +58,7 @@ export class ListComponent implements OnInit {
     } else if (this.activeTab === 'rejected') {
       filteredPrestataires = this.prestataires.filter(p => p.status === ValidateStatus.REFUSE);
     } else {
-      filteredPrestataires = this.prestataires; // Tous les prestataires
+      filteredPrestataires = this.prestataires;
     }
 
     this.paginatedPrestataires = filteredPrestataires.slice(startIndex, startIndex + this.pageSize);
