@@ -7,6 +7,7 @@ import { RegisterPraistataireComponent } from './register-praistataire/register-
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { ListComponent } from './list/list.component';
 import { EditComponent } from './edit/edit.component';
+import {MatPaginatorModule} from "@angular/material/paginator";
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { EditComponent } from './edit/edit.component';
     CommonModule,
     PrestataireRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    MatPaginatorModule
   ]
 })
 export class PrestataireModule { }

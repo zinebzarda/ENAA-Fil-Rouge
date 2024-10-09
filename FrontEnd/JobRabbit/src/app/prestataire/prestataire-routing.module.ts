@@ -4,7 +4,6 @@ import { PrestataireComponent } from './prestataire.component';
 import {RegisterPraistataireComponent} from "./register-praistataire/register-praistataire.component";
 
 const routes: Routes = [
-  { path: '', component: PrestataireComponent },
   { path: 'register', component:RegisterPraistataireComponent}
 ];
 
