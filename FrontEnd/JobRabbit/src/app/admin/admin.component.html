@@ -1,3 +1,11 @@
+<!--<app-list></app-list>-->
+
+
+<!--<app-prestataire></app-prestataire>-->
+
+<!--<a href="#" routerLink="/listContact">list</a>-->
+
+
 <!-- preloader area start -->
 <!--<div class="preloader" id="preloader">-->
 <!--  <div class="preloader-inner">-->
@@ -17,7 +25,7 @@
           <i class="las la-bars"></i>
         </div>
       </div>
-      <div class="dashboard-left-content">
+      <div class="dashboard-left-content" >
         <div class="dashboard-close-main">
           <div class="close-bars"> <i class="las la-times"></i> </div>
           <div class="dashboard-top padding-top-40">
@@ -32,7 +40,7 @@
           <div class="dashboard-bottom margin-top-35 margin-bottom-50">
             <ul class="dashboard-list ">
               <li class="list">
-                <a href="dashboard.html"> <i class="las la-th"></i> Dashboard </a>
+                <a href="#" routerLink="/admin/listContact"> <i class="las la-th"></i> Dashboard </a>
               </li>
               <li class="list has-children">
                 <a href="javascript:void(0)"> <i class="las la-cogs"></i> Services </a>
@@ -43,7 +51,7 @@
                 </ul>
               </li>
               <li class="list">
-                <a href="dashboard_orders_pending.html"> <i class="las la-tasks"></i> Order Pending </a>
+                <a href="#" routerLink="/prestataire"> <i class="las la-tasks"></i> Order Pending </a>
               </li>
               <li class="list">
                 <a href="dashboard_order.html"> <i class="las la-tasks"></i> Order Status </a>
@@ -93,7 +101,7 @@
             </div>
           </div>
           <div class="col-xl-3 col-md-6 margin-bottom-30 orders-child">
-            <div class="single-orders">
+            <div class="single-orders" style="box-shadow: 0px 4px 15px rgba(128, 0, 128, 0.5);">
               <div class="orders-shapes">
                 <img src="assets/img/dashboard/orders-shapes2.png" alt="">
               </div>
@@ -109,7 +117,7 @@
             </div>
           </div>
           <div class="col-xl-3 col-md-6 margin-bottom-30 orders-child">
-            <div class="single-orders">
+            <div class="single-orders" style="box-shadow: 0px 4px 15px rgba(128, 0, 128, 0.5);">
               <div class="orders-shapes">
                 <img src="assets/img/dashboard/orders-shapes3.png" alt="">
               </div>
@@ -125,7 +133,7 @@
             </div>
           </div>
           <div class="col-xl-3 col-md-6 margin-bottom-30 orders-child">
-            <div class="single-orders">
+            <div class="single-orders" style="box-shadow: 0px 4px 15px rgba(128, 0, 128, 0.5);">
               <div class="orders-shapes">
                 <img src="assets/img/dashboard/orders-shapes4.png" alt="">
               </div>
@@ -140,13 +148,14 @@
               </div>
             </div>
           </div>
-          <app-list-contact></app-list-contact>
         </div>
+        <router-outlet></router-outlet>
       </div>
     </div>
   </div>
 </div>
-<!-- Dashboard area end -->
+
+      <!-- Dashboard area end -->
 <!-- back to top area start -->
 <div class="back-to-top">
   <span class="back-top"><i class="las la-angle-up"></i></span>

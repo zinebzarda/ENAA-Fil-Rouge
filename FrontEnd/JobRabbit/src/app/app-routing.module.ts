@@ -29,7 +29,6 @@ const routes: Routes = [
   { path: 'faq', component: FaqComponent },
   { path: 'footer', component: FooterComponent },
   { path: 'addContact', component: AddComponent },
-  { path: 'listContact', component: ListContactComponent },
   { path: 'home', component: HomeComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
