@@ -13,6 +13,7 @@ import {LogoutComponent} from "./component/logout/logout.component";
 import {PageNotFoundComponent} from "./component/page-not-found/page-not-found.component";
 import {AddComponent} from "./contact/add/add.component";
 import {ListContactComponent} from "./contact/list-contact/list-contact.component";
+import {FaqComponent} from "./Homes/faq/faq.component";
 
 const routes: Routes = [
   { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'category', component: CategoryComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'faq', component: FaqComponent },
   { path: 'footer', component: FooterComponent },
   { path: 'addContact', component: AddComponent },
   { path: 'listContact', component: ListContactComponent },

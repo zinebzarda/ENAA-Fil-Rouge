@@ -17,7 +17,7 @@ import {AppModule} from "../app.module";
     AdminRoutingModule,
     ClientModule,
     PrestataireModule,
-
+    AppModule
   ]
 })
 export class AdminModule { }

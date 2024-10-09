@@ -1,15 +1,3 @@
-<!--<p>admin works!</p>-->
-
-<!--<app-list></app-list>-->
-
-
-<!--<app-prestataire></app-prestataire>-->
-
-<!--<a href="#" routerLink="/listContact">list</a>-->
-
-
-
-
 <!-- preloader area start -->
 <!--<div class="preloader" id="preloader">-->
 <!--  <div class="preloader-inner">-->
@@ -41,9 +29,9 @@
               <span class="small-title"> Owner CleanMart </span>
             </div>
           </div>
-          <div class="dashboard-bottom margin-top-20">
+          <div class="dashboard-bottom margin-top-35 margin-bottom-50">
             <ul class="dashboard-list ">
-              <li class="list active">
+              <li class="list">
                 <a href="dashboard.html"> <i class="las la-th"></i> Dashboard </a>
               </li>
               <li class="list has-children">
@@ -60,7 +48,7 @@
               <li class="list">
                 <a href="dashboard_order.html"> <i class="las la-tasks"></i> Order Status </a>
               </li>
-              <li class="list">
+              <li class="list active">
                 <a href="dashboard_payout.html"> <i class="las la-dollar-sign"></i> Payout History </a>
               </li>
               <li class="list has-children">
@@ -87,253 +75,72 @@
         </div>
       </div>
       <div class="dashboard-right">
-        <div class="dashboard-top-cards">
-          <div class="row">
-            <div class="col-xl-3 col-md-6 margin-bottom-30 orders-child">
-              <div class="single-orders">
-                <div class="orders-shapes">
-                  <img src="assets/img/dashboard/orders-shapes.png" alt="">
-                </div>
-                <div class="orders-flex-content">
-                  <div class="icon">
-                    <i class="las la-tasks"></i>
-                  </div>
-                  <div class="contents">
-                    <h2 class="order-titles"> 12 </h2>
-                    <span class="order-para"> Order Pending </span>
-                  </div>
-                </div>
+        <div class="row">
+          <div class="col-xl-3 col-md-6 margin-bottom-30 orders-child">
+            <div class="single-orders">
+              <div class="orders-shapes">
+                <img src="assets/img/dashboard/orders-shapes.png" alt="">
               </div>
-            </div>
-            <div class="col-xl-3 col-md-6 margin-bottom-30 orders-child">
-              <div class="single-orders">
-                <div class="orders-shapes">
-                  <img src="assets/img/dashboard/orders-shapes2.png" alt="">
+              <div class="orders-flex-content">
+                <div class="icon">
+                  <i class="las la-tasks"></i>
                 </div>
-                <div class="orders-flex-content">
-                  <div class="icon">
-                    <i class="las la-handshake"></i>
-                  </div>
-                  <div class="contents">
-                    <h2 class="order-titles"> 2350 </h2>
-                    <span class="order-para"> Order Completed </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6 margin-bottom-30 orders-child">
-              <div class="single-orders">
-                <div class="orders-shapes">
-                  <img src="assets/img/dashboard/orders-shapes3.png" alt="">
-                </div>
-                <div class="orders-flex-content">
-                  <div class="icon">
-                    <i class="las la-dollar-sign"></i>
-                  </div>
-                  <div class="contents">
-                    <h2 class="order-titles"> 12 </h2>
-                    <span class="order-para"> Total Earning </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6 margin-bottom-30 orders-child">
-              <div class="single-orders">
-                <div class="orders-shapes">
-                  <img src="assets/img/dashboard/orders-shapes4.png" alt="">
-                </div>
-                <div class="orders-flex-content">
-                  <div class="icon">
-                    <i class="las la-file-invoice-dollar"></i>
-                  </div>
-                  <div class="contents">
-                    <h2 class="order-titles"> 2350 </h2>
-                    <span class="order-para"> Balance </span>
-                  </div>
+                <div class="contents">
+                  <h2 class="order-titles"> 12 </h2>
+                  <span class="order-para"> Order Pending </span>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-<!--        <div class="dashboard-middle-flex marg-reverse-30">-->
-<!--          <div class="single-flex-middle margin-top-40">-->
-<!--            <div class="line-charts-wrapper">-->
-<!--              <div class="line-top-contents">-->
-<!--                <h5 class="earning-title"> Total Earning Overview </h5>-->
-<!--                <div class="line-chart-select">-->
-<!--                  <select>-->
-<!--                    <option value="1">Jan</option>-->
-<!--                    <option value="2">Feb</option>-->
-<!--                    <option value="2">Mar</option>-->
-<!--                    <option value="2">Apr</option>-->
-<!--                    <option value="2">May</option>-->
-<!--                    <option value="2">Jun</option>-->
-<!--                    <option value="2">Jul</option>-->
-<!--                    <option value="2">Aug</option>-->
-<!--                    <option value="2">Sep</option>-->
-<!--                    <option value="2">Oct</option>-->
-<!--                    <option value="2">Nov</option>-->
-<!--                    <option value="2">Dec</option>-->
-<!--                  </select>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--              <div class="line-charts">-->
-<!--                <canvas id="line-chart"></canvas>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <div class="single-flex-middle">-->
-<!--            <div class="single-flex-middle-inner">-->
-<!--              <div class="line-charts-wrapper margin-top-40">-->
-<!--                <div class="line-top-contents">-->
-<!--                  <h5 class="earning-title"> To do List </h5>-->
-<!--                  <div class="line-chart-select style-02">-->
-<!--                    <select>-->
-<!--                      <option value="1">See More</option>-->
-<!--                      <option value="2">See More</option>-->
-<!--                      <option value="2">See More</option>-->
-<!--                      <option value="2">See More</option>-->
-<!--                      <option value="2">See More</option>-->
-<!--                      <option value="2">See More</option>-->
-<!--                      <option value="2">See More</option>-->
-<!--                      <option value="2">See More</option>-->
-<!--                      <option value="2">See More</option>-->
-<!--                      <option value="2">See More</option>-->
-<!--                      <option value="2">See More</option>-->
-<!--                      <option value="2">See More</option>-->
-<!--                    </select>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--                <div class="single-checbox">-->
-<!--                  <div class="checkbox-inlines">-->
-<!--                    <input class="check-input" type="checkbox" id="check15">-->
-<!--                    <label class="checkbox-label" for="check15"> It is a long established fact that a reader will be distracted. </label>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--                <div class="single-checbox">-->
-<!--                  <div class="checkbox-inlines">-->
-<!--                    <input class="check-input" type="checkbox" id="check16">-->
-<!--                    <label class="checkbox-label" for="check16"> It is a long established fact that a reader will be distracted. </label>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--                <div class="single-checbox">-->
-<!--                  <div class="checkbox-inlines">-->
-<!--                    <input class="check-input" type="checkbox" id="check17">-->
-<!--                    <label class="checkbox-label" for="check17"> It is a long established fact that a reader will be distracted. </label>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--              <div class="line-charts-wrapper margin-top-40">-->
-<!--                <div class="line-top-contents">-->
-<!--                  <h5 class="earning-title"> This Month Summery </h5>-->
-<!--                </div>-->
-<!--                <div class="chart-summery-inner">-->
-<!--                  <div class="single-chart-summery">-->
-<!--                    <div class="icon">-->
-<!--                      <i class="las la-tasks"></i>-->
-<!--                    </div>-->
-<!--                    <div class="contents">-->
-<!--                      <h4 class="title"> 130 </h4>-->
-<!--                      <span class="title-para"> Order </span>-->
-<!--                    </div>-->
-<!--                  </div>-->
-<!--                  <div class="single-chart-summery">-->
-<!--                    <div class="icon">-->
-<!--                      <i class="las la-dollar-sign"></i>-->
-<!--                    </div>-->
-<!--                    <div class="contents">-->
-<!--                      <h4 class="title"> $6500 </h4>-->
-<!--                      <span class="title-para"> Earning </span>-->
-<!--                    </div>-->
-<!--                  </div>-->
-<!--                  <div class="single-chart-summery">-->
-<!--                    <div class="icon">-->
-<!--                      <i class="las la-file-invoice-dollar"></i>-->
-<!--                    </div>-->
-<!--                    <div class="contents">-->
-<!--                      <h4 class="title"> 3250 </h4>-->
-<!--                      <span class="title-para"> Balance </span>-->
-<!--                    </div>-->
-<!--                  </div>-->
-<!--                  <div class="single-chart-summery">-->
-<!--                    <div class="icon">-->
-<!--                      <i class="las la-male"></i>-->
-<!--                    </div>-->
-<!--                    <div class="contents">-->
-<!--                      <h4 class="title"> 340 </h4>-->
-<!--                      <span class="title-para"> Repeat Buyer </span>-->
-<!--                    </div>-->
-<!--                  </div>-->
-<!--                </div>-->
-
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-        <div class="dashboard-middle-flex style-02">
-          <div class="single-flex-middle margin-top-40">
-            <div class="line-charts-wrapper">
-              <div class="table-responsive table-responsive--md">
-                <table class="custom--table">
-                  <thead>
-                  <tr>
-                    <th> Client Name </th>
-                    <th> Status </th>
-                    <th> Location </th>
-                    <th> Price </th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td data-label="Client Name"> Riyad Hossain </td>
-                    <td class="completed" data-label="Status"> Completed </td>
-                    <td data-label="Location"> New York </td>
-                    <td data-label="Price"> $1475 </td>
-                  </tr>
-                  <tr>
-                    <td data-label="Client Name"> Arafat Hossain </td>
-                    <td class="canceled" data-label="Status"> Canceled </td>
-                    <td data-label="Location"> Oklahoma </td>
-                    <td data-label="Price"> $1370 </td>
-                  </tr>
-                  <tr>
-                    <td data-label="Client Name"> Shafiq Islam </td>
-                    <td class="pending" data-label="Status"> Pending </td>
-                    <td data-label="Location"> Washington </td>
-                    <td data-label="Price"> $1365 </td>
-                  </tr>
-                  <tr>
-                    <td data-label="Client Name"> Sharif Ahmed </td>
-                    <td class="completed" data-label="Status"> Completed </td>
-                    <td data-label="Location"> Barcelona </td>
-                    <td data-label="Price"> $1400 </td>
-                  </tr>
-                  </tbody>
-                </table>
+          <div class="col-xl-3 col-md-6 margin-bottom-30 orders-child">
+            <div class="single-orders">
+              <div class="orders-shapes">
+                <img src="assets/img/dashboard/orders-shapes2.png" alt="">
               </div>
-            </div>
-          </div>
-          <div class="single-flex-middle margin-top-40">
-            <div class="line-charts-wrapper">
-              <div class="line-top-contents">
-                <h5 class="earning-title"> Weekly Work Summery </h5>
-                <div class="line-chart-select">
-                  <select>
-                    <option value="1">Sun</option>
-                    <option value="2">Mon</option>
-                    <option value="3">Tue</option>
-                    <option value="4">Wed</option>
-                    <option value="5">Thu</option>
-                    <option value="6">Fri</option>
-                    <option value="7">Sat</option>
-                  </select>
+              <div class="orders-flex-content">
+                <div class="icon">
+                  <i class="las la-handshake"></i>
+                </div>
+                <div class="contents">
+                  <h2 class="order-titles"> 2350 </h2>
+                  <span class="order-para"> Order Completed </span>
                 </div>
               </div>
-              <div class="group-bar-charts">
-                <canvas id="bar-chart-grouped"></canvas>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6 margin-bottom-30 orders-child">
+            <div class="single-orders">
+              <div class="orders-shapes">
+                <img src="assets/img/dashboard/orders-shapes3.png" alt="">
+              </div>
+              <div class="orders-flex-content">
+                <div class="icon">
+                  <i class="las la-dollar-sign"></i>
+                </div>
+                <div class="contents">
+                  <h2 class="order-titles"> 12 </h2>
+                  <span class="order-para"> Total Earning </span>
+                </div>
               </div>
             </div>
           </div>
+          <div class="col-xl-3 col-md-6 margin-bottom-30 orders-child">
+            <div class="single-orders">
+              <div class="orders-shapes">
+                <img src="assets/img/dashboard/orders-shapes4.png" alt="">
+              </div>
+              <div class="orders-flex-content">
+                <div class="icon">
+                  <i class="las la-file-invoice-dollar"></i>
+                </div>
+                <div class="contents">
+                  <h2 class="order-titles"> 2350 </h2>
+                  <span class="order-para"> Balance </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <app-list-contact></app-list-contact>
         </div>
       </div>
     </div>

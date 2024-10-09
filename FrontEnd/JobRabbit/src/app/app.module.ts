@@ -22,6 +22,8 @@ import {Interceptor} from "./core/interceptor/interceptor.interceptor";
 import { AddComponent } from './contact/add/add.component';
 import { ListContactComponent } from './contact/list-contact/list-contact.component';
 import { ReviewComponent } from './review/review/review.component';
+import { FaqComponent } from './Homes/faq/faq.component';
+import {MatPaginatorModule} from "@angular/material/paginator";
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +40,7 @@ import { ReviewComponent } from './review/review/review.component';
     AddComponent,
     ListContactComponent,
     ReviewComponent,
+    FaqComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,6 +51,7 @@ import { ReviewComponent } from './review/review/review.component';
     BrowserAnimationsModule,
     ClientModule,
     PrestataireModule,
+    MatPaginatorModule,
   ],
   providers: [
     {
