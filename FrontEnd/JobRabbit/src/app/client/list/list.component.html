@@ -1,0 +1,27 @@
+<div class="client-list">
+  <h2>Client List</h2>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Username</th>
+      <th>Email</th>
+      <th>Adresse</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let client of clients">
+      <td>{{ client.username }}</td>
+      <td>{{ client.email }}</td>
+      <td>{{ client.adresse }}</td>
+      <td>
+        <button class="edit-btn" (click)="openEditPopup(client)">Modifier</button>
+        <button class="delete-btn" (click)="deleteClient(client.id)">Supprimer</button>
+
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <!-- Popup de modification -->
+<app-edit *ngIf="showEditPopup" [client]="selectedClient" (closePopup)="closeEditPopup()"></app-edit>
+</div>

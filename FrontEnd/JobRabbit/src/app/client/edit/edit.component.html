@@ -1,0 +1,21 @@
+<div *ngIf="client" class="edit-client-form">
+  <form (ngSubmit)="onSubmit()">
+    <div>
+      <label for="username">Username</label>
+      <input id="username" [(ngModel)]="client.username" name="username" required>
+    </div>
+
+    <div>
+      <label for="email">Email</label>
+      <input id="email" [(ngModel)]="client.email" name="email" required type="email">
+    </div>
+
+    <div>
+      <label for="adresse">Adresse</label>
+      <input id="adresse" [(ngModel)]="client.adresse" name="adresse" required type="text">
+    </div>
+
+    <button type="submit">Save</button>
+    <button type="button" (click)="closePopupMethod()">Cancel</button>
+  </form>
+</div>

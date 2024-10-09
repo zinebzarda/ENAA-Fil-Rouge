@@ -1,0 +1,44 @@
+<div class="col-lg-12">
+  <div class="dashboard-settings dashboard-flex-shwing margin-top-20">
+    <h2 class="dashboards-title">Contact List</h2>
+    <span class="show-page-num">Showing {{ paginatedContacts.length }} of {{ contacts.length }}</span>
+  </div>
+</div>
+<div class="col-lg-12 margin-top-20">
+  <div class="single-dashboard-order">
+    <div class="table-responsive table-responsive--md">
+      <table class="custom--table">
+        <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Message</th>
+          <th>Created At</th>
+          <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let contact of paginatedContacts">
+          <td data-label="Name">{{ contact.name }}</td>
+          <td data-label="Email">{{ contact.email }}</td>
+          <td data-label="Phone">{{ contact.phone }}</td>
+          <td data-label="Message">{{ contact.message }}</td>
+          <td data-label="Created At">{{ formatDate(contact.createdAt) }}</td>
+          <td data-label="Actions">
+            <a class="delete-link" (click)="deleteContact(contact.id); showAlert()">
+              <span class="icon color-three"><i class="las la-trash"></i></span> Supprimer
+            </a>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <mat-paginator
+      [length]="contacts.length"
+      [pageSize]="pageSize"
+      [pageSizeOptions]="[5, 10, 20]"
+      (page)="onPageChange($event)">
+    </mat-paginator>
+  </div>
+</div>

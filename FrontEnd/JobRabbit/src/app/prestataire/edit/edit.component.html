@@ -1,0 +1,50 @@
+<div *ngIf="prestataire" class="edit-prestataire-form">
+  <form (ngSubmit)="onSubmit()">
+    <div>
+      <label for="username">Username</label>
+      <input id="username" [(ngModel)]="prestataire.username" name="username" required>
+    </div>
+
+    <div>
+      <label for="email">Email</label>
+      <input id="email" [(ngModel)]="prestataire.email" name="email" required type="email">
+    </div>
+
+    <div>
+      <label for="domaineExpertise">Domaine d'expertise</label>
+      <input id="domaineExpertise" [(ngModel)]="prestataire.domaineExpertise" name="domaineExpertise" required>
+    </div>
+
+    <div>
+      <label for="disponibilites">Disponibilités</label>
+      <input id="disponibilites" [(ngModel)]="prestataire.disponibilites" name="disponibilites" required>
+    </div>
+
+    <div>
+      <label for="experience">Expérience</label>
+      <input id="experience" [(ngModel)]="prestataire.experience" name="experience" required>
+    </div>
+
+    <div>
+      <label for="tel">Téléphone</label>
+      <input id="tel" [(ngModel)]="prestataire.tel" name="tel" required type="tel">
+    </div>
+
+    <div>
+      <label for="validateStatus">Statut de validation</label>
+      <select id="validateStatus" [(ngModel)]="prestataire.status" name="validateStatus" required>
+        <option value="EN_ATTENTE">EN_ATTENTE</option>
+        <option value="ACCEPTE">ACCEPTE</option>
+        <option value="REFUSE">REFUSE</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="services">Services</label>
+      <textarea id="services" [(ngModel)]="prestataire.services" name="services" required></textarea>
+    </div>
+
+    <button type="submit">Sauvegarder</button>
+    <button type="button" (click)="closePopupMethod()">Annuler</button>
+  </form>
+</div>

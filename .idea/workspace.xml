@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d580e07-d143-4b6b-8644-6fec88509950" name="Changes" comment="modification sur status">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="7d580e07-d143-4b6b-8644-6fec88509950" name="Changes" comment="modification sur readme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/ContactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/ContactController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/model/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/model/Contact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/resources/db/migration/V4__Create_table_Contact.sql" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/resources/db/migration/V4__Create_table_Contact.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/Homes/about/about.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/Homes/about/about.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/Homes/nav-bar/nav-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/Homes/nav-bar/nav-bar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/admin/admin.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/admin/admin.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/admin/admin.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/admin/admin.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/core/services/contact.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/core/services/contact.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/models/contact.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/models/contact.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,12 +38,12 @@
     &quot;assignee&quot;: &quot;zinebzarda&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/zinebzarda/ENAA-Fil-Rouge.git",
-    "accountId": "3c53f0b3-0254-4293-96a5-230689bc40d2"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/zinebzarda/ENAA-Fil-Rouge.git&quot;,
+    &quot;accountId&quot;: &quot;3c53f0b3-0254-4293-96a5-230689bc40d2&quot;
   }
-}]]></component>
+}</component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
   </component>
@@ -60,49 +59,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.BackEnd: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "JUnit.ClientServiceTest.executor": "Run",
-    "JUnit.ContactServiceTest.executor": "Run",
-    "JUnit.DemandeServiceServiceTest.executor": "Run",
-    "JUnit.FeedbackServiceTest.executor": "Run",
-    "JUnit.PrestataireServiceTest.executor": "Run",
-    "JUnit.PrestataireServiceTest.testUpdatePrestataire.executor": "Run",
-    "JUnit.ServiceServiceTest.executor": "Run",
-    "JUnit.ServiceServiceTest.findById.executor": "Run",
-    "JUnit.ServiceServiceTest.findById_shouldThrowException_whenServiceNotFound.executor": "Run",
-    "Maven.filRouge [clean].executor": "Run",
-    "Maven.filRouge [install].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.FilRougeApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/user/Desktop/Les Projets/ConstructionXpert-Services---Microservices-Frontend-",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.start.executor": "Run",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "ts.external.directory.path": "C:\\Users\\user\\Desktop\\filRouge\\FrontEnd\\JobRabbit\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.BackEnd: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClientServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContactServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DemandeServiceServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.FeedbackServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PrestataireServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PrestataireServiceTest.testUpdatePrestataire.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ServiceServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ServiceServiceTest.findById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ServiceServiceTest.findById_shouldThrowException_whenServiceNotFound.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.filRouge [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.filRouge [install].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.FilRougeApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/Les Projets/ConstructionXpert-Services---Microservices-Frontend-&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\user\\Desktop\\filRouge\\FrontEnd\\JobRabbit\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\user\Desktop\filRouge\FrontEnd\JobRabbit\src" />
@@ -233,7 +232,7 @@
       <workItem from="1728002080968" duration="15240000" />
       <workItem from="1728052458925" duration="41757000" />
       <workItem from="1728298795895" duration="287000" />
-      <workItem from="1728299503646" duration="33559000" />
+      <workItem from="1728299503646" duration="59803000" />
     </task>
     <task id="LOCAL-00001" summary="changement Jenkinsfile">
       <option name="closed" value="true" />
@@ -555,7 +554,39 @@
       <option name="project" value="LOCAL" />
       <updated>1728397182754</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="modification sur contact front et back">
+      <option name="closed" value="true" />
+      <created>1728404398605</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1728404398606</updated>
+    </task>
+    <task id="LOCAL-00042" summary="modification sur review">
+      <option name="closed" value="true" />
+      <created>1728426031124</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1728426031124</updated>
+    </task>
+    <task id="LOCAL-00043" summary="modification sur review">
+      <option name="closed" value="true" />
+      <created>1728426188977</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1728426188977</updated>
+    </task>
+    <task id="LOCAL-00044" summary="modification sur readme">
+      <option name="closed" value="true" />
+      <created>1728436240526</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1728436240526</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -573,9 +604,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="prestataire" />
-    <MESSAGE value="animation  modification de style" />
-    <MESSAGE value="auth and application" />
     <MESSAGE value="logout" />
     <MESSAGE value="register prestataire ans client" />
     <MESSAGE value="modification sur l'ajout de service par prestataire" />
@@ -598,6 +626,9 @@
     <MESSAGE value="modification dsur les service" />
     <MESSAGE value="modification sur contact" />
     <MESSAGE value="modification sur status" />
-    <option name="LAST_COMMIT_MESSAGE" value="modification sur status" />
+    <MESSAGE value="modification sur contact front et back" />
+    <MESSAGE value="modification sur review" />
+    <MESSAGE value="modification sur readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="modification sur readme" />
   </component>
 </project>

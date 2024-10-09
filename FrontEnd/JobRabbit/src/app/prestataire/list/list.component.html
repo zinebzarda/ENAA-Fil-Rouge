@@ -1,0 +1,73 @@
+<div class="row justify-content-center">
+  <div class="col-lg-12">
+    <div class="dashboard-settings dashboard-flex-shwing text-center">
+      <h2 class="dashboards-title">Prestataire List</h2>
+      <span class="show-page-num">Showing {{ paginatedPrestataires.length }} of {{ totalPrestataires }}</span>
+    </div>
+  </div>
+</div>
+
+<div class="row justify-content-center">
+  <div class="col-lg-12 margin-top-40">
+    <div class="dashboard-status-list text-center">
+      <ul class="tabs status-order-list margin-bottom-10">
+        <li data-tab="tab-validated" (click)="changeTab('validated')">Validés <span class="numbers">{{ validatedCount }}</span></li>
+        <li data-tab="tab-pending" (click)="changeTab('pending')">En Attente <span class="numbers">{{ pendingCount }}</span></li>
+        <li data-tab="tab-rejected" (click)="changeTab('rejected')">Rejetés <span class="numbers">{{ rejectedCount }}</span></li>
+        <li data-tab="tab-all" (click)="changeTab('all')">Tous <span class="numbers">{{ totalPrestataires }}</span></li> <!-- Optionnel -->
+      </ul>
+    </div>
+
+    <div class="table-responsive table-responsive--md table-responsive-lg">
+      <table class="custom--table">
+        <thead>
+        <tr>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Domaine d'expertise</th>
+          <th>Disponibilités</th>
+          <th>Expérience</th>
+          <th>Téléphone</th>
+          <th>Statut de validation</th>
+          <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let prestataire of paginatedPrestataires">
+          <td data-label="Username">{{ prestataire.username }}</td>
+          <td data-label="Email">{{ prestataire.email }}</td>
+          <td data-label="Domaine d'expertise">{{ prestataire.domaineExpertise }}</td>
+          <td data-label="Disponibilités">{{ prestataire.disponibilites }}</td>
+          <td data-label="Expérience">{{ prestataire.experience }}</td>
+          <td data-label="Téléphone">{{ prestataire.tel }}</td>
+          <td data-label="Statut de validation" [ngClass]="{
+                'bg-yellow': prestataire.status === 'EN_ATTENTE',
+                'bg-green': prestataire.status === 'ACCEPTE',
+                'bg-red': prestataire.status === 'REFUSE'
+              }">
+            {{ getStatusLabel(prestataire.status) }}
+          </td>
+          <td data-label="Actions">
+            <a class="delete-link" (click)="deletePrestataire(prestataire.id); showAlert()">
+              <span class="icon color-three"><i class="las la-trash"></i></span> Supprimer
+            </a>
+            <a class="edit-link" (click)="openEditPopup(prestataire)">
+              <span class="icon color-two"><i class="las la-edit"></i></span> Modifier
+            </a>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Pagination -->
+    <mat-paginator [length]="totalPrestataires"
+                   [pageSize]="pageSize"
+                   [pageSizeOptions]="[5, 10, 20]"
+                   (page)="onPageChange($event)">
+    </mat-paginator>
+  </div>
+</div>
+
+<!-- Popup for editing -->
+<app-edit *ngIf="showEditPopup" [prestataire]="selectedPrestataire" (closePopup)="closeEditPopup()"></app-edit>
