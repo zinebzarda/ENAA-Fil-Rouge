@@ -19,6 +19,7 @@ const routes: Routes = [
   { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
   { path: 'client', loadChildren: () => import('./client/client.module').then(m => m.ClientModule) },
   { path: 'prestataire', loadChildren: () => import('./prestataire/prestataire.module').then(m => m.PrestataireModule) },
+  { path: 'service', loadChildren: () => import('./service/service.module').then(m => m.ServiceModule) },
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent },
   { path: 'logout', component: LogoutComponent },

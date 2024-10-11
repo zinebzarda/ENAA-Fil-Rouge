@@ -24,6 +24,12 @@ import { ListContactComponent } from './contact/list-contact/list-contact.compon
 import { ReviewComponent } from './review/review/review.component';
 import { FaqComponent } from './Homes/faq/faq.component';
 import {MatPaginatorModule} from "@angular/material/paginator";
+
+import {JwtModule} from '@auth0/angular-jwt'
+import {ServiceModule} from "./service/service.module";
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,6 +58,12 @@ import {MatPaginatorModule} from "@angular/material/paginator";
     ClientModule,
     PrestataireModule,
     MatPaginatorModule,
+    JwtModule.forRoot({
+      config: {
+        tokenGetter: () => localStorage.getItem('token'),
+      }
+    }),
+    ServiceModule
   ],
   providers: [
     {
@@ -63,7 +75,8 @@ import {MatPaginatorModule} from "@angular/material/paginator";
   exports: [
     FooterComponent,
     NavBarComponent,
-    ListContactComponent
+    ListContactComponent,
+    HomeComponent
   ],
   bootstrap: [AppComponent]
 })

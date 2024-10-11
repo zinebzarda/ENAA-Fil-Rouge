@@ -4,7 +4,7 @@ import { AdminRoutingModule } from './admin-routing.module';
 import { AdminComponent } from './admin.component';
 import { ClientModule } from "../client/client.module";
 import { PrestataireModule } from "../prestataire/prestataire.module";
-import {AppModule} from "../app.module";
+
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import {AppModule} from "../app.module";
     CommonModule,
     AdminRoutingModule,
     ClientModule,
-    PrestataireModule
+    PrestataireModule,
   ]
 })
 export class AdminModule { }
