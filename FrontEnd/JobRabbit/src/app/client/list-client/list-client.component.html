@@ -1,0 +1,50 @@
+<div class="col-lg-12">
+  <div class="dashboard-settings dashboard-flex-shwing margin-top-20">
+    <h2 class="dashboards-title">Client List</h2>
+    <span class="show-page-num">Showing {{ clients.length }} clients</span>
+  </div>
+</div>
+<div class="col-lg-12 margin-top-20">
+  <div class="single-dashboard-order">
+    <div class="table-responsive table-responsive--md">
+      <table class="custom--table">
+        <thead>
+        <tr>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Adresse</th>
+          <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let client of clients">
+          <td data-label="Username">{{ client.username }}</td>
+          <td data-label="Email">{{ client.email }}</td>
+          <td data-label="Adresse">{{ client.adresse }}</td>
+          <td data-label="Actions">
+            <a class="delete-link" (click)="deleteClient(client.id); showAlert()">
+              <span class="icon color-three"><i class="las la-trash"></i></span> Supprimer
+            </a>
+<!--            <a class="edit-link" (click)="openEditPopup(client)">-->
+<!--              <span class="icon color-two"><i class="las la-edit"></i></span> Modifier-->
+<!--            </a>-->
+          </td>
+        </tr>
+        </tbody>
+      </table>
+      <mat-paginator
+        [length]="clients.length"
+        [pageSize]="pageSize"
+        [pageIndex]="pageIndex"
+        [pageSizeOptions]="[5, 10, 20]"
+        (page)="onPageChange($event)">
+      </mat-paginator>
+    </div>
+  </div>
+</div>
+
+
+<!-- Popup de modification -->
+<!--<app-edit-client *ngIf="showEditPopup" [client]="selectedClient" (closePopup)="closeEditPopup()"></app-edit-client>-->
+
+

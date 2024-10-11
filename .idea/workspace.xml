@@ -4,16 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d580e07-d143-4b6b-8644-6fec88509950" name="Changes" comment="modification sur readme">
+    <list default="true" id="7d580e07-d143-4b6b-8644-6fec88509950" name="Changes" comment="modification sur client">
+      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/list-client/list-client.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_10_2024_00_32_[Changes]/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_10_2024_00_32_[Changes]/favicon1.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_10_2024_00_32_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_10_2024_00_32__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/Jenkinsfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/Homes/about/about.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/Homes/about/about.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/Homes/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/Homes/home/home.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/Homes/nav-bar/nav-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/Homes/nav-bar/nav-bar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/admin/admin.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/admin/admin.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/admin/admin.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/admin/admin.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/client-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/client-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/client.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/client.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/client.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/client.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/client.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/client.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/edit/edit.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/edit-client/edit-client.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/edit/edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/edit-client/edit-client.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/edit/edit.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/edit-client/edit-client.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/edit/edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/edit-client/edit-client.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/list/list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/list-client/list-client.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/list/list.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/list/list.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/list-client/list-client.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/list/list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/list-client/list-client.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/component/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/component/register/register.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/edit/edit.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/edit-prestataire/edit-prestataire.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/edit/edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/edit-prestataire/edit-prestataire.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/edit/edit.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/edit-prestataire/edit-prestataire.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/edit/edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/edit-prestataire/edit-prestataire.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/list/list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/list-prestataire/list-prestataire.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/list/list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/list-prestataire/list-prestataire.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/list/list.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/list-prestataire/list-prestataire.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/list/list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/list-prestataire/list-prestataire.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/prestataire-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/prestataire-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/prestataire.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/prestataire.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/prestataire.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/prestataire.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/prestataire.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/prestataire.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/jquery-3.6.0.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/jquery-3.6.0.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/jquery-migrate.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/jquery-migrate.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/jquery.nice-select.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/jquery.nice-select.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/jquery.nicescroll.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/jquery.nicescroll.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/slick.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/slick.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/wow.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/wow.min.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,55 +265,8 @@
       <workItem from="1728002080968" duration="15240000" />
       <workItem from="1728052458925" duration="41757000" />
       <workItem from="1728298795895" duration="287000" />
-      <workItem from="1728299503646" duration="59803000" />
-    </task>
-    <task id="LOCAL-00001" summary="changement Jenkinsfile">
-      <option name="closed" value="true" />
-      <created>1727455740796</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1727455740796</updated>
-    </task>
-    <task id="LOCAL-00002" summary="changement Jenkinsfile">
-      <option name="closed" value="true" />
-      <created>1727455772569</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1727455772569</updated>
-    </task>
-    <task id="LOCAL-00003" summary="changement Jenkinsfile v5">
-      <option name="closed" value="true" />
-      <created>1727457398170</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1727457398170</updated>
-    </task>
-    <task id="LOCAL-00004" summary="changement Jenkinsfile v6">
-      <option name="closed" value="true" />
-      <created>1727457952760</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1727457952760</updated>
-    </task>
-    <task id="LOCAL-00005" summary="changement Jenkinsfile v6">
-      <option name="closed" value="true" />
-      <created>1727458216987</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1727458216987</updated>
-    </task>
-    <task id="LOCAL-00006" summary="changement Jenkinsfile v67">
-      <option name="closed" value="true" />
-      <created>1727458467471</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1727458467471</updated>
+      <workItem from="1728299503646" duration="93511000" />
+      <workItem from="1728652593559" duration="8352000" />
     </task>
     <task id="LOCAL-00007" summary="design">
       <option name="closed" value="true" />
@@ -586,7 +572,95 @@
       <option name="project" value="LOCAL" />
       <updated>1728436240526</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="modification sur about">
+      <option name="closed" value="true" />
+      <created>1728482641844</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1728482641845</updated>
+    </task>
+    <task id="LOCAL-00046" summary="modification sur admin">
+      <option name="closed" value="true" />
+      <created>1728482681812</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1728482681812</updated>
+    </task>
+    <task id="LOCAL-00047" summary="modification sur Jenkinsfile">
+      <option name="closed" value="true" />
+      <created>1728482706998</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1728482706998</updated>
+    </task>
+    <task id="LOCAL-00048" summary="add contact a admin">
+      <option name="closed" value="true" />
+      <created>1728491218427</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1728491218427</updated>
+    </task>
+    <task id="LOCAL-00049" summary="change readme">
+      <option name="closed" value="true" />
+      <created>1728491241197</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1728491241197</updated>
+    </task>
+    <task id="LOCAL-00050" summary="add design de afficer prestataire a admin">
+      <option name="closed" value="true" />
+      <created>1728496332760</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1728496332761</updated>
+    </task>
+    <task id="LOCAL-00051" summary="modification de readme">
+      <option name="closed" value="true" />
+      <created>1728496397558</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1728496397559</updated>
+    </task>
+    <task id="LOCAL-00052" summary="modification de design prestataire">
+      <option name="closed" value="true" />
+      <created>1728499503016</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1728499503016</updated>
+    </task>
+    <task id="LOCAL-00053" summary="modification sur demande backend">
+      <option name="closed" value="true" />
+      <created>1728661762869</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1728661762869</updated>
+    </task>
+    <task id="LOCAL-00054" summary="modification sur admin">
+      <option name="closed" value="true" />
+      <created>1728661827841</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1728661827841</updated>
+    </task>
+    <task id="LOCAL-00055" summary="modification sur client">
+      <option name="closed" value="true" />
+      <created>1728661874612</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1728661874612</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -604,16 +678,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="logout" />
-    <MESSAGE value="register prestataire ans client" />
-    <MESSAGE value="modification sur l'ajout de service par prestataire" />
-    <MESSAGE value="add review" />
-    <MESSAGE value="modification sur register" />
-    <MESSAGE value="modification sur prestataire backEnd" />
-    <MESSAGE value="modification sur client" />
-    <MESSAGE value="modification sur front de login" />
-    <MESSAGE value="modification sur front de login and logout" />
-    <MESSAGE value="modification sur fpage not found" />
     <MESSAGE value="modification sur JwtAuthorization" />
     <MESSAGE value="modification sur creation de service par prestataire" />
     <MESSAGE value="modification sur client dto" />
@@ -629,6 +693,28 @@
     <MESSAGE value="modification sur contact front et back" />
     <MESSAGE value="modification sur review" />
     <MESSAGE value="modification sur readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="modification sur readme" />
+    <MESSAGE value="modification sur about" />
+    <MESSAGE value="modification sur Jenkinsfile" />
+    <MESSAGE value="add contact a admin" />
+    <MESSAGE value="change readme" />
+    <MESSAGE value="add design de afficer prestataire a admin" />
+    <MESSAGE value="modification de readme" />
+    <MESSAGE value="modification de design prestataire" />
+    <MESSAGE value="modification sur demande backend" />
+    <MESSAGE value="modification sur admin" />
+    <MESSAGE value="modification sur client" />
+    <option name="LAST_COMMIT_MESSAGE" value="modification sur client" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/prestataire.module.ts</url>
+          <line>16</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
