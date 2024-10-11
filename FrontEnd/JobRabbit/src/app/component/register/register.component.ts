@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent {
+  selectedTab: string = 'client';
 
+  selectTab(tab: string) {
+    this.selectedTab = tab;
+  }
 }

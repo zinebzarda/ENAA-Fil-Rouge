@@ -5,17 +5,18 @@ import { PrestataireRoutingModule } from './prestataire-routing.module';
 import { PrestataireComponent } from './prestataire.component';
 import { RegisterPraistataireComponent } from './register-praistataire/register-praistataire.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import { ListComponent } from './list/list.component';
-import { EditComponent } from './edit/edit.component';
 import {MatPaginatorModule} from "@angular/material/paginator";
+import {EditPrestataireComponent} from "./edit-prestataire/edit-prestataire.component";
+import {ListPrestataireComponent} from "./list-prestataire/list-prestataire.component";
+import {ServiceModule} from "../service/service.module";
 
 
 @NgModule({
   declarations: [
     PrestataireComponent,
     RegisterPraistataireComponent,
-    ListComponent,
-    EditComponent
+    ListPrestataireComponent,
+    EditPrestataireComponent
   ],
   exports: [
     RegisterPraistataireComponent,
@@ -26,7 +27,8 @@ import {MatPaginatorModule} from "@angular/material/paginator";
     PrestataireRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    ServiceModule
   ]
 })
 export class PrestataireModule { }

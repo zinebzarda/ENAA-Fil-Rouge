@@ -5,11 +5,11 @@ import { PageEvent } from '@angular/material/paginator';
 import { ValidateStatus } from "../../models/enums/validate-status.enum";
 
 @Component({
-  selector: 'app-list',
-  templateUrl: './list.component.html',
-  styleUrls: ['./list.component.css']
+  selector: 'app-list-prestataire',
+  templateUrl: './list-prestataire.component.html',
+  styleUrls: ['./list-prestataire.component.css']
 })
-export class ListComponent implements OnInit {
+export class ListPrestataireComponent implements OnInit {
 
   prestataires: Prestataire[] = [];
   paginatedPrestataires: Prestataire[] = [];

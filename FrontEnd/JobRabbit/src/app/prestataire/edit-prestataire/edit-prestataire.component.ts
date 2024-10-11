@@ -3,11 +3,11 @@ import {Prestataire} from "../../models/prestataire";
 import {PrestataireService} from "../../core/services/prestataire.service";
 
 @Component({
-  selector: 'app-edit',
-  templateUrl: './edit.component.html',
-  styleUrls: ['./edit.component.css']
+  selector: 'app-edit-prestataire',
+  templateUrl: './edit-prestataire.component.html',
+  styleUrls: ['./edit-prestataire.component.css']
 })
-export class EditComponent {
+export class EditPrestataireComponent {
 
   @Input() prestataire: Prestataire | null = null;
   @Output() closePopup = new EventEmitter<void>();
