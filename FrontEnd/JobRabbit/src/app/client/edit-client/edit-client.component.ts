@@ -3,11 +3,11 @@ import {Client} from "../../models/client";
 import {ClientService} from "../../core/services/client.service";
 
 @Component({
-  selector: 'app-edit',
-  templateUrl: './edit.component.html',
-  styleUrls: ['./edit.component.css']
+  selector: 'app-edit-client',
+  templateUrl: './edit-client.component.html',
+  styleUrls: ['./edit-client.component.css']
 })
-export class EditComponent {
+export class EditClientComponent {
 
   @Input() client: Client | null = null;
   @Output() closePopup = new EventEmitter<void>();

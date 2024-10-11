@@ -5,28 +5,32 @@ import { ClientRoutingModule } from './client-routing.module';
 import { ClientComponent } from './client.component';
 import { RegisterClientComponent } from './register-client/register-client.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import { EditComponent } from './edit/edit.component';
-import { ListComponent } from './list/list.component';
+import {EditClientComponent} from "./edit-client/edit-client.component";
+import {ListClientComponent} from "./list-client/list-client.component";
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {ServiceModule} from "../service/service.module";
 
 
 @NgModule({
   declarations: [
     ClientComponent,
     RegisterClientComponent,
-    EditComponent,
-    ListComponent
+    EditClientComponent,
+    ListClientComponent
   ],
     exports: [
         ClientComponent,
         RegisterClientComponent,
-        ListComponent,
-        EditComponent
+      ListClientComponent,
+      EditClientComponent
     ],
   imports: [
     CommonModule,
     ClientRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    MatPaginatorModule,
+    ServiceModule
   ]
 })
 export class ClientModule { }
