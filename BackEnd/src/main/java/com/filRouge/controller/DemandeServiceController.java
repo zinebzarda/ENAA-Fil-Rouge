@@ -2,6 +2,7 @@ package com.filRouge.controller;
 
 import com.filRouge.exception.ResourceNotFoundException;
 import com.filRouge.model.DemandeService;
+import com.filRouge.model.Services;
 import com.filRouge.model.enums.ValidateStatus;
 import com.filRouge.service.DemandeServiceService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,11 +19,9 @@ public class DemandeServiceController {
     @Autowired
     private DemandeServiceService demandeServiceService;
 
-    @PostMapping
-    public ResponseEntity<DemandeService> createDemandeService(@RequestParam Long clientId,
-                                                               @RequestParam Long serviceId) {
-        DemandeService demandeService = demandeServiceService.createDemandeService(clientId, serviceId);
-        return new ResponseEntity<>(demandeService, HttpStatus.CREATED);
+    @PostMapping("/add")
+    public DemandeService createService(@RequestBody DemandeService service) {
+        return demandeServiceService.createDemandeService(service);
     }
 
     @GetMapping
@@ -38,14 +37,6 @@ public class DemandeServiceController {
         return new ResponseEntity<>(demandeService, HttpStatus.OK);
     }
 
-    @PutMapping("/update/{id}")
-    public ResponseEntity<DemandeService> updateDemande(@PathVariable Long id,
-                                                        @RequestParam(required = false) Long clientId,
-                                                        @RequestParam(required = false) Long serviceId,
-                                                        @RequestParam(required = false) ValidateStatus statut) {
-        DemandeService updatedDemande = demandeServiceService.updateDemande(id, clientId, serviceId, statut);
-        return new ResponseEntity<>(updatedDemande, HttpStatus.OK);
-    }
 
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<Void> deleteDemande(@PathVariable Long id) {

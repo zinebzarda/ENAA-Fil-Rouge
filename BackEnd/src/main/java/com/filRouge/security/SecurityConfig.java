@@ -3,7 +3,6 @@ package com.filRouge.security;
 import com.filRouge.service.CustomUserDetailsService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.core.annotation.MergedAnnotations;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -44,7 +43,7 @@ public class SecurityConfig {
 
 
                                         .requestMatchers(POST,"/services/**").hasRole("PRESTATAIRE")
-                                        .requestMatchers("/services/all").hasAnyRole("ADMIN", "CLIENT")
+                                        .requestMatchers("/services/all").permitAll()
                                         .requestMatchers(PUT,"/services/**").hasAnyRole("ADMIN","PRESTATAIRE")
                                         .requestMatchers(DELETE,"/services/**").hasAnyRole("ADMIN", "PRESTATAIRE")
                                         .requestMatchers("/services/search").hasRole("CLIENT")
@@ -68,8 +67,8 @@ public class SecurityConfig {
 
 
 
-//                                // Client demande endpoints
-//                                .requestMatchers(POST, "/client/demandes").hasRole("CLIENT")
+                                // Client demande endpoints
+                                .requestMatchers(POST, "/demandes/**").hasRole("CLIENT")
 //                                .requestMatchers(GET, "/client/demandes").hasRole("CLIENT")
 //                                .requestMatchers(PUT, "/client/demandes/*/cancel").hasRole("CLIENT")
 //                                .requestMatchers(POST, "/client/demandes/*/feedback").hasRole("CLIENT")

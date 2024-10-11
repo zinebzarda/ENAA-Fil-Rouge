@@ -8,7 +8,9 @@ import com.filRouge.model.enums.ValidateStatus;
 import com.filRouge.repository.DemandeServiceRepository;
 import com.filRouge.repository.ClientRepository;
 import com.filRouge.repository.ServiceRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -27,21 +29,21 @@ public class DemandeServiceService {
     @Autowired
     private ServiceRepository serviceRepository;
 
-    public DemandeService createDemandeService(Long clientId, Long serviceId) {
-        Client client = clientRepository.findById(clientId)
-                .orElseThrow(() -> new ResourceNotFoundException("Client non trouvé avec l'id : " + clientId));
+    @Transactional
+    public DemandeService createDemandeService(DemandeService demandeService) {
 
-        Services service = serviceRepository.findById(serviceId)
-                .orElseThrow(() -> new ResourceNotFoundException("Service non trouvé avec l'id : " + serviceId));
+        var username = SecurityContextHolder.getContext().getAuthentication().getName();
 
-        DemandeService demandeService = new DemandeService();
+        Client client = clientRepository.findByUsername(username);
+
         demandeService.setClient(client);
-        demandeService.setService(service);
+
         demandeService.setDateDemmande(LocalDate.now());
         demandeService.setStatut(ValidateStatus.EN_ATTENTE);
 
         return demandeServiceRepository.save(demandeService);
     }
+
 
     public List<DemandeService> getAllDemandes() {
         return demandeServiceRepository.findAll();
@@ -50,29 +52,6 @@ public class DemandeServiceService {
     public Optional<DemandeService> getDemandeById(Long id) {
         return Optional.ofNullable(demandeServiceRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Demande non trouvée avec l'id : " + id)));
-    }
-
-    public DemandeService updateDemande(Long id, Long clientId, Long serviceId, ValidateStatus statut) {
-        DemandeService existingDemande = demandeServiceRepository.findById(id)
-                .orElseThrow(() -> new ResourceNotFoundException("Demande non trouvée avec l'id : " + id));
-
-        if (clientId != null) {
-            Client client = clientRepository.findById(clientId)
-                    .orElseThrow(() -> new ResourceNotFoundException("Client non trouvé avec l'id : " + clientId));
-            existingDemande.setClient(client);
-        }
-
-        if (serviceId != null) {
-            Services service = serviceRepository.findById(serviceId)
-                    .orElseThrow(() -> new ResourceNotFoundException("Service non trouvé avec l'id : " + serviceId));
-            existingDemande.setService(service);
-        }
-
-        if (statut != null) {
-            existingDemande.setStatut(statut);
-        }
-
-        return demandeServiceRepository.save(existingDemande);
     }
 
     public void deleteDemande(Long id) {

@@ -8,12 +8,12 @@ import {Services} from "../../models/services";
   providedIn: 'root'
 })
 export class ServicesService {
-  private apiUrl = 'http://localhost:8080/Services';
+  private apiUrl = 'http://localhost:8080/services';
   constructor(private http: HttpClient) {}
 
   // Créer un service
   createService(service:Services): Observable<Services> {
-    return this.http.post<Services>(this.apiUrl, service);
+    return this.http.post<Services>(`${this.apiUrl}/add`, service);
   }
 
   // Récupérer tous les services
@@ -32,7 +32,7 @@ export class ServicesService {
   }
 
   // Supprimer un service
-  deleteService(id: number): Observable<void> {
+  deleteService(id: number | undefined): Observable<void> {
     return this.http.delete<void>(`${this.apiUrl}/delete/${id}`);
   }
 
