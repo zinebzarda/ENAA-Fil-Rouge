@@ -4,49 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d580e07-d143-4b6b-8644-6fec88509950" name="Changes" comment="modification sur client">
-      <change afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/list-client/list-client.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_10_2024_00_32_[Changes]/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_10_2024_00_32_[Changes]/favicon1.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_10_2024_00_32_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_10_2024_00_32__Changes_.xml" beforeDir="false" />
+    <list default="true" id="7d580e07-d143-4b6b-8644-6fec88509950" name="Changes" comment="modification sur client et home">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/ServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/ServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/dto/LoginDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/dto/LoginDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/repository/ServiceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/repository/ServiceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/security/JwtAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/security/JwtAuth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/service/DemandeServiceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/service/DemandeServiceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/service/ServiceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/service/ServiceService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/Homes/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/Homes/home/home.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/Homes/nav-bar/nav-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/Homes/nav-bar/nav-bar.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/client-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/client-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/client.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/client.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/client.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/client.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/client.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/client.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/edit/edit.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/edit-client/edit-client.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/edit/edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/edit-client/edit-client.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/edit/edit.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/edit-client/edit-client.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/edit/edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/edit-client/edit-client.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/list/list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/list-client/list-client.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/list/list.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/list/list.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/list-client/list-client.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/list/list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/list-client/list-client.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/component/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/component/register/register.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/edit/edit.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/edit-prestataire/edit-prestataire.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/edit/edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/edit-prestataire/edit-prestataire.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/edit/edit.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/edit-prestataire/edit-prestataire.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/edit/edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/edit-prestataire/edit-prestataire.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/list/list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/list-prestataire/list-prestataire.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/list/list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/list-prestataire/list-prestataire.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/list/list.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/list-prestataire/list-prestataire.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/list/list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/list-prestataire/list-prestataire.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/prestataire-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/prestataire-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/prestataire.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/prestataire.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/prestataire.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/prestataire.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/prestataire.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/prestataire.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/jquery-3.6.0.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/jquery-3.6.0.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/jquery-migrate.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/jquery-migrate.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/jquery.nice-select.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/jquery.nice-select.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/jquery.nicescroll.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/jquery.nicescroll.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/slick.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/slick.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/wow.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/js/wow.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/core/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/core/services/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/core/services/services.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/core/services/services.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/assets/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,23 +241,7 @@
       <workItem from="1728052458925" duration="41757000" />
       <workItem from="1728298795895" duration="287000" />
       <workItem from="1728299503646" duration="93511000" />
-      <workItem from="1728652593559" duration="8352000" />
-    </task>
-    <task id="LOCAL-00007" summary="design">
-      <option name="closed" value="true" />
-      <created>1727971339570</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1727971339570</updated>
-    </task>
-    <task id="LOCAL-00008" summary="modification sur prestatair backend">
-      <option name="closed" value="true" />
-      <created>1727998320421</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1727998320421</updated>
+      <workItem from="1728652593559" duration="33671000" />
     </task>
     <task id="LOCAL-00009" summary="modification sur prestatair backend">
       <option name="closed" value="true" />
@@ -660,7 +619,23 @@
       <option name="project" value="LOCAL" />
       <updated>1728661874612</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="modification sur prestataire">
+      <option name="closed" value="true" />
+      <created>1728662018516</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1728662018516</updated>
+    </task>
+    <task id="LOCAL-00057" summary="modification sur client et home">
+      <option name="closed" value="true" />
+      <created>1728662251934</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1728662251934</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -678,8 +653,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modification sur JwtAuthorization" />
-    <MESSAGE value="modification sur creation de service par prestataire" />
     <MESSAGE value="modification sur client dto" />
     <MESSAGE value="modification creation de crud de prestataire" />
     <MESSAGE value="modification creation de crud de client" />
@@ -703,7 +676,9 @@
     <MESSAGE value="modification sur demande backend" />
     <MESSAGE value="modification sur admin" />
     <MESSAGE value="modification sur client" />
-    <option name="LAST_COMMIT_MESSAGE" value="modification sur client" />
+    <MESSAGE value="modification sur prestataire" />
+    <MESSAGE value="modification sur client et home" />
+    <option name="LAST_COMMIT_MESSAGE" value="modification sur client et home" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -8,5 +8,5 @@ import java.util.List;
 public interface ServiceRepository extends JpaRepository<Services,Long> {
 //    List<Services> findByTitreContainingOrDescriptionContaining(String titre, String description);
     List<Services> findByTitreContaining(String titre);
-
+    List<Services> findServicesByPrestataireId(long id);
 }

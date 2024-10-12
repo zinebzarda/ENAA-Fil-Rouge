@@ -43,7 +43,7 @@ public class AuthenticationController {
         );
         Personne personne = personneRepository.findByUsername(authenticationRequest.getUsername());
         Role role= personne.getRole();
-        String token = JwtAuth.generateToken(authenticationRequest.getUsername(),role);
+        String token = JwtAuth.generateToken(authenticationRequest.getUsername(), personne.getId(), role);
         Map<String, String> response = new HashMap<>();
         response.put("token", token);
         return ResponseEntity.ok(response);

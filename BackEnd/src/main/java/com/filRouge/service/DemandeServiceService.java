@@ -3,7 +3,6 @@ package com.filRouge.service;
 import com.filRouge.exception.ResourceNotFoundException;
 import com.filRouge.model.Client;
 import com.filRouge.model.DemandeService;
-import com.filRouge.model.Services;
 import com.filRouge.model.enums.ValidateStatus;
 import com.filRouge.repository.DemandeServiceRepository;
 import com.filRouge.repository.ClientRepository;

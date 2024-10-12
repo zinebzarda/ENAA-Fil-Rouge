@@ -5,6 +5,7 @@ import com.filRouge.model.Services;
 import com.filRouge.service.ServiceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -28,6 +29,15 @@ public class ServiceController {
     @GetMapping("/all")
     public List<Services> getAllServices() {
         return serviceService.getAllServices();
+    }
+
+    @GetMapping("/prestataire/{id}")
+    public ResponseEntity<List<Services>> getAllServicesByPrestataireId(@PathVariable Long id) {
+        List<Services> services = serviceService.getAllServicesByPrestataireId(id);
+        if (services.isEmpty()) {
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
+        return new ResponseEntity<>(services, HttpStatus.OK);
     }
 
     @GetMapping("/{id}")

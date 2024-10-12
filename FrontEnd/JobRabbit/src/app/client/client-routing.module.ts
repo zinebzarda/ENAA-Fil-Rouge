@@ -10,7 +10,7 @@ import {HomeComponent} from "../Homes/home/home.component";
 const routes: Routes = [
   { path: '', component: ClientComponent ,children:[
   {path: 'listService' ,component:ListServicesComponent},
-  { path: '', redirectTo: 'listService', pathMatch: 'full' },
+ { path: '', redirectTo: 'listService', pathMatch: 'full' },
   { path: 'register', component: RegisterClientComponent },
   { path: 'editClient', component: EditClientComponent },
   { path: 'listClient', component: ListClientComponent }

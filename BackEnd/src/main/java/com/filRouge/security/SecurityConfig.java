@@ -43,7 +43,7 @@ public class SecurityConfig {
 
 
                                         .requestMatchers(POST,"/services/**").hasRole("PRESTATAIRE")
-                                        .requestMatchers("/services/all").permitAll()
+                                        .requestMatchers(GET,"/services/**").permitAll()
                                         .requestMatchers(PUT,"/services/**").hasAnyRole("ADMIN","PRESTATAIRE")
                                         .requestMatchers(DELETE,"/services/**").hasAnyRole("ADMIN", "PRESTATAIRE")
                                         .requestMatchers("/services/search").hasRole("CLIENT")

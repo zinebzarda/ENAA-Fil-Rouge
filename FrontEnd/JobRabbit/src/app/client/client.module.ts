@@ -9,6 +9,7 @@ import {EditClientComponent} from "./edit-client/edit-client.component";
 import {ListClientComponent} from "./list-client/list-client.component";
 import {MatPaginatorModule} from "@angular/material/paginator";
 import {ServiceModule} from "../service/service.module";
+import {AppModule} from "../app.module";
 
 
 @NgModule({
@@ -30,7 +31,7 @@ import {ServiceModule} from "../service/service.module";
     ReactiveFormsModule,
     FormsModule,
     MatPaginatorModule,
-    ServiceModule
+    ServiceModule,
   ]
 })
 export class ClientModule { }

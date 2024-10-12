@@ -48,6 +48,10 @@ public class ServiceService {
         return serviceRepository.findAll();
     }
 
+    public List<Services> getAllServicesByPrestataireId(Long id) {
+        return serviceRepository.findServicesByPrestataireId(id);
+    }
+
 
 
     public Services updateService(Long id, Services serviceDetails) {
