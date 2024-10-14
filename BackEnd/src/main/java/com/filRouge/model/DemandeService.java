@@ -1,5 +1,6 @@
 package com.filRouge.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.filRouge.model.enums.ValidateStatus;
 import jakarta.persistence.*;
 import lombok.*;
@@ -21,18 +22,16 @@ public class DemandeService {
     @Column(name = "date_demmande")
     private LocalDate dateDemmande;
 
-    @Enumerated(EnumType.STRING)
-    private ValidateStatus statut;
-
     @ManyToOne
     @JoinColumn(name = "client_id")
     private Client client;
 
     @ManyToOne
-    @JoinColumn(name = "service_id")
+    @JoinColumn(name = "serviceId")
     private Services service;
 
     @OneToMany(mappedBy = "demandeService")
+    @JsonIgnore
     private List<Feedback> feedbacks;
 
 }

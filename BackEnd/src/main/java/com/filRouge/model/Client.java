@@ -16,6 +16,7 @@ import java.util.List;
 @Entity
 public class Client extends Personne {
     private String adresse;
+    private String tel;
 
 
     @OneToMany(mappedBy = "client")

@@ -51,8 +51,15 @@
             </ul>
           </li>
           <li><a href="#" routerLink="/addContact">contact</a></li>
-          <li><a href="#" routerLink="/login">Login</a></li>
-          <li><a href="#" routerLink="/logout">Logout</a></li>
+
+          <li class="menu-item-has-children">
+            <a href="javascript:void(0)">Login</a>
+            <ul class="sub-menu">
+              <li><a href="#" routerLink="/login">Login</a></li>
+              <li><a href="#" routerLink="/register">Register</a></li>
+              <li><a href="#" routerLink="/logout">Logout</a></li>
+            </ul>
+          </li>
 
         </ul>
       </div>
@@ -161,61 +168,6 @@
 <!-- Category Service area starts -->
 <section class="category-services-area padding-top-100 padding-bottom-100">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-3 col-sm-6">
-        <div class="single-category-service">
-          <div class="single-select">
-            <select>
-              <option value="1">Select Categories</option>
-              <option value="2">Select Categories</option>
-              <option value="2">Select Categories</option>
-              <option value="2">Select Categories</option>
-              <option value="2">Select Categories</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <div class="single-category-service">
-          <div class="single-select">
-            <select>
-              <option value="1">Price Range</option>
-              <option value="2">Price Range</option>
-              <option value="2">Price Range</option>
-              <option value="2">Price Range</option>
-              <option value="2">Price Range</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <div class="single-category-service">
-          <div class="single-select">
-            <select>
-              <option value="1">Ratings</option>
-              <option value="2">Ratings</option>
-              <option value="2">Ratings</option>
-              <option value="2">Ratings</option>
-              <option value="2">Ratings</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <div class="single-category-service flex-category-service">
-          <div class="single-select">
-            <span class="select-sort"> Sort By: </span>
-            <select>
-              <option value="1"> $0 to $20</option>
-              <option value="2">$20 to $40</option>
-              <option value="3">$40 to $60</option>
-              <option value="4">$60 to $80</option>
-              <option value="5">$80 to $100</option>
-            </select>
-          </div>
-        </div>
-      </div>
-    </div>
     <router-outlet></router-outlet>
   </div>
 </section>

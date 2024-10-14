@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {AuthService} from "../core/services/auth.service";
+import {Prestataire} from "../models/prestataire";
 
 @Component({
   selector: 'app-prestataire',
@@ -9,6 +10,7 @@ import {AuthService} from "../core/services/auth.service";
 export class PrestataireComponent implements OnInit{
 
   @Input() userRole!: string | null;
+  prestataire!: any[] ;
 
   constructor(
     private  authService:AuthService

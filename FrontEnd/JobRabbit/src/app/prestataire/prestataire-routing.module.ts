@@ -5,6 +5,7 @@ import {ListServicesComponent} from "../service/list-services/list-services.comp
 import {EditServiceComponent} from "../service/edit-service/edit-service.component";
 import {AddServiceComponent} from "../service/add-service/add-service.component";
 import {PrestataireComponent} from "./prestataire.component";
+import {ListDemandeComponent} from "../demande/list-demande/list-demande.component";
 
 const routes: Routes = [
   { path: '', component: PrestataireComponent , children: [
@@ -12,7 +13,8 @@ const routes: Routes = [
     { path:'addService',component:AddServiceComponent},
     { path: '', redirectTo: 'addService', pathMatch: 'full' },
     { path:'listService',component:ListServicesComponent},
-    { path: 'editService',component:EditServiceComponent}
+    { path: 'editService/:id',component:EditServiceComponent},
+    { path: 'demandes', component: ListDemandeComponent },
     ]},
 ];
 

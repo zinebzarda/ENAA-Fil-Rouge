@@ -69,7 +69,7 @@ public class SecurityConfig {
 
                                 // Client demande endpoints
                                 .requestMatchers(POST, "/demandes/**").hasRole("CLIENT")
-//                                .requestMatchers(GET, "/client/demandes").hasRole("CLIENT")
+                                .requestMatchers(GET, "/demandes/**").hasRole("PRESTATAIRE")
 //                                .requestMatchers(PUT, "/client/demandes/*/cancel").hasRole("CLIENT")
 //                                .requestMatchers(POST, "/client/demandes/*/feedback").hasRole("CLIENT")
 //                                .requestMatchers(POST, "/client/demandes/contact-support").hasRole("CLIENT")

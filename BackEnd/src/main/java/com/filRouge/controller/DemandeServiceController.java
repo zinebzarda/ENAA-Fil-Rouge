@@ -2,8 +2,6 @@ package com.filRouge.controller;
 
 import com.filRouge.exception.ResourceNotFoundException;
 import com.filRouge.model.DemandeService;
-import com.filRouge.model.Services;
-import com.filRouge.model.enums.ValidateStatus;
 import com.filRouge.service.DemandeServiceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -19,15 +17,21 @@ public class DemandeServiceController {
     @Autowired
     private DemandeServiceService demandeServiceService;
 
-    @PostMapping("/add")
-    public DemandeService createService(@RequestBody DemandeService service) {
-        return demandeServiceService.createDemandeService(service);
+    @PostMapping("/add/{id}")
+    public ResponseEntity<DemandeService> createDemandeService(@RequestBody DemandeService demandeService, @PathVariable Long id) {
+        DemandeService createdDemandeService = demandeServiceService.createDemandeService(demandeService, id);
+        return new ResponseEntity<>(createdDemandeService, HttpStatus.CREATED);
     }
+
 
     @GetMapping
     public ResponseEntity<List<DemandeService>> getAllDemandes() {
         List<DemandeService> demandes = demandeServiceService.getAllDemandes();
         return new ResponseEntity<>(demandes, HttpStatus.OK);
+    }
+    @GetMapping("service/{id}")
+    public List<DemandeService> getDemandeServiceById(@PathVariable Long id) {
+        return demandeServiceService.getDemandesByServiceId(id);
     }
 
     @GetMapping("/{id}")

@@ -14,6 +14,7 @@ import {PageNotFoundComponent} from "./component/page-not-found/page-not-found.c
 import {AddComponent} from "./contact/add/add.component";
 import {ListContactComponent} from "./contact/list-contact/list-contact.component";
 import {FaqComponent} from "./Homes/faq/faq.component";
+import {AddDemandeComponent} from "./demande/add-demande/add-demande.component";
 
 const routes: Routes = [
   { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
@@ -30,6 +31,7 @@ const routes: Routes = [
   { path: 'faq', component: FaqComponent },
   { path: 'footer', component: FooterComponent },
   { path: 'addContact', component: AddComponent },
+  { path: 'book/:id', component: AddDemandeComponent },
   { path: 'home', component: HomeComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }

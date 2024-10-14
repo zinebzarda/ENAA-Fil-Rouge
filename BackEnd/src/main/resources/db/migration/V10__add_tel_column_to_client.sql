@@ -1,0 +1,3 @@
+
+ALTER TABLE client
+    ADD COLUMN tel VARCHAR(15);

@@ -11,34 +11,20 @@ export class DemandeServiceService {
 
   constructor(private http: HttpClient) {}
 
-  createDemandeService(clientId: number, serviceId: number): Observable<DemandeService> {
-    return this.http.post<DemandeService>(`${this.apiUrl}?clientId=${clientId}&serviceId=${serviceId}`, {});
+  addDemande(demande: DemandeService, serviceId: number): Observable<DemandeService> {
+    return this.http.post<DemandeService>(`${this.apiUrl}/add/${serviceId}`, demande);
   }
 
-  getAllDemandes(): Observable<DemandeService[]> {
-    return this.http.get<DemandeService[]>(this.apiUrl);
+  getDemandes(): Observable<DemandeService[]> {
+    return this.http.get<DemandeService[]>(`${this.apiUrl}`);
+  }
+
+  getDemandesByServiceId(serviceId: number): Observable<DemandeService[]> {
+    return this.http.get<DemandeService[]>(`${this.apiUrl}/service/${serviceId}`);
   }
 
   getDemandeById(id: number): Observable<DemandeService> {
     return this.http.get<DemandeService>(`${this.apiUrl}/${id}`);
-  }
-
-  updateDemande(id: number, clientId?: number, serviceId?: number, statut?: string): Observable<DemandeService> {
-    // Crée un objet HttpParams pour inclure uniquement les paramètres définis
-    let params = new HttpParams();
-
-    if (clientId) {
-      params = params.set('clientId', clientId.toString());
-    }
-    if (serviceId) {
-      params = params.set('serviceId', serviceId.toString());
-    }
-    if (statut) {
-      params = params.set('statut', statut);
-    }
-
-    // Envoie la requête PUT avec les paramètres
-    return this.http.put<DemandeService>(`${this.apiUrl}/update/${id}`, {}, { params });
   }
 
   deleteDemande(id: number): Observable<void> {

@@ -14,8 +14,6 @@ export class ListClientComponent implements OnInit {
   paginatedClients: Client[] = [];
   pageSize: number = 10;
   pageIndex: number = 0;
-  showEditPopup = false;
-  selectedClient: Client | null = null;
 
   constructor(private clientService: ClientService) { }
 

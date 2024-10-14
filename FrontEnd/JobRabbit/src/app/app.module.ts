@@ -27,6 +27,8 @@ import {MatPaginatorModule} from "@angular/material/paginator";
 
 import {JwtModule} from '@auth0/angular-jwt'
 import {ServiceModule} from "./service/service.module";
+import { AddDemandeComponent } from './demande/add-demande/add-demande.component';
+import { ListDemandeComponent } from './demande/list-demande/list-demande.component';
 
 
 
@@ -47,6 +49,8 @@ import {ServiceModule} from "./service/service.module";
     ListContactComponent,
     ReviewComponent,
     FaqComponent,
+    AddDemandeComponent,
+    ListDemandeComponent,
   ],
   imports: [
     BrowserModule,

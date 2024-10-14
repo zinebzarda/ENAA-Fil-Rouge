@@ -5,9 +5,8 @@ import {ValidateStatus} from "./enums/validate-status.enum";
 
 export interface DemandeService {
   id?: number;
-  dateDemmande: string;
-  statut: ValidateStatus;
-  client: Client;
-  service: Services;
-  feedbacks: Feedback[];
+  dateDemmande: Date;
+  client?: any;
+  service?: any;
+  feedbacks?: any[];
 }

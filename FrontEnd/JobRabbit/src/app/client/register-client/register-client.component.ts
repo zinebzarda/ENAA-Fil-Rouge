@@ -23,7 +23,8 @@ export class RegisterClientComponent implements OnInit {
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required]],
       confirmPassword: ['', [Validators.required]],
-      adresse: ['', Validators.required] // Champ spécifique au Client
+      adresse: ['', Validators.required],
+      tel: ['', Validators.required]
     }, {validator: this.passwordMatchValidator});
   }
 

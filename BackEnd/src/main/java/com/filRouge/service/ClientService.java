@@ -36,6 +36,7 @@ public class ClientService {
         client.setUsername(clientRequestDTO.getUsername());
         client.setEmail(clientRequestDTO.getEmail());
         client.setAdresse(clientRequestDTO.getAdresse());
+        client.setTel(clientRequestDTO.getTel());
         client.setPassword(passwordEncoder.encode(clientRequestDTO.getPassword()));
         client.setRole(Role.CLIENT);
 
@@ -65,6 +66,7 @@ public class ClientService {
         existingClient.setUsername(clientRequestDTO.getUsername());
         existingClient.setEmail(clientRequestDTO.getEmail());
         existingClient.setAdresse(clientRequestDTO.getAdresse());
+        existingClient.setTel(clientRequestDTO.getAdresse());
 
         if (clientRequestDTO.getPassword() != null && !clientRequestDTO.getPassword().isEmpty()) {
             existingClient.setPassword(passwordEncoder.encode(clientRequestDTO.getPassword()));
@@ -143,6 +145,7 @@ public class ClientService {
         clientResponseDTO.setUsername(client.getUsername());
         clientResponseDTO.setEmail(client.getEmail());
         clientResponseDTO.setAdresse(client.getAdresse());
+        clientResponseDTO.setTel(client.getTel());
         return clientResponseDTO;
     }
 }

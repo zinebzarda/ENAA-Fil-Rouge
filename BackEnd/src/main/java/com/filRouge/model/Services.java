@@ -26,6 +26,7 @@ public class Services {
     private Prestataire prestataire;
 
     @OneToMany(mappedBy = "service")
+    @JsonIgnore
     private List<DemandeService> demandes;
 
     @OneToMany(mappedBy = "services", cascade = CascadeType.ALL, orphanRemoval = true)
