@@ -4,35 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d580e07-d143-4b6b-8644-6fec88509950" name="Changes" comment="modification sur jwt">
-      <change afterPath="$PROJECT_DIR$/BackEnd/src/main/resources/db/migration/V10__add_tel_column_to_client.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BackEnd/src/main/resources/db/migration/V9__Delete_statut_from_demande_service.sql" afterDir="false" />
+    <list default="true" id="7d580e07-d143-4b6b-8644-6fec88509950" name="Changes" comment="des changement">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/DemandeServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/DemandeServiceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/dto/ClientRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/dto/ClientRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/dto/ClientResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/dto/ClientResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/model/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/model/DemandeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/model/DemandeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/model/Services.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/model/Services.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/repository/DemandeServiceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/repository/DemandeServiceRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/service/ClientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/service/DemandeServiceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/service/DemandeServiceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/test/java/com/filRouge/DemandeServiceServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/test/java/com/filRouge/DemandeServiceServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/Homes/nav-bar/nav-bar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/Homes/nav-bar/nav-bar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/client.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/client.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/list-client/list-client.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/list-client/list-client.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/list-client/list-client.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/list-client/list-client.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/register-client/register-client.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/register-client/register-client.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/register-client/register-client.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/register-client/register-client.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/core/services/demande.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/core/services/demande.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/models/client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/models/client.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/models/demande-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/models/demande-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/prestataire-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/prestataire-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/prestataire.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/prestataire.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/prestataire.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/prestataire.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,15 +226,7 @@
       <workItem from="1728052458925" duration="41757000" />
       <workItem from="1728298795895" duration="287000" />
       <workItem from="1728299503646" duration="93511000" />
-      <workItem from="1728652593559" duration="75414000" />
-    </task>
-    <task id="LOCAL-00010" summary="resister de client et prestataire">
-      <option name="closed" value="true" />
-      <created>1728002497057</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1728002497057</updated>
+      <workItem from="1728652593559" duration="77162000" />
     </task>
     <task id="LOCAL-00011" summary="resister de client Design">
       <option name="closed" value="true" />
@@ -647,7 +612,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728738379460</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="des changement">
+      <option name="closed" value="true" />
+      <created>1728906717052</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1728906717052</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -665,7 +638,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modification creation de crud de prestataire" />
     <MESSAGE value="modification creation de crud de client" />
     <MESSAGE value="modification creation sur about" />
     <MESSAGE value="modification de admin" />
@@ -690,7 +662,8 @@
     <MESSAGE value="modification sur prestataire" />
     <MESSAGE value="modification sur client et home" />
     <MESSAGE value="modification sur jwt" />
-    <option name="LAST_COMMIT_MESSAGE" value="modification sur jwt" />
+    <MESSAGE value="des changement" />
+    <option name="LAST_COMMIT_MESSAGE" value="des changement" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
