@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d580e07-d143-4b6b-8644-6fec88509950" name="Changes" comment="des changement">
+    <list default="true" id="7d580e07-d143-4b6b-8644-6fec88509950" name="Changes" comment="mysqldb">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -226,15 +226,7 @@
       <workItem from="1728052458925" duration="41757000" />
       <workItem from="1728298795895" duration="287000" />
       <workItem from="1728299503646" duration="93511000" />
-      <workItem from="1728652593559" duration="77162000" />
-    </task>
-    <task id="LOCAL-00011" summary="resister de client Design">
-      <option name="closed" value="true" />
-      <created>1728063526008</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1728063526008</updated>
+      <workItem from="1728652593559" duration="77740000" />
     </task>
     <task id="LOCAL-00012" summary="modification sur les services angular">
       <option name="closed" value="true" />
@@ -620,7 +612,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728906717052</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="mysqldb">
+      <option name="closed" value="true" />
+      <created>1728908717785</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1728908717785</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -638,7 +638,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modification creation de crud de client" />
     <MESSAGE value="modification creation sur about" />
     <MESSAGE value="modification de admin" />
     <MESSAGE value="modification de logout et login" />
@@ -663,7 +662,8 @@
     <MESSAGE value="modification sur client et home" />
     <MESSAGE value="modification sur jwt" />
     <MESSAGE value="des changement" />
-    <option name="LAST_COMMIT_MESSAGE" value="des changement" />
+    <MESSAGE value="mysqldb" />
+    <option name="LAST_COMMIT_MESSAGE" value="mysqldb" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
