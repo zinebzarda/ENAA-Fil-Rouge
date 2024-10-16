@@ -6,5 +6,5 @@ export interface Contact {
   email: string;
   message: string;
   phone: string
-  createdAt?: Date;
+  created_at: Date;
 }

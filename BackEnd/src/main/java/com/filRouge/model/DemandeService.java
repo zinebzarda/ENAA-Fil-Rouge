@@ -30,8 +30,5 @@ public class DemandeService {
     @JoinColumn(name = "serviceId")
     private Services service;
 
-    @OneToMany(mappedBy = "demandeService")
-    @JsonIgnore
-    private List<Feedback> feedbacks;
 
 }

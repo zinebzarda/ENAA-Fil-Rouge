@@ -36,6 +36,6 @@ export class AddComponent {
     }
   }
   showAlert(){
-    alert("Message Message envoyé avec succès")
+    alert(" Message envoyé avec succès")
   }
 }

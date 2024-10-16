@@ -24,7 +24,7 @@ public class  Contact {
     private LocalDateTime createdAt;
 
 
-//    @ManyToOne
-//    @JoinColumn(name = "client_id")
-//    private Client client;
+    @ManyToOne
+    @JoinColumn(name = "client_id")
+    private Client client;
 }

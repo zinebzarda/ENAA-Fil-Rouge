@@ -84,10 +84,7 @@ public class SecurityConfig {
 //                                .requestMatchers(PUT, "/admin/demandes/*/confirm").hasRole("ADMIN")
 //                                .requestMatchers(DELETE, "/admin/demandes/*").hasRole("ADMIN")
 //                                .requestMatchers(PUT, "/admin/demandes/*").hasRole("ADMIN")
-
-
-
-                                        .anyRequest().authenticated()
+                                  .anyRequest().authenticated()
                 )
                 .formLogin(formLogin -> formLogin.disable());
         http.addFilterBefore(new JwtAuthorizationFilter(customUserDetailsService), UsernamePasswordAuthenticationFilter.class);

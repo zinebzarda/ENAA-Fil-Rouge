@@ -67,5 +67,9 @@ public class ServiceService {
     public List<Services> searchServices(String titre) {
         return serviceRepository.findByTitreContaining(titre);
     }
+
+    public int countServices() {
+        return serviceRepository.countServices();
+    }
 }
 

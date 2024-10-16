@@ -59,4 +59,10 @@ public class ServiceController {
     public List<Services> searchServices(@RequestParam String titre) {
         return serviceService.searchServices(titre);
     }
+
+    @GetMapping("/count")
+    public int getServiceCount() {
+      return serviceService.countServices();
+    }
+
 }
