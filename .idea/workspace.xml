@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d580e07-d143-4b6b-8644-6fec88509950" name="Changes" comment="mysqldb">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/ServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/controller/ServiceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/model/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/model/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/model/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/model/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/model/Contact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/model/DemandeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/model/DemandeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/repository/ServiceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/repository/ServiceRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/service/ServiceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/com/filRouge/service/ServiceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/test/java/com/filRouge/DemandeServiceServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/test/java/com/filRouge/DemandeServiceServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/admin/admin.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/admin/admin.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/register-client/register-client.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/client/register-client/register-client.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/contact/add/add.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/contact/add/add.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/contact/list-contact/list-contact.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/contact/list-contact/list-contact.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/models/contact.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/models/contact.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/prestataire.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/prestataire.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/register-praistataire/register-praistataire.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/JobRabbit/src/app/prestataire/register-praistataire/register-praistataire.component.html" afterDir="false" />
-    </list>
+    <list default="true" id="7d580e07-d143-4b6b-8644-6fec88509950" name="Changes" comment="finFilRouge" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -244,23 +224,7 @@
       <workItem from="1728052458925" duration="41757000" />
       <workItem from="1728298795895" duration="287000" />
       <workItem from="1728299503646" duration="93511000" />
-      <workItem from="1728652593559" duration="106537000" />
-    </task>
-    <task id="LOCAL-00016" summary="animation  modification de style">
-      <option name="closed" value="true" />
-      <created>1728078438152</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1728078438152</updated>
-    </task>
-    <task id="LOCAL-00017" summary="auth and application">
-      <option name="closed" value="true" />
-      <created>1728078505197</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1728078505197</updated>
+      <workItem from="1728652593559" duration="106959000" />
     </task>
     <task id="LOCAL-00018" summary="logout">
       <option name="closed" value="true" />
@@ -638,7 +602,23 @@
       <option name="project" value="LOCAL" />
       <updated>1728912368890</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="finFilRouge">
+      <option name="closed" value="true" />
+      <created>1729071678476</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1729071678477</updated>
+    </task>
+    <task id="LOCAL-00066" summary="finFilRouge">
+      <option name="closed" value="true" />
+      <created>1729071726166</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1729071726166</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -656,7 +636,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modification creation sur about" />
     <MESSAGE value="modification de admin" />
     <MESSAGE value="modification de logout et login" />
     <MESSAGE value="modification de logout et page not found" />
@@ -681,7 +660,8 @@
     <MESSAGE value="modification sur jwt" />
     <MESSAGE value="des changement" />
     <MESSAGE value="mysqldb" />
-    <option name="LAST_COMMIT_MESSAGE" value="mysqldb" />
+    <MESSAGE value="finFilRouge" />
+    <option name="LAST_COMMIT_MESSAGE" value="finFilRouge" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
