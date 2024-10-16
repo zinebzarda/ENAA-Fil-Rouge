@@ -1,0 +1,207 @@
+<!--<h2>Liste des Services</h2>-->
+<!--<table>-->
+<!--  <thead>-->
+<!--  <tr>-->
+<!--    <th>Titre</th>-->
+<!--    <th>Description</th>-->
+<!--    <th>Prix</th>-->
+<!--    <th>Actions</th>-->
+<!--  </tr>-->
+<!--  </thead>-->
+<!--  <tbody>-->
+<!--  <tr *ngFor="let service of services">-->
+<!--    <td>{{ service.titre }}</td>-->
+<!--    <td>{{ service.description }}</td>-->
+<!--    <td>{{ service.prix }} €</td>-->
+<!--    <td>-->
+<!--      <button (click)="editService(service.id)">Modifier</button>-->
+<!--      <button (click)="deleteService(service.id)">Supprimer</button>-->
+<!--    </td>-->
+<!--  </tr>-->
+<!--  </tbody>-->
+<!--</table>-->
+<!--      =====================       ADMIN           =======================-->
+<!--be cqrful-->
+<div *ngIf="userRole ==='ADMIN'" class="col-lg-12">
+  <div class="dashboard-settings dashboard-flex-shwing margin-top-20">
+    <h2 class="dashboards-title">Services List </h2>
+    <span class="show-page-num">Showing {{ services.length }} services</span>
+  </div>
+    <div class="col-lg-12 margin-top-20">
+      <div class="single-dashboard-order">
+        <div class="table-responsive table-responsive--md">
+          <table class="custom--table">
+            <thead>
+            <tr>
+              <th>Titre</th>
+              <th>Description</th>
+              <th>Prix</th>
+              <th>Image</th>
+              <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let service of services">
+              <td data-label="title">{{ service.titre }}</td>
+              <td data-label="Email">{{ service.description }}</td>
+              <td data-label="Adresse">{{ service.prix }}</td>
+              <td data-label="Image">
+                <img [src]="service.image" style="width: 50px">
+              </td>
+
+              <td data-label="Actions">
+                <a class="delete-link" (click)="deleteService(service.id)">
+                  <span class="icon color-three"><i class="las la-trash"></i></span> Supprimer
+                </a>
+                <!--            <a class="edit-link" (click)="editService(service.id)"><span class="icon color-two"><i class="las la-edit"></i>-->
+                <!--            </span> Modifier-->
+                <!--            </a>-->
+              </td>
+            </tr>
+            </tbody>
+          </table>
+          <mat-paginator
+            [length]="services.length"
+            [pageSize]="pageSize"
+            [pageIndex]="pageIndex"
+            [pageSizeOptions]="[5, 10, 20]"
+            (page)="onPageChange($event)">
+          </mat-paginator>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+<!--      =====================       Prestataire           =======================-->
+<!--be cqrful-->
+<div *ngIf="userRole ==='PRESTATAIRE'" class="col-lg-12">
+  <div class="dashboard-settings dashboard-flex-shwing margin-top-20">
+    <h2 class="dashboards-title">Service List </h2>
+    <span class="show-page-num">Showing {{ services.length }} services</span>
+  </div>
+    <!--be cqrful-->
+    <div class="col-lg-12 margin-top-20">
+      <div class="single-dashboard-order">
+        <div class="table-responsive table-responsive--md">
+          <table class="custom--table">
+            <thead>
+            <tr>
+              <th>Titre</th>
+              <th>Description</th>
+              <th>Prix</th>
+              <th>Image</th>
+              <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let service of services">
+              <td data-label="title">{{ service.titre }}</td>
+              <td data-label="Email">{{ service.description }}</td>
+              <td data-label="Adresse">{{ service.prix }}</td>
+              <td data-label="Image">
+                <img [src]="service.image" style="width: 50px">
+              </td>
+
+              <td data-label="Actions">
+                <a class="delete-link" (click)="deleteService(service.id)">
+                  <span class="icon color-three"><i class="las la-trash"></i></span> Supprimer
+                </a>
+                <a class="edit-link" (click)="editService(service.id)"><span class="icon color-two"><i class="las la-edit"></i>
+                </span> Modifier
+                </a>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+          <mat-paginator
+            [length]="services.length"
+            [pageSize]="pageSize"
+            [pageIndex]="pageIndex"
+            [pageSizeOptions]="[5, 10, 20]"
+            (page)="onPageChange($event)">
+          </mat-paginator>
+        </div>
+      </div>
+    </div>
+    <!--be cqrful-->
+  </div>
+
+
+
+
+<!-- Popup de modification -->
+<!--<app-edit-client *ngIf="showEditPopup" [client]="selectedClient" (closePopup)="closeEditPopup()"></app-edit-client>-->
+<!--      =====================       CLIENT           =======================-->
+<div *ngIf="userRole?.toString() === 'CLIENT'">
+  <div *ngIf="isAuthenticated; else unauthenticated">
+    <div class="row margin-top-20">
+      <!-- Search Bar -->
+      <div class="col-lg-12 margin-bottom-20">
+        <input type="text" [(ngModel)]="searchTerm" (ngModelChange)="onSearchTermChange()" placeholder="Search services by title..." class="form-control" />
+      </div>
+    </div>
+
+    <div class="row margin-top-20">
+      <div class="col-xl-3 col-md-6 margin-top-30" *ngFor="let service of paginatedServices">
+        <div class="single-service service-two style-03 service-padding section-bg-2 wow fadeInUp" data-wow-delay=".2s">
+          <a href="javascript:void(0)" class="service-thumb">
+            <img [src]="service.image" alt="Service Image">
+            <div class="award-icons style-02">
+              <i class="las la-award"></i>
+            </div>
+          </a>
+          <div class="services-contents content-padding-reverse">
+            <ul class="author-tag">
+              <li class="tag-list">
+                <a href="#">
+                  <div class="authors">
+                    <div class="thumb">
+                      <img [src]="service.image" alt="Author Image">
+                      <span class="notification-dot"></span>
+                    </div>
+                    <span class="author-title">{{ service.titre }}</span>
+                  </div>
+                </a>
+              </li>
+              <li class="tag-list">
+                <a href="#">
+                  <span class="icon"> <i class="las la-star"></i> </span>
+<!--                  <span class="reviews"> {{ service.rating }}</span>-->
+                </a>
+              </li>
+            </ul>
+            <h4 class="common-title-two hover-color-three">
+              <a> {{ service.titre }} </a>
+            </h4>
+            <p class="common-para"> {{ service.description }} </p>
+            <div class="service-price-wrapper mt-4">
+              <div class="service-price style-02">
+                <span class="prices style-02 color-3"> ${{ service.prix }} </span>
+              </div>
+              <div class="btn-wrapper">
+                <button class="cmn-btn btn-outline-light btn-medium" [routerLink]="['/book', service.id]" >Book</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #unauthenticated>
+    <div class="col-lg-12 text-center margin-top-50">
+      <h2>Please log in to view our services</h2>
+      <p class="margin-top-20">You need to be logged in as a client to access our service listings.</p>
+      <button (click)="login()" class="cmn-btn btn-bg-1 margin-top-20">LogIn</button>
+    </div>
+  </ng-template>
+</div>
+
+
+<!-- Pagination Controls (Angular Material Paginator or Custom Pagination) -->
+<!--<mat-paginator [length]="services.length" [pageSize]="pageSize" [pageIndex]="pageIndex" (page)="onPageChange($event)">-->
+<!--</mat-paginator>-->
+
+

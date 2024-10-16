@@ -1,0 +1,23 @@
+.cmn-btn {
+  background-color: purple; /* Couleur de fond violet */
+  color: white;             /* Couleur du texte en blanc */
+  border: 2px solid white;  /* Bordure blanche */
+  padding: 10px 20px;       /* Espacement intérieur du bouton */
+  border-radius: 5px;       /* Coins arrondis */
+  cursor: pointer;          /* Curseur de souris pointer */
+  transition: background-color 0.3s ease; /* Transition douce pour le changement de couleur */
+}
+
+.cmn-btn:hover {
+  background-color: darkviolet; /* Couleur de fond au survol */
+}
+
+
+.success-message {
+  display: grid;
+  place-items: center; /* Centre à la fois horizontalement et verticalement */
+  height: 100%;
+  width: 80%;           /* Largeur souhaitée */
+  margin: 0 auto;      /* Centre horizontalement */
+  text-align: center;  /* Centre le texte à l'intérieur du conteneur */
+}

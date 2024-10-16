@@ -1,0 +1,83 @@
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="dashboard-settings dashboard-flex-shwing">
+        <h2 class="dashboards-title">Ajouter un Service</h2>
+        <div class="btn-wrapper">
+          <a href="dashboard_services.html" class="cmn-btn btn-bg-1">Voir Services</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12 margin-top-50">
+      <div class="single-settings">
+        <h4 class="input-title">Enregistrer les informations</h4>
+        <form [formGroup]="serviceForm" (ngSubmit)="onSubmit()">
+          <div class="single-dashboard-input">
+            <div class="single-info-input margin-top-30">
+              <label class="info-title" for="titre">Titre du Service*</label>
+              <input class="form--control" id="titre" formControlName="titre" type="text" placeholder="Ajouter le titre">
+            </div>
+          </div>
+
+          <div class="single-dashboard-input">
+            <div class="single-info-input margin-top-30">
+              <label class="info-title" for="description">Description du Service*</label>
+              <textarea class="form--control textarea--form" id="description" formControlName="description" placeholder="Type Description"></textarea>
+            </div>
+          </div>
+
+          <div class="single-dashboard-input">
+            <div class="single-info-input margin-top-30">
+              <label class="info-title" for="prix">Prix*</label>
+              <input class="form--control" id="prix" formControlName="prix" type="number" placeholder="Ajouter le prix">
+            </div>
+          </div>
+
+<!--          <div class="single-dashboard-input">-->
+<!--            <div class="single-info-input margin-top-30">-->
+<!--              <label class="info-title" for="nationalIdCardUrl">Carte d'identité nationale*</label>-->
+<!--              <input class="form&#45;&#45;control" id="nationalIdCardUrl" type="file" (change)="onFileSelected($event, 'image')" required>-->
+<!--              <div *ngIf="imageUrl">-->
+<!--                <h6 class="drop-title">Aperçu de l'image :</h6>-->
+<!--                <img [src]="imageUrl" alt="Image Preview" style="max-width: 70%; height: auto;">-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+
+          <div class="single-dashboard-input">
+            <div class="single-info-input margin-top-30">
+              <label class="info-title">Carte d'identité nationale*</label>
+
+              <!-- File Choose Area -->
+              <a href="javascript:void(0)" class="file-choose-area" (click)="fileInput.click()">
+                <div class="icon">
+                  <i class="las la-image"></i>
+                </div>
+                <h6 class="drop-title">Déposez votre image ou <span class="color-1">Parcourir</span></h6>
+                <ul class="file-size-list">
+                  <li> Taille maximale du fichier : 10mb </li>
+                  <li> Ratio : 1600*1200 </li>
+                </ul>
+              </a>
+
+              <!-- Hidden File Input -->
+              <input type="file" #fileInput id="nationalIdCardUrl" (change)="onFileSelected($event, 'image')" required style="display: none;">
+
+              <!-- Image Preview -->
+              <div *ngIf="imageUrl" class="image-preview-area margin-top-30">
+                <h6 class="drop-title">Aperçu de l'image :</h6>
+                <img [src]="imageUrl" alt="Image Preview" style="max-width: 70%; height: auto;">
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-wrapper margin-top-40">
+            <button class="cmn-btn btn-bg-1" type="submit" [disabled]="serviceForm.invalid">Ajouter</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+

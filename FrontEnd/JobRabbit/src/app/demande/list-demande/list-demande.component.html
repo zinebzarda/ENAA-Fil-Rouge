@@ -1,0 +1,44 @@
+<div class="col-lg-12">
+  <div class="dashboard-settings dashboard-flex-shwing margin-top-20">
+    <h2 class="dashboards-title">Liste des Demandes de Service</h2>
+    <span class="show-page-num">Affichage de {{ demandes.length }} demandes</span>
+  </div>
+</div>
+
+<!-- Table des demandes filtrées -->
+<div class="col-lg-12 margin-top-20">
+  <div class="single-dashboard-order">
+    <div class="table-responsive table-responsive--md">
+      <table class="custom--table">
+        <thead>
+        <tr>
+          <th>Date de Demande</th>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Adresse</th>
+          <th>Phone</th>
+          <th>Service</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let demande of paginatedDemandes">
+          <td data-label="Date de Demande">{{ demande.dateDemmande | date: 'dd/MM/YYYY' }}</td>
+          <td data-label="Username">{{ demande.client?.username }}</td>
+          <td data-label="Email">{{ demande.client.email }}</td>
+          <td data-label="Adresse">{{ demande.client.adresse }}</td>
+          <td data-label="Phone">{{ demande.client.tel }}</td>
+          <td data-label="Service">{{ demande.service?.titre }}</td>
+        </tr>
+        </tbody>
+      </table>
+
+      <mat-paginator
+        [length]="demandes.length"
+        [pageSize]="pageSize"
+        [pageIndex]="pageIndex"
+        [pageSizeOptions]="[5, 10, 20]"
+        (page)="onPageChange($event)">
+      </mat-paginator>
+    </div>
+  </div>
+</div>
